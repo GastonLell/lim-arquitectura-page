@@ -1,9 +1,9 @@
-import "./estilos.css";
+
 
 const Servicios = () => {
   return (
     <section id="servicios">
-      <h2 className="subtitulo">
+      <h2 className="subtitulos">
         SERVIC<span>IOS</span>
       </h2>
     </section>
