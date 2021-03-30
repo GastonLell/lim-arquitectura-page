@@ -1,4 +1,3 @@
-import "./estilos.css";
 import ImagenLogo from "../assets/images/logo-loremipsum.jpg";
 const Menu = () => {
   return (

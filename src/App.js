@@ -1,4 +1,5 @@
-import './App.css';
+import './scss/app.scss';
+
 import Inicio from "./pages/Inicio";
 function App() {
   return (
