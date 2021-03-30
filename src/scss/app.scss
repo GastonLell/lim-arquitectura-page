@@ -1,20 +1,25 @@
+// VARIABLES
+
 /* GENERALES */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.subtitulos{
+
+.subtitulos {
     font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
 }
-.subtitulos span{
+
+.subtitulos span {
     border-bottom: 4px solid black;
 }
 
 /* BARRA DE NAVEGACION */
-nav{
+
+nav {
     position: sticky;
     top: 0;
     z-index: 1;
@@ -25,59 +30,64 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 0 150px;
-}
 
-nav .logo-marca img{
-    width: auto;
-    height: 80px;
-}
+    .logo-marca img {
+        width: auto;
+        height: 80px;
+    }
 
-nav .navegacion {
-    width: 60%;
-}
+    .navegacion {
+        width: 60%;
+    }
 
-nav .navegacion ul{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-}
-nav .navegacion ul a{
-    text-decoration: none;
-    color: #333;
+    .navegacion ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    .navegacion ul a {
+        text-decoration: none;
+        color: #333;
+    }
 }
 
 /* NOSOTROS */
 
-#nosotros{
+#nosotros {
     padding: 150px;
     height: 86vh;
-}
-.nosotros-contenedor{
-    margin: 35px 0;
-    display: flex;
-    justify-content: space-between;
-}
-.nosotros-contenedor .nosotros-texto{
-    margin-right: 40px;
-} 
-.nosotros-contenedor .nosotros-texto p{
-    text-align: justify;
-    margin-bottom: 15px;
-}
-.nosotros-contenedor .nosotros-imgs{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
 
-#nosotros .nosotros-imgs img{
-    width: 200px;
-    height: 150px;
-}
-#nosotros #creamos-futuro{
-    font-size: 105px;
-    text-align: center;
-    text-shadow: 6px 10px 8px rgb(179, 175, 175);
-    color: #fff;
-}
+    .nosotros-contenedor {
+        margin: 35px 0;
+        display: flex;
+        justify-content: space-between;
+    }
 
+    .nosotros-contenedor .nosotros-texto {
+        margin-right: 40px;
+    }
+
+    .nosotros-contenedor .nosotros-texto p {
+        text-align: justify;
+        margin-bottom: 15px;
+    }
+
+    .nosotros-contenedor .nosotros-imgs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .nosotros-imgs img {
+        width: 200px;
+        height: 150px;
+    }
+
+    #creamos-futuro {
+        font-size: 105px;
+        text-align: center;
+        text-shadow: 6px 10px 8px rgb(179, 175, 175);
+        color: #fff;
+    }
+}

@@ -1,5 +1,3 @@
-
-
 const Servicios = () => {
   return (
     <section id="servicios">
