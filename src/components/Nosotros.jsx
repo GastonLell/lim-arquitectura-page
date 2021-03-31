@@ -46,8 +46,6 @@ const Nosotros = () => {
           <img id="img-mateo" src={MateoImagen} alt="Mateo lim arquitectura" />
         </div>
       </div>
-
-      <h2 id="creamos-futuro">we create the future</h2>
     </section>
   );
 };

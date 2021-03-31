@@ -17,33 +17,96 @@
 
 /* BARRA DE NAVEGACION */
 nav {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 1;
   background-color: #f7f1f1;
   width: 100%;
   height: 80px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 150px;
+  flex-direction: column;
 }
 nav .logo-marca img {
-  width: auto;
-  height: 80px;
+  display: none;
 }
-nav .navegacion {
-  width: 60%;
+nav .btn-hamburguer button {
+  position: relative;
+  top: 20px;
+  left: 85%;
+  background-color: #f7f1f1;
+  border: none;
+  outline: none;
+  font-size: 35px;
+  text-align: center;
 }
 nav .navegacion ul {
-  display: flex;
-  justify-content: space-between;
   list-style: none;
+  background-color: #f7f1f1;
+  width: 100%;
+}
+nav .navegacion ul.nav-open {
+  position: relative;
+  top: 35px;
+  left: 0;
+  transition: all 500ms ease;
+}
+nav .navegacion ul.nav-close {
+  position: relative;
+  top: -150%;
+  left: 0;
+  transition: all 500ms ease;
+}
+nav .navegacion ul li {
+  padding: 15px;
+  text-align: center;
 }
 nav .navegacion ul a {
+  font-size: 20px;
   text-decoration: none;
   color: #333;
+}
+@media (min-width: 576px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  nav .navegacion {
+    width: 60%;
+  }
+  nav .navegacion ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  nav .logo-marca img {
+    display: block;
+    width: auto;
+    height: 80px;
+  }
+  nav .btn-hamburguer button {
+    display: none;
+  }
+}
+
+.imagen-inicio {
+  width: 100%;
+  height: 86vh;
+  background-image: url(../assets/images/render-index.jpg);
+  background-position: 0px 0px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: table;
+  text-align: center;
+}
+.imagen-inicio #creamos-futuro {
+  display: table-cell;
+  vertical-align: bottom;
+  font-size: 100px;
+  text-shadow: 2px 4px 4px #b3afaf;
+  color: #fff;
 }
 
 /* NOSOTROS */
@@ -71,10 +134,4 @@ nav .navegacion ul a {
 #nosotros .nosotros-imgs img {
   width: 200px;
   height: 150px;
-}
-#nosotros #creamos-futuro {
-  font-size: 105px;
-  text-align: center;
-  text-shadow: 6px 10px 8px #b3afaf;
-  color: #fff;
 }/*# sourceMappingURL=app.css.map */
