@@ -114,7 +114,7 @@ nav .navegacion ul a {
 
 /* NOSOTROS */
 #nosotros {
-  padding: 70px;
+  padding: 120px;
   height: 86vh;
 }
 #nosotros .nosotros-contenedor {
@@ -135,4 +135,20 @@ nav .navegacion ul a {
 #nosotros .nosotros-imgs img {
   width: 200px;
   height: 150px;
+}
+
+#proyectos {
+  height: 86vh;
+}
+#proyectos .subtitulos {
+  padding: 10px 120px;
+}
+#proyectos .proyectos-contenedor {
+  padding: 70px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#proyectos .proyectos-contenedor img {
+  margin: 10px 10px;
 }/*# sourceMappingURL=app.css.map */

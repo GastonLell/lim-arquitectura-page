@@ -1,6 +1,8 @@
 // VARIABLES
   $color-uno: rgb(247, 241, 241);
-  $padding-lateral: 70px;
+  $padding-lateral-uno: 70px;
+  $padding-lateral-dos: 120px;
+
 /* GENERALES */
 * {
   margin: 0;
@@ -73,7 +75,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 $padding-lateral;
+    padding: 0 $padding-lateral-uno;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -123,7 +125,7 @@ nav {
 /* NOSOTROS */
 
 #nosotros {
-  padding: $padding-lateral;
+  padding: $padding-lateral-dos;
   height: 86vh;
 
   .nosotros-contenedor {
@@ -148,5 +150,22 @@ nav {
   .nosotros-imgs img {
     width: 200px;
     height: 150px;
+  }
+}
+
+#proyectos{
+  height: 86vh;
+
+  .subtitulos{
+    padding: 10px $padding-lateral-dos;
+  }
+  .proyectos-contenedor{
+    padding: $padding-lateral-uno;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .proyectos-contenedor img{
+    margin: 10px 10px;
   }
 }
