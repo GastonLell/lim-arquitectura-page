@@ -35,11 +35,11 @@ const Menu = () => {
           </li>
           <span>|</span>
           <li>
-            <a href="proyectos">Proyectos</a>
+            <a href="#proyectos">Proyectos</a>
           </li>
           <span>|</span>
           <li>
-            <a href="contacto">Contacto</a>
+            <a href="#contacto">Contacto</a>
           </li>
         </ul>
       </div>

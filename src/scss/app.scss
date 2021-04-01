@@ -126,7 +126,7 @@ nav {
 
 #nosotros {
   padding: $padding-lateral-dos;
-  height: 86vh;
+  height: 100vh;
 
   .nosotros-contenedor {
     margin: 35px 0;
@@ -154,13 +154,11 @@ nav {
 }
 
 #proyectos{
-  height: 86vh;
-
   .subtitulos{
     padding: 10px $padding-lateral-dos;
   }
   .proyectos-contenedor{
-    padding: $padding-lateral-uno;
+    padding: $padding-lateral-uno - 10;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

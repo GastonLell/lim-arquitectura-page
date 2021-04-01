@@ -115,7 +115,7 @@ nav .navegacion ul a {
 /* NOSOTROS */
 #nosotros {
   padding: 120px;
-  height: 86vh;
+  height: 100vh;
 }
 #nosotros .nosotros-contenedor {
   margin: 35px 0;
@@ -137,14 +137,11 @@ nav .navegacion ul a {
   height: 150px;
 }
 
-#proyectos {
-  height: 86vh;
-}
 #proyectos .subtitulos {
   padding: 10px 120px;
 }
 #proyectos .proyectos-contenedor {
-  padding: 70px;
+  padding: 60px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
