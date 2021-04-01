@@ -29,15 +29,15 @@ const Menu = () => {
           <li>
             <a href="#nosotros">Nosotros</a>
           </li>
-
+          <span>|</span>
           <li>
             <a href="#servicios">Servicios</a>
           </li>
-
+          <span>|</span>
           <li>
             <a href="proyectos">Proyectos</a>
           </li>
-
+          <span>|</span>
           <li>
             <a href="contacto">Contacto</a>
           </li>

@@ -7,7 +7,7 @@ const Inicio = () => {
   return (
     <>
       <Menu />
-      <RealidadVirtual />
+      {/* <RealidadVirtual /> */}
       <Slogan />
       <Nosotros />
       <Servicios />

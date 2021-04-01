@@ -42,8 +42,7 @@ const Nosotros = () => {
           </p>
         </div>
         <div className="nosotros-imgs">
-          <img id="img-lucila" src={LucilaImagen} alt="Lucila lim arquitectura" />
-          <img id="img-mateo" src={MateoImagen} alt="Mateo lim arquitectura" />
+          <img src={LucilaImagen} alt="lim arquitectura" />
         </div>
       </div>
     </section>

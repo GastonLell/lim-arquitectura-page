@@ -1,5 +1,6 @@
 // VARIABLES
   $color-uno: rgb(247, 241, 241);
+  $padding-lateral: 70px;
 /* GENERALES */
 * {
   margin: 0;
@@ -67,11 +68,12 @@ nav {
     text-decoration: none;
     color: #333;
   }
+
   @media (min-width: 576px) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 150px;
+    padding: 0 $padding-lateral;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -84,6 +86,9 @@ nav {
       display: flex;
       justify-content: space-between;
       list-style: none;
+    }
+    .navegacion span {
+      line-height: 55px;
     }
     .logo-marca img {
       display: block;
@@ -118,7 +123,7 @@ nav {
 /* NOSOTROS */
 
 #nosotros {
-  padding: 150px;
+  padding: $padding-lateral;
   height: 86vh;
 
   .nosotros-contenedor {
@@ -138,8 +143,6 @@ nav {
 
   .nosotros-contenedor .nosotros-imgs {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
   }
 
   .nosotros-imgs img {

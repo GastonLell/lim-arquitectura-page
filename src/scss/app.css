@@ -67,7 +67,7 @@ nav .navegacion ul a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 150px;
+    padding: 0 70px;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -80,6 +80,9 @@ nav .navegacion ul a {
     display: flex;
     justify-content: space-between;
     list-style: none;
+  }
+  nav .navegacion span {
+    line-height: 55px;
   }
   nav .logo-marca img {
     display: block;
@@ -111,7 +114,7 @@ nav .navegacion ul a {
 
 /* NOSOTROS */
 #nosotros {
-  padding: 150px;
+  padding: 70px;
   height: 86vh;
 }
 #nosotros .nosotros-contenedor {
@@ -128,8 +131,6 @@ nav .navegacion ul a {
 }
 #nosotros .nosotros-contenedor .nosotros-imgs {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 #nosotros .nosotros-imgs img {
   width: 200px;
