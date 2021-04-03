@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ItemsProyecto from "../components/ItemsProyecto";
-
+import CarouselBootstrap from "../components/CarouselBootstrap";
 const Proyectos = () => {
   const [categoria, setCategoria] = useState("todo");
 
@@ -33,7 +33,8 @@ const Proyectos = () => {
       </div>
 
       <div className="proyectos-contenedor">
-        <ItemsProyecto categoria={categoria} />
+        {/* <ItemsProyecto categoria={categoria} /> */}
+        <CarouselBootstrap/>
       </div>
       
     </section>

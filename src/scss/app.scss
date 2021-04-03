@@ -1,8 +1,9 @@
+
 // VARIABLES
-  $color-uno: rgb(247, 241, 241);
-  $color-gris: #282c2d;
-  $padding-lateral-uno: 70px;
-  $padding-lateral-dos: 120px;
+$color-uno: rgb(247, 241, 241);
+$color-gris: #282c2d;
+$padding-lateral-uno: 70px;
+$padding-lateral-dos: 120px;
 
 /* GENERALES */
 * {
@@ -10,9 +11,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-p{
+
+p {
   color: $color-gris;
 }
+
 .subtitulos {
   font-size: 35px;
   font-family: Arial, Helvetica, sans-serif;
@@ -32,10 +35,11 @@ nav {
   display: flex;
   flex-direction: column;
 
-  .logo-marca img{
+  .logo-marca img {
     display: none;
   }
-  .btn-hamburguer button{
+
+  .btn-hamburguer button {
     position: relative;
     top: 20px;
     left: 85%;
@@ -45,25 +49,28 @@ nav {
     font-size: 35px;
     text-align: center;
   }
+
   .navegacion ul {
     list-style: none;
     background-color: $color-uno;
     width: 100%;
   }
-  .navegacion ul.nav-open{
+
+  .navegacion ul.nav-open {
     position: relative;
     top: 35px;
     left: 0;
     transition: all 500ms ease;
   }
-  .navegacion ul.nav-close{
+
+  .navegacion ul.nav-close {
     position: relative;
     top: -150%;
     left: 0;
     transition: all 500ms ease;
   }
 
-  .navegacion ul li{
+  .navegacion ul li {
     padding: 15px;
     text-align: center;
   }
@@ -92,15 +99,18 @@ nav {
       justify-content: space-between;
       list-style: none;
     }
+
     .navegacion span {
       line-height: 55px;
     }
+
     .logo-marca img {
       display: block;
       width: auto;
       height: 80px;
     }
-    .btn-hamburguer button{
+
+    .btn-hamburguer button {
       display: none;
     }
   }
@@ -156,27 +166,31 @@ nav {
   }
 }
 
-#proyectos{
-  .subtitulos{
+#proyectos {
+  .subtitulos {
     padding: 10px $padding-lateral-dos;
   }
-  
-  .proyectos-contenedor{
-    padding: $padding-lateral-uno - 10;
+
+  .proyectos-contenedor {
+    padding: 10px $padding-lateral-uno - 10;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  .proyectos-contenedor img{
+
+  .proyectos-contenedor img {
     margin: 10px 10px;
   }
+
   .nav-proyectos {
     padding: 25px $padding-lateral-dos;
   }
-  .nav-proyectos ul{
+
+  .nav-proyectos ul {
     display: flex;
   }
-  .nav-proyectos button{
+
+  .nav-proyectos button {
     border: none;
     outline: none;
     background-color: transparent;
@@ -184,10 +198,22 @@ nav {
     margin-right: 70px;
     color: $color-gris;
   }
-  .nav-proyectos button:hover{
+
+  .nav-proyectos button:hover {
     color: black;
   }
-  .nav-proyectos button.active{
+
+  .nav-proyectos button.active {
     color: black;
   }
+}
+.carousel{
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  height: 50px;
+}
+.carousel .imgSlider{
+  width: 50%;
+  height: auto;
 }

@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
+import Carousel from "./Carousel";
 import dbPrueba from "../dbPrueba/dbPrueba";
 
 const ItemsProyecto = ({ categoria }) => {
   const [items, setItems] = useState([]);
+  const [images, setSrcImagenes] = useState([]);
 
   const mostrarItems = () => {
-    if (categoria === "render") {
-      let arrayItems = dbPrueba.filter((item) => item.categoria === "render");
+    if (categoria === "renders") {
+      let arrayItems = dbPrueba.filter((item) => item.categoria === "renders");
       setItems(arrayItems);
     } else if (categoria === "videos") {
       let arrayItems = dbPrueba.filter((item) => item.categoria === "videos");
@@ -24,12 +26,13 @@ const ItemsProyecto = ({ categoria }) => {
     mostrarItems();
   }, [categoria]);
 
-  return (
-    <>
-      {items.map((item) => {
-        return <img src={item.srcImagen} alt={item.nombre} />;
-      })}
-    </>
-  );
+  useEffect(() => {
+    let srcImagenes = items.map((item) => ({
+      src: item.srcImagen,
+    }));
+    setSrcImagenes(srcImagenes);
+  }, [items]);
+
+  return <Carousel />;
 };
 export default ItemsProyecto;
