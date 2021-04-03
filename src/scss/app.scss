@@ -1,5 +1,6 @@
 // VARIABLES
   $color-uno: rgb(247, 241, 241);
+  $color-gris: #282c2d;
   $padding-lateral-uno: 70px;
   $padding-lateral-dos: 120px;
 
@@ -9,7 +10,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+p{
+  color: $color-gris;
+}
 .subtitulos {
   font-size: 35px;
   font-family: Arial, Helvetica, sans-serif;
@@ -157,6 +160,7 @@ nav {
   .subtitulos{
     padding: 10px $padding-lateral-dos;
   }
+  
   .proyectos-contenedor{
     padding: $padding-lateral-uno - 10;
     display: flex;
@@ -165,5 +169,25 @@ nav {
   }
   .proyectos-contenedor img{
     margin: 10px 10px;
+  }
+  .nav-proyectos {
+    padding: 25px $padding-lateral-dos;
+  }
+  .nav-proyectos ul{
+    display: flex;
+  }
+  .nav-proyectos button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 20px;
+    margin-right: 70px;
+    color: $color-gris;
+  }
+  .nav-proyectos button:hover{
+    color: black;
+  }
+  .nav-proyectos button.active{
+    color: black;
   }
 }

@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+p {
+  color: #282c2d;
+}
+
 .subtitulos {
   font-size: 35px;
   font-family: Arial, Helvetica, sans-serif;
@@ -148,4 +152,24 @@ nav .navegacion ul a {
 }
 #proyectos .proyectos-contenedor img {
   margin: 10px 10px;
+}
+#proyectos .nav-proyectos {
+  padding: 25px 120px;
+}
+#proyectos .nav-proyectos ul {
+  display: flex;
+}
+#proyectos .nav-proyectos button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+  margin-right: 70px;
+  color: #282c2d;
+}
+#proyectos .nav-proyectos button:hover {
+  color: black;
+}
+#proyectos .nav-proyectos button.active {
+  color: black;
 }/*# sourceMappingURL=app.css.map */
