@@ -1,23 +1,28 @@
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+// import Container from 'react-bootstrap/Container';
+// import Row from 'react-bootstrap/Row';
+// import Col from 'react-bootstrap/Col';
 
 
 const Menu = () => {
   return (
-    <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-
+    // cambié lg por md, fijate que te parece que se haga hamburguesa en md en vez de lg.
+    <Navbar className="" bg="" expand="md">
+      <Navbar.Brand href="#home">LOGO</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link href="#home">Inicio</Nav.Link>
-          <Nav.Link href="#link">Servicios</Nav.Link>
-          <Nav.Link href="#link">Link</Nav.Link>
-          <Nav.Link href="#link">Link</Nav.Link>
+        <Nav className="mr-auto flex-grow-1 justify-content-end">
+          {/* mx= margin left y right para darle un espaciado entre estos items */}
+          <Nav.Link className="px-md-5 nav__bordeDer" href="#home">NOSOTROS</Nav.Link>
+          <Nav.Link className="px-md-5 nav__bordeDer" href="#link">PROYECTOS</Nav.Link>
+          <Nav.Link className="px-md-5 nav__bordeDer" href="#home">SERVICIOS</Nav.Link>
+          <Nav.Link className="px-md-5" href="#link">CONTACTO</Nav.Link>
         </Nav>
+        
       </Navbar.Collapse>
     </Navbar>
+    
   );
 };
 
