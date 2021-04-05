@@ -1,8 +1,5 @@
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-// import Container from 'react-bootstrap/Container';
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
 
 
 const Menu = () => {
@@ -19,10 +16,8 @@ const Menu = () => {
           <Nav.Link className="px-md-5 nav__bordeDer" href="#home">SERVICIOS</Nav.Link>
           <Nav.Link className="px-md-5" href="#link">CONTACTO</Nav.Link>
         </Nav>
-        
       </Navbar.Collapse>
     </Navbar>
-    
   );
 };
 
