@@ -148,4 +148,8 @@ nav {
   width: 50%;
   height: auto; }
 
+.modal-content {
+  background-color: transparent;
+  border: none; }
+
 /*# sourceMappingURL=app.css.map */

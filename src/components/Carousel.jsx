@@ -1,7 +1,7 @@
 import { Carousel } from "react-bootstrap";
 import imagen from "../assets/images/Lucila.jpg";
 
-const CarouselBootstrap = () => {
+const CarouselProyectos = () => {
   return (
     <Carousel className="w-75">
       <Carousel.Item>
@@ -20,4 +20,4 @@ const CarouselBootstrap = () => {
   );
 };
 
-export default CarouselBootstrap;
+export default CarouselProyectos;

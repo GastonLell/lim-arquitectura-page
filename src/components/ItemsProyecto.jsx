@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Carousel from "./Carousel";
 import dbPrueba from "../dbPrueba/dbPrueba";
 
-const ItemsProyecto = ({ categoria }) => {
+const ItemsProyecto = ({ categoria, modalShow, setModalShow }) => {
   const [items, setItems] = useState([]);
   const [images, setSrcImagenes] = useState([]);
 
@@ -33,6 +33,8 @@ const ItemsProyecto = ({ categoria }) => {
     setSrcImagenes(srcImagenes);
   }, [items]);
 
-  return <Carousel />;
+  return (
+     <Carousel />
+  )
 };
 export default ItemsProyecto;
