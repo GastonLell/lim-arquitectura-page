@@ -1,4 +1,3 @@
-
 // VARIABLES
 $color-uno: rgb(247, 241, 241);
 $color-gris: #282c2d;
@@ -220,5 +219,8 @@ nav {
 
 .modal-content{
   background-color: transparent;
+  border: none;
+}
+.modal-header{
   border: none;
 }
