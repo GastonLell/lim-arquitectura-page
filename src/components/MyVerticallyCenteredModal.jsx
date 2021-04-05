@@ -9,7 +9,7 @@ const MyVerticallyCenteredModal = (props) => {
       aria-labelledby="contained-modal-title-vcenter"
       contentClassName="modal-content"
       >
-      <Modal.Header closeButton />
+      <Modal.Header closeButton className="modal-header" />
       <Modal.Body>
         <Carousel />
       </Modal.Body>
