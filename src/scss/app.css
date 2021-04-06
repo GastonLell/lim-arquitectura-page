@@ -34,14 +34,7 @@
   }
 }
 
-#proyectos .subtitulos {
-  padding: 10px 120px;
-}
-
 #proyectos .proyectos-contenedor {
-  padding: 10px 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -51,13 +44,7 @@
 }
 
 #proyectos .proyectos-contenedor img {
-  margin: 10px 10px;
-}
-
-#proyectos .nav-proyectos {
-  padding: 25px 120px;
-}
-
+  margin: 10px 10px; }
 #proyectos .nav-proyectos ul {
   display: -webkit-box;
   display: -ms-flexbox;

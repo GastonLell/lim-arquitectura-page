@@ -73,15 +73,5 @@ export default[
         nombre: "Casa quince",
         categoria: "renders",
         srcImagen: "http://placehold.it/383x340"
-    },
-    {
-        nombre: "Casa dieciseis",
-        categoria: "renders",
-        srcImagen: "http://placehold.it/383x340"
-    },
-    {
-        nombre: "Casa diecisiete",
-        categoria: "realidad",
-        srcImagen: "http://placehold.it/383x340"
     }
 ]
