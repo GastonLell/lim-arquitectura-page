@@ -15,12 +15,12 @@ $padding-lateral-dos: 120px;
 
 
 #proyectos {
-  .subtitulos {
-    padding: 10px $padding-lateral-dos;
-  }
+  // .subtitulos {
+  //   padding: 10px $padding-lateral-dos;
+  // }
 
   .proyectos-contenedor {
-    padding: 10px $padding-lateral-uno - 10;
+    // padding: 10px $padding-lateral-uno - 10;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -31,7 +31,7 @@ $padding-lateral-dos: 120px;
   }
 
   .nav-proyectos {
-    padding: 25px $padding-lateral-dos;
+    //padding: 25px $padding-lateral-dos;
   }
 
   .nav-proyectos ul {

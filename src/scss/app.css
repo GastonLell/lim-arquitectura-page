@@ -4,17 +4,12 @@
   padding: 0;
   box-sizing: border-box; }
 
-#proyectos .subtitulos {
-  padding: 10px 120px; }
 #proyectos .proyectos-contenedor {
-  padding: 10px 60px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
 #proyectos .proyectos-contenedor img {
   margin: 10px 10px; }
-#proyectos .nav-proyectos {
-  padding: 25px 120px; }
 #proyectos .nav-proyectos ul {
   display: flex; }
 #proyectos .nav-proyectos button {
