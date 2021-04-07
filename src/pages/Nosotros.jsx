@@ -7,12 +7,13 @@ const Nosotros = () => {
 
   return (
 
+  <Container fluid className="border-top">
     <Container className="miContenedor">
       
       <Row className="mb-3 mb-md-5">
 
         <Col>
-          <h1>NOSOT<span className="border-bottom border-dark">ROS</span></h1>
+          <h1 className="mb-5">NOSOT<span className="border-bottom border-dark">ROS</span></h1>
 
           <div className="p-0 nosotros__text--tamanio">
             <p>Somos Lucila y Mateo, arquitectos que hemos tenido la oportunidad de comenzar nuestras prácticas profesionales ya en los tramos finales de nuestra carrera.</p>
@@ -20,13 +21,15 @@ const Nosotros = () => {
           </div>
         </Col>
 
-        <Col className="">
-          <img className="NosotrosTamanio" src={ellos} alt="Ellos"/>
+        <Col className="d-flex justify-content-center">
+          <img className="nosotros__foto--tamanio" src={ellos} alt="Ellos"/>
         </Col>
 
       </Row>
 
     </Container>
+  </Container>  
+
   );
 };
 export default Nosotros;

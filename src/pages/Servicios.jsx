@@ -7,7 +7,9 @@ const Servicios = () => {
 
   return (
 
+    <Container fluid className="border-top border-bottom miContenedor">
     <Container className="">
+      
         <Row className="mb-3 mb-md-5">
         <h2>SERVIC<span className="border-bottom border-dark">IOS</span></h2>
         </Row>
@@ -56,7 +58,7 @@ const Servicios = () => {
           </Col>
 
         </Row>
-
+    </Container>
     </Container>
   );
 };
