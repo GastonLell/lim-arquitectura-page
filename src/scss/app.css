@@ -6,6 +6,22 @@
           box-sizing: border-box;
 }
 
+* .slogan__contenedor {
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+}
+
+* .miContenedor {
+  min-height: 100vh;
+}
+
 * .miLogo {
   width: 125px;
 }
@@ -15,12 +31,17 @@
   border-radius: 2px;
 }
 
+* .nosotros__text--tamanio {
+  font-size: 1.3rem;
+  max-width: 75vw;
+}
+
 * .columnaBorderTop {
   border-top: 5px solid;
 }
 
 * .servicios__miPadding {
-  padding: 1rem 1rem 0 1rem;
+  padding: 2rem 2rem 0 2rem;
 }
 
 * .serviciosSombra {
@@ -35,6 +56,8 @@
 }
 
 #proyectos .proyectos-contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -44,7 +67,9 @@
 }
 
 #proyectos .proyectos-contenedor img {
-  margin: 10px 10px; }
+  margin: 10px 10px;
+}
+
 #proyectos .nav-proyectos ul {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -16,9 +16,9 @@ const Proyectos = () => {
   return (
     <section id="proyectos">
       <Container>
-        <h2 className="subtitulos">
+        <h1 className="subtitulos">
           PROYEC<span>TOS</span>
-        </h2>
+        </h1>
 
         <div className="nav-proyectos">
           <ul>
