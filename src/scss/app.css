@@ -2,68 +2,38 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 @media (min-width: 768px) {
   .nav__bordeDer {
-    border-right: 1px solid;
-  }
-}
-
-#proyectos .proyectos-contenedor {
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-#proyectos .proyectos-contenedor img {
-  margin: 10px 10px; }
-#proyectos .nav-proyectos ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
+    border-right: 1px solid; } }
 #proyectos .nav-proyectos button {
   border: none;
   outline: none;
   background-color: transparent;
   font-size: 20px;
   margin-right: 70px;
-  color: #282c2d;
-}
-
+  color: #282c2d; }
 #proyectos .nav-proyectos button:hover {
-  color: black;
-}
-
+  color: black; }
 #proyectos .nav-proyectos button.active {
-  color: black;
-}
+  color: black; }
 
 .carousel {
   display: block;
   margin: 0 auto;
   width: 500px;
-  height: 50px;
-}
+  height: 50px; }
 
 .carousel .imgSlider {
   width: 50%;
-  height: auto;
-}
+  height: auto; }
 
 .modal-content {
   background-color: transparent;
-  border: none;
-}
+  border: none; }
 
 .modal-header {
-  border: none;
-}
+  border: none; }
+
 /*# sourceMappingURL=app.css.map */

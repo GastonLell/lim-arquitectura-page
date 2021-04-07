@@ -8,20 +8,16 @@ const MyVerticallyCenteredModal = (props) => {
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       contentClassName="modal-content"
+      
       >
-      <Modal.Header closeButton className="modal-header" />
+
+      {/*
+        para cerrar modal con cruz
+      <Modal.Header closeButton className="modal-header" /> */}
       <Modal.Body>
-        <Carousel />
+        <Carousel items={props.items} itemId={props.itemId} />
       </Modal.Body>
     </Modal>
   );
 };
 export default MyVerticallyCenteredModal;
-//use state para abrir y cerrar modal
-// const [modalShow, setModalShow] = React.useState(false);
-
-// boton para abrir modal
-
-//   <Button variant="primary" onClick={() => setModalShow(true)}>
-//   Launch vertically centered modal
-// </Button>
