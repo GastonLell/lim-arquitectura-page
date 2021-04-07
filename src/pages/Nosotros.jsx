@@ -15,7 +15,7 @@ const Nosotros = () => {
         <Col>
           <h1 className="mb-5">NOSOT<span className="border-bottom border-dark">ROS</span></h1>
 
-          <div className="p-0 nosotros__text--tamanio">
+          <div className="p-0 nosotrosText">
             <p>Somos Lucila y Mateo, arquitectos que hemos tenido la oportunidad de comenzar nuestras prácticas profesionales ya en los tramos finales de nuestra carrera.</p>
             <p>Eso nos permitió adquirir experiencia en diseño y desarrollo en el terreno, que nos facilitó la decisición de instalarnos en una de las ciudades insignes del mundo, Madrid, permitiéndonos llegar a cualquier parte del mundo.</p>
           </div>
