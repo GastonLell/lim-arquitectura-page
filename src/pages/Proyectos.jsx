@@ -4,7 +4,6 @@ import ContenedorProyectos from "../components/ContenedorProyectos";
 import Container from "react-bootstrap/Container";
 
 const Proyectos = () => {
-
   const [modalShow, setModalShow] = useState(false);
 
   const [categoria, setCategoria] = useState("todo");
@@ -15,10 +14,10 @@ const Proyectos = () => {
 
   return (
     <section id="proyectos">
-      <Container>
-        <h1 className="subtitulos">
-          PROYEC<span>TOS</span>
-        </h1>
+      <Container className="p-0">
+        <h2>
+          PROYEC<span className="border-bottom border-dark">TOS</span>
+        </h2>
 
         <div className="nav-proyectos">
           <ul>
@@ -29,6 +28,7 @@ const Proyectos = () => {
             >
               Renders
             </button>
+
             <button
               className={categoria === "videos" ? "active" : ""}
               onClick={cambiarCategoria}
@@ -36,6 +36,7 @@ const Proyectos = () => {
             >
               Videos
             </button>
+
             <button
               className={categoria === "realidad" ? "active" : ""}
               onClick={cambiarCategoria}
@@ -46,7 +47,11 @@ const Proyectos = () => {
           </ul>
         </div>
       </Container>
-      <ContenedorProyectos modalShow={modalShow} setModalShow={setModalShow} />
+      <ContenedorProyectos
+        modalShow={modalShow}
+        setModalShow={setModalShow}
+        categoria={categoria}
+      />
     </section>
   );
 };

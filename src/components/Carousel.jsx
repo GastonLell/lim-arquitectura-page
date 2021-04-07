@@ -1,21 +1,32 @@
+import {useState } from 'react';
 import { Carousel } from "react-bootstrap";
-import imagen from "../assets/images/Lucila.jpg";
 
-const CarouselProyectos = () => {
+const CarouselProyectos = ({ items = [], itemId, tamaño }) => {
+
   return (
-    <Carousel className="w-75">
-      <Carousel.Item>
-        <img className="d-block w-100" src={imagen} alt="First slide" />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img className="d-block w-100" src={imagen} alt="Second slide" />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img className="d-block w-100" src={imagen} alt="Third slide" />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img className="d-block w-100" src={imagen} alt="Third slide" />
-      </Carousel.Item>
+    //probar si se selecciona automaticamente la imagen sin el renderizado condicional
+    <Carousel className={tamaño} nextIcon prevIcon indicators={false}  >
+      {itemId ? (
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={items[itemId].srcImagen}
+            alt={items[itemId].nombre}
+          />
+        </Carousel.Item>
+      ) : (
+        items.map((item) => {
+          return (
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={item.srcImagen}
+                alt={item.nombre}
+              />
+            </Carousel.Item>
+          );
+        })
+      )}
     </Carousel>
   );
 };
