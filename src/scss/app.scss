@@ -13,6 +13,16 @@ $color-gris: #282c2d;
   padding: 0;
   box-sizing: border-box;
 
+  .slogan__contenedor{
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+  }
+  .miContenedor{
+    min-height: 100vh;
+  }
   .miLogo{
     width: 125px;
   }
@@ -20,11 +30,15 @@ $color-gris: #282c2d;
     width: 90%;
     border-radius: 2px;
   }
+  .nosotros__text--tamanio{
+    font-size: 1.3rem;
+    max-width: 75vw;
+  }
   .columnaBorderTop{
     border-top: 5px solid;
   }
   .servicios__miPadding{
-    padding: 1rem 1rem 0 1rem;
+    padding: 2rem 2rem 0 2rem;
   }
   .serviciosSombra{
     box-shadow: 3px 3px 15px #999;

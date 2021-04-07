@@ -15,7 +15,7 @@ const Servicios = () => {
         <Row className="">
 
           <Col className="">
-            <Card className="h-100 serviciosSombra" style={{ width: '18rem' }}>
+            <Card className="h-100 serviciosSombra" style={{ width: '21.8rem' }}>
               <Card.Body className="columnaBorderTop p-0">
                 <Card.Title className="servicios__miPadding">DISEÑO ARQUITECTONICO Y DE INTERIORES</Card.Title>
                 <div className="border w-75"></div>
@@ -29,7 +29,7 @@ const Servicios = () => {
           </Col>
 
           <Col className="">
-          <Card className="h-100 serviciosSombra" style={{ width: '18rem' }}>
+          <Card className="h-100 serviciosSombra" style={{ width: '21.8rem' }}>
               <Card.Body className="columnaBorderTop p-0">
                 <Card.Title className="servicios__miPadding">COMUNICACIÓN ARQUITECTÓNICA</Card.Title>
                 <div className="border w-75"></div>
@@ -43,7 +43,7 @@ const Servicios = () => {
           </Col>
 
           <Col className="">
-          <Card className="h-100 serviciosSombra" style={{ width: '18rem' }}>
+          <Card className="h-100 serviciosSombra" style={{ width: '21.8rem' }}>
               <Card.Body className="columnaBorderTop p-0">
                 <Card.Title className="servicios__miPadding">PROJECT MANAGMENT</Card.Title>
                 <div className="border w-75"></div>
