@@ -1,11 +1,11 @@
 import {useState } from 'react';
 import { Carousel } from "react-bootstrap";
 
-const CarouselProyectos = ({ items = [], itemId }) => {
+const CarouselProyectos = ({ items = [], itemId, tamaño }) => {
 
   return (
     //probar si se selecciona automaticamente la imagen sin el renderizado condicional
-    <Carousel className="w-75" nextIcon prevIcon indicators={false}  >
+    <Carousel className={tamaño} nextIcon prevIcon indicators={false}  >
       {itemId ? (
         <Carousel.Item>
           <img
