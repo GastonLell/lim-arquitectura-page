@@ -13,7 +13,7 @@ const Nosotros = () => {
       <Row className="mb-3 mb-md-5">
 
         <Col>
-          <h1 className="mb-5">NOSOT<span className="border-bottom border-dark">ROS</span></h1>
+          <h2 className="mb-5">NOSOT<span className="border-bottom border-dark">ROS</span></h2>
 
           <div className="p-0 nosotrosText">
             <p>Somos Lucila y Mateo, arquitectos que hemos tenido la oportunidad de comenzar nuestras prácticas profesionales ya en los tramos finales de nuestra carrera.</p>
