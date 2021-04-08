@@ -1,125 +1,106 @@
 #inicio {
   width: 100%;
-  height: auto;
-}
-
-#inicio .carousel {
-  height: auto;
-  position: inherit;
-}
+  height: auto; }
+  #inicio .carousel {
+    height: auto;
+    position: inherit; }
 
 /* GENERALES */
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-* h1, * h2, * h3, * h4, * h5, * h6 {
-  font-family: 'Josefin Sans', sans-serif;
-}
-
-* p, * a {
-  font-family: 'Lato', sans-serif;
-}
-
-* .slogan__contenedor {
-  height: 20vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-* .sloganLato {
-  font-family: 'Lato', sans-serif;
-}
-
-* .miContenedor {
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-* .miLogo {
-  width: 125px;
-}
-
-* .nosotros__foto--tamanio {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 400px;
-  height: 400px;
-  border-radius: 2px;
-}
-
-* .nosotrosText {
-  color: #9B9B9B;
-  font-size: 1.3rem;
-}
-
-* .columnaBorderTop {
-  border-top: 5px solid;
-}
-
-* .servicios__miPadding {
-  padding: 2rem 2rem 0 2rem;
-}
-
-* .serviciosSombra {
-  -webkit-box-shadow: 3px 3px 15px #999;
-          box-shadow: 3px 3px 15px #999;
-}
+  box-sizing: border-box; }
+  * h2.subtitulo {
+    font-size: 40px;
+    margin-bottom: 35px; }
+    * h2.subtitulo span {
+      border-bottom: 5px solid;
+      padding: 5px; }
+  * h1, * h2, * h3, * h4, * h5, * h6 {
+    font-family: 'Josefin Sans', sans-serif; }
+  * p, * a {
+    font-family: 'Lato', sans-serif; }
+  * .slogan__contenedor {
+    height: 20vh;
+    display: flex;
+    align-items: center; }
+  * .sloganLato {
+    font-family: 'Lato', sans-serif; }
+  * .miContenedor {
+    min-height: 100vh;
+    display: flex;
+    align-items: center; }
+  * .row__menu {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1; }
+  * .miLogo {
+    width: 125px; }
+  * .nosotros__foto--tamanio {
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    border-radius: 2px; }
+  * .nosotrosText {
+    color: #9B9B9B;
+    font-size: 1.3rem; }
+  * .columnaBorderTop {
+    border-top: 5px solid; }
+  * .servicios__miPadding {
+    padding: 2rem 2rem 0 2rem; }
+  * .serviciosSombra {
+    box-shadow: 3px 3px 15px #999; }
 
 @media (min-width: 768px) {
   .nav__bordeDer {
-    border-right: 1px solid;
-  }
-}
-
+    border-right: 1px solid; } }
 #proyectos .nav-proyectos button {
   border: none;
   outline: none;
   background-color: transparent;
   font-size: 20px;
   margin-right: 70px;
-  color: #282c2d;
-}
-
+  color: #282c2d; }
 #proyectos .nav-proyectos button:hover {
-  color: black;
-}
-
+  color: black; }
 #proyectos .nav-proyectos button.active {
-  color: black;
-}
+  color: black; }
 
 .carousel {
   display: block;
   margin: 0 auto;
   width: 500px;
-  height: 50px;
-}
+  height: 50px; }
 
 .carousel .imgSlider {
   width: 50%;
-  height: auto;
-}
+  height: auto; }
 
 .modal-content {
   background-color: transparent;
-  border: none;
-}
+  border: none; }
 
 .modal-header {
-  border: none;
-}
+  border: none; }
+
+#contacto {
+  padding: 160px 50px; }
+  #contacto p {
+    font-size: 20px; }
+    #contacto p strong {
+      line-height: 50px; }
+  #contacto form {
+    width: 90%; }
+    #contacto form .form-control {
+      font-size: 17px;
+      font-style: italic;
+      border: 1px solid #333;
+      border-radius: 0 !important; }
+    #contacto form .textarea-form {
+      resize: none; }
+    #contacto form .btn {
+      width: 20%;
+      border-radius: 0 !important; }
+
 /*# sourceMappingURL=app.css.map */

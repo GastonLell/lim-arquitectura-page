@@ -19,9 +19,19 @@ $color-gris: #282c2d;
   padding: 0;
   box-sizing: border-box;
 
+  h2.subtitulo{
+    font-size: 40px;
+    margin-bottom: 35px;
+    span{
+      border-bottom: 5px solid;
+      padding: 5px;
+    }
+  }
+
   h1,h2,h3,h4,h5,h6{
     font-family: 'Josefin Sans', sans-serif;
   }
+
   // Probando tipografía
   p, a{
     font-family: 'Lato', sans-serif;
@@ -38,6 +48,12 @@ $color-gris: #282c2d;
     min-height: 100vh;
     display: flex;
     align-items: center;
+  }
+  .row__menu{
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
   }
   .miLogo{
     width: 125px;
@@ -128,4 +144,30 @@ $color-gris: #282c2d;
 
 .modal-header {
   border: none;
+}
+
+#contacto{
+  padding: 160px 50px;
+  p{
+    font-size: 20px;
+    strong{
+      line-height: 50px;
+    }
+  }
+  form{
+    width: 90%;
+    .form-control{
+      font-size: 17px;
+      font-style: italic;
+      border: 1px solid #333;
+      border-radius: 0 !important;
+    }
+    .textarea-form{
+      resize: none;
+    }
+    .btn{
+      width: 20%;
+      border-radius: 0 !important;
+    }
+  }
 }
