@@ -16,16 +16,23 @@
   padding: 5px;
 }
 
-* h1, * h2, * h3, * h4, * h5, * h6 {
+* h1,
+* h2,
+* h3,
+* h4,
+* h5,
+* h6 {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-* p, * a {
+* p,
+* a {
   font-family: 'Lato', sans-serif;
 }
 
 * .miContenedor {
-  min-height: 100vh;
+  padding: 45px 0;
+  min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,7 +68,8 @@
 }
 
 #inicio .slogan__contenedor {
-  height: 20vh;
+  padding: 115px 0px;
+  height: 35vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,9 +79,11 @@
 }
 
 #inicio .sloganLato {
+  font-size: 27px;
+  line-height: 35px;
   font-family: 'Lato', sans-serif;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 #nosotros .nosotros__foto--tamanio {
@@ -94,13 +104,17 @@
   padding-bottom: 0px;
 }
 
+#proyectos {
+  padding: 100px 0;
+}
+
 #proyectos .nav-proyectos button {
   border: none;
   outline: none;
   background-color: transparent;
   font-size: 20px;
   margin-right: 70px;
-  color: #282c2d;
+  color: #9B9B9B;
 }
 
 #proyectos .nav-proyectos button:hover {
@@ -111,6 +125,10 @@
   color: black;
 }
 
+#proyectos .contenedor-proyectos {
+  padding: 20px;
+}
+
 .carousel {
   display: block;
   margin: 0 auto;
@@ -119,13 +137,26 @@
 }
 
 .carousel .imgSlider {
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 
 .modal-content {
+  width: 100%;
   background-color: transparent;
   border: none;
+}
+
+.modal-dialog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .modal-header {
@@ -154,7 +185,7 @@
 }
 
 #contacto form {
-  width: 90%;
+  width: 100%;
 }
 
 #contacto form .form-control {
@@ -169,7 +200,6 @@
 }
 
 #contacto form .btn {
-  width: 20%;
   border-radius: 0 !important;
 }
 
@@ -177,6 +207,11 @@
   background-color: #282c2d;
   padding-left: 100px;
   padding-right: 100px;
+  background-color: #282c2d;
+  height: 10vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #footer .footer__alineamiento {
@@ -188,6 +223,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#footer p {
+  color: white;
+  display: inline;
 }
 
 #footer .footer__logo {
