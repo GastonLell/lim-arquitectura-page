@@ -155,7 +155,7 @@ $color-gris: #282c2d;
     }
   }
   form{
-    width: 90%;
+    width: 100%;
     .form-control{
       font-size: 17px;
       font-style: italic;
@@ -166,7 +166,6 @@ $color-gris: #282c2d;
       resize: none;
     }
     .btn{
-      width: 20%;
       border-radius: 0 !important;
     }
   }
