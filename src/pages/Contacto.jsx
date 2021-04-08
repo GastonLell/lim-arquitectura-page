@@ -1,9 +1,26 @@
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import FormContacto from "../components/FormContacto";
+
 const Contacto = () => {
-    return(
-        <section>
-            <h2>Seccion contactos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eligendi?</p>
-        </section>
-    )
-}
+  return (
+    <Container id="contacto">
+      <Row>
+        <Col>
+          <h2 className="subtitulo">
+            CONTA<span>CTO</span>
+          </h2>
+          <p>
+            <i>Envianos tu consulta al formulario <br/> o mediante nuestras redes.</i> <br />
+            <strong><i>Madrid, España</i></strong>
+          </p>
+        </Col>
+        <Col>
+          <FormContacto />
+        </Col>
+      </Row>
+    </Container>
+  );
+};
 export default Contacto;
