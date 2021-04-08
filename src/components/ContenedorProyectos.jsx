@@ -40,7 +40,7 @@ const ContenedorProyectos = ({ modalShow, setModalShow, categoria }) => {
   }, [categoria]);
 
   return (
-    <Container fluid className="p-6">
+    <Container fluid className="contenedor-proyectos">
       <Row md={3}>
         {items.map((item) => {
           return (

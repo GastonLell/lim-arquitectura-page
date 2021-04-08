@@ -7,12 +7,12 @@ const Nosotros = () => {
 
   return (
 
-  <Container fluid id="nosotros" className="border-top border-bottom">
+  <Container fluid id="nosotros" className="border-top border-bottom miContenedor">
     <Container className="miContenedor">
       
-      <Row className="mb-3 mb-md-5">
+      <Row className="m-0">
 
-        <Col>
+        <Col className="p-0">
           <h2 className="subtitulo">NOSOT<span className="">ROS</span></h2>
 
           <div className="nosotrosText">

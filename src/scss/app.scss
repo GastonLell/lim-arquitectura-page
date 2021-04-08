@@ -1,6 +1,6 @@
 // VARIABLES
 $color-uno: rgb(247, 241, 241);
-$color-gris: #282c2d;
+$color-gris: #9B9B9B;
 
 /* GENERALES */
 * {
@@ -8,32 +8,39 @@ $color-gris: #282c2d;
   padding: 0;
   box-sizing: border-box;
 
-  h2.subtitulo{
+  h2.subtitulo {
     font-size: 40px;
     margin-bottom: 35px;
-    span{
+
+    span {
       border-bottom: 5px solid;
       padding: 5px;
     }
   }
 
-  h1,h2,h3,h4,h5,h6{
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: 'Josefin Sans', sans-serif;
   }
 
   // Probando tipografía
-  p, a{
+  p,
+  a {
     font-family: 'Lato', sans-serif;
   }
-  
-  .miContenedor{
-    min-height: 100vh;
+
+  .miContenedor {
+    padding: 45px 0;
+    min-height: 90vh;
     display: flex;
     align-items: center;
   }
-  
-  
-  .columnaBorderTop{
+
+  .columnaBorderTop {
     border-top: 5px solid;
   }
 
@@ -41,71 +48,75 @@ $color-gris: #282c2d;
 
 // MENU 
 
-#menu{
+#menu {
 
-  .miLogo{
+  .miLogo {
     width: 125px;
   }
-  
+
 }
-.row__menu{
+
+.row__menu {
   background-color: #fff;
   position: sticky;
   top: 0;
   z-index: 1;
 }
 
-
 // INICIO
 
-#inicio{
+#inicio {
   width: 100%;
   height: auto;
 
-  .carousel{
+  .carousel {
     height: auto;
     position: inherit;
   }
-  .slogan__contenedor{
-    height: 20vh;
+
+  .slogan__contenedor {
+    padding: 115px 0px;
+    height: 35vh;
     display: flex;
     align-items: center;
   }
-  .sloganLato{
+
+  .sloganLato {
+    font-size: 27px;
+    line-height: 35px;
     font-family: 'Lato', sans-serif;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 700;
   }
-  
+
 }
 
 // NOSOTROS
 
-#nosotros{
+#nosotros {
 
-.nosotros__foto--tamanio{
-  justify-content: center;
-  width: 400px;
-  height: 400px;
-  border-radius: 2px;
+  .nosotros__foto--tamanio {
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    border-radius: 2px;
+  }
+
+  .nosotrosText {
+    color: $color-gris;
+    font-size: 1.3rem;
+    padding-top: 0px;
+    padding-right: 125px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+  }
+
 }
-.nosotrosText{
-  color: #9B9B9B;
-  font-size: 1.3rem;
-  padding-top: 0px;
-  padding-right: 125px;
-  padding-left: 0px;
-  padding-bottom: 0px;
-}
-
-}
-
-
-
 
 // PROYECTOS
 
 #proyectos {
+  padding: 100px 0;
 
   .nav-proyectos button {
     border: none;
@@ -123,6 +134,10 @@ $color-gris: #282c2d;
   .nav-proyectos button.active {
     color: black;
   }
+
+  .contenedor-proyectos {
+    padding: 20px;
+  }
 }
 
 //CAROUSEL
@@ -135,15 +150,22 @@ $color-gris: #282c2d;
 }
 
 .carousel .imgSlider {
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 
 // MODALE
 
 .modal-content {
+  width: 100%;
   background-color: transparent;
   border: none;
+}
+
+.modal-dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-header {
@@ -153,39 +175,46 @@ $color-gris: #282c2d;
 
 // SERVICIOS 
 
-#servicios{
+#servicios {
 
-.servicios__miPadding{
-  padding: 2rem 2rem 0 2rem;
-}
-.serviciosSombra{
-  box-shadow: 3px 3px 15px #999;
-}
+  .servicios__miPadding {
+    padding: 2rem 2rem 0 2rem;
+  }
+
+  .serviciosSombra {
+    box-shadow: 3px 3px 15px #999;
+  }
 
 }
 
 // CONTACTO
 
-#contacto{
+#contacto {
   padding: 160px 50px;
-  p{
+
+  p {
     font-size: 20px;
-    strong{
+
+    strong {
       line-height: 50px;
     }
   }
-  form{
+
+  form {
     width: 100%;
-    .form-control{
+
+    .form-control {
       font-size: 17px;
       font-style: italic;
       border: 1px solid #333;
       border-radius: 0 !important;
     }
-    .textarea-form{
+
+    .textarea-form {
       resize: none;
     }
-    .btn{
+
+    .btn {
       border-radius: 0 !important;
     }
   }
@@ -193,26 +222,27 @@ $color-gris: #282c2d;
 
 // FOOTER 
 
-  #footer{
+#footer {
 
-    background-color: #282c2d;
-    height: 10vh;
-    // display: flex;
-    align-items: center;
+  background-color: #282c2d;
+  height: 10vh;
+  // display: flex;
+  align-items: center;
 
-    p{
-      color: white;
-      display: inline;
-    }
+  p {
+    color: white;
+    display: inline;
+  }
 
-    .footer__logo{
-      width: 100px;
-    }
-    .footer__vector{
-      width: 50px;
-      border-radius: 50px;
-      background-color: white;
-    }
+  .footer__logo {
+    width: 100px;
+  }
+
+  .footer__vector {
+    width: 50px;
+    border-radius: 50px;
+    background-color: white;
+  }
 }
 
 
