@@ -7,15 +7,15 @@ const Nosotros = () => {
 
   return (
 
-  <Container fluid className="border-top">
+  <Container fluid id="nosotros" className="border-top border-bottom">
     <Container className="miContenedor">
       
       <Row className="mb-3 mb-md-5">
 
         <Col>
-          <h2 className="mb-5">NOSOT<span className="border-bottom border-dark">ROS</span></h2>
+          <h2 className="subtitulo">NOSOT<span className="">ROS</span></h2>
 
-          <div className="p-0 nosotrosText">
+          <div className="nosotrosText">
             <p>Somos Lucila y Mateo, arquitectos que hemos tenido la oportunidad de comenzar nuestras prácticas profesionales ya en los tramos finales de nuestra carrera.</p>
             <p>Eso nos permitió adquirir experiencia en diseño y desarrollo en el terreno, que nos facilitó la decisición de instalarnos en una de las ciudades insignes del mundo, Madrid, permitiéndonos llegar a cualquier parte del mundo.</p>
           </div>

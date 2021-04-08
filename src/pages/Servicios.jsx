@@ -7,7 +7,7 @@ const Servicios = () => {
 
   return (
 
-    <Container fluid className="border-top border-bottom miContenedor">
+    <Container fluid id="servicios" className="border-top border-bottom miContenedor">
     <Container className="">
       
         <Row className="mb-3 mb-md-5">
