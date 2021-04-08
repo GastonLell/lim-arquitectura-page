@@ -8,6 +8,7 @@ import Servicios from "./pages/Servicios";
 import Proyectos from "./pages/Proyectos";
 import Contacto from "./pages/Contacto";
 import Menu from "./components/Menu";
+import Footer from "./components/Footer";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -43,6 +44,11 @@ function App() {
         <Row className="m-0">
           <Col className="p-0">
             <Contacto/>
+          </Col>
+        </Row>
+        <Row className="m-0">
+          <Col className="p-0">
+            <Footer/>
           </Col>
         </Row>
       </Container>

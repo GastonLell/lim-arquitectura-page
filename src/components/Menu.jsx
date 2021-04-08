@@ -6,7 +6,7 @@ import Nav from "react-bootstrap/Nav";
 const Menu = () => {
   return (
     // cambié lg por md, fijate que te parece que se haga hamburguesa en md en vez de lg.
-    <Navbar className="border-bottom px-5" bg="" expand="md">
+    <Navbar id="menu" className="border-bottom px-5" bg="" expand="md">
       <Navbar.Brand href="#home"><img className="miLogo" src={logo} alt="Logo"/></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
