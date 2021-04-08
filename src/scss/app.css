@@ -175,15 +175,19 @@
 
 #footer {
   background-color: #282c2d;
-  height: 10vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#footer .footer__alineamiento {
+  text-align: end;
 }
 
 #footer p {
   color: white;
-  display: inline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #footer .footer__logo {

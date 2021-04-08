@@ -197,13 +197,17 @@ $color-gris: #282c2d;
   #footer{
 
     background-color: #282c2d;
-    height: 10vh;
+    padding-left: 100px;
+    padding-right: 100px;
     // display: flex;
-    align-items: center;
+    // align-items: center;
 
+    .footer__alineamiento{
+      text-align: end;
+    }
     p{
       color: white;
-      display: inline;
+      display: flex;
     }
 
     .footer__logo{
