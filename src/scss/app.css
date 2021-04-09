@@ -44,11 +44,11 @@
     position: inherit; }
   #inicio .slogan__contenedor {
     padding: 0px 0px;
-    height: 35vh;
+    height: auto;
     display: flex;
     align-items: center; }
   #inicio .sloganLato {
-    font-size: 27px;
+    font-size: 26px;
     line-height: 35px;
     font-family: 'Lato', sans-serif;
     font-style: italic;
@@ -109,7 +109,8 @@
 #servicios {
   padding: 100px 0; }
   #servicios .servicios__miPadding {
-    padding: 2rem 2rem 0 2rem; }
+    padding: 2rem 2rem 0 2rem;
+    min-height: 80px; }
   #servicios .serviciosSombra {
     box-shadow: 3px 3px 15px #999; }
 

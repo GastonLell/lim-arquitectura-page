@@ -76,13 +76,13 @@ $color-gris: #9B9B9B;
 
   .slogan__contenedor {
     padding: 0px 0px;
-    height: 35vh;
+    height: auto;
     display: flex;
     align-items: center;
   }
 
   .sloganLato {
-    font-size: 27px;
+    font-size: 26px;
     line-height: 35px;
     font-family: 'Lato', sans-serif;
     font-style: italic;
@@ -179,6 +179,7 @@ $color-gris: #9B9B9B;
   padding: 100px 0;
   .servicios__miPadding {
     padding: 2rem 2rem 0 2rem;
+    min-height: 80px;
   }
 
   .serviciosSombra {
