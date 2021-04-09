@@ -6,8 +6,8 @@ import FormContacto from "../components/FormContacto";
 const Contacto = () => {
   return (
     <Container id="contacto">
-      <Row>
-        <Col>
+      <Row className="m-0">
+        <Col className="p-0">
           <h2 className="subtitulo">
             CONTA<span>CTO</span>
           </h2>

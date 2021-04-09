@@ -106,13 +106,15 @@
 .modal-header {
   border: none; }
 
-#servicios .servicios__miPadding {
-  padding: 2rem 2rem 0 2rem; }
-#servicios .serviciosSombra {
-  box-shadow: 3px 3px 15px #999; }
+#servicios {
+  padding: 100px 0; }
+  #servicios .servicios__miPadding {
+    padding: 2rem 2rem 0 2rem; }
+  #servicios .serviciosSombra {
+    box-shadow: 3px 3px 15px #999; }
 
 #contacto {
-  padding: 160px 50px; }
+  padding: 100px 0; }
   #contacto p {
     font-size: 20px; }
     #contacto p strong {
