@@ -8,7 +8,6 @@ const MyVerticallyCenteredModal = (props) => {
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       contentClassName="modal-content"
-      
       >
 
       {/*
