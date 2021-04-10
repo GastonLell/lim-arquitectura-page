@@ -93,65 +93,7 @@
     position: relative;
     display: inline-block; }
   #inicio .logo-container {
-    width: 50%; }
-  #inicio .img-logo img {
-    opacity: 0;
-    width: 70px;
-    position: absolute;
-    top: 175px;
-    left: 602px;
-    animation-name: img-opacity;
-    animation-duration: 3s;
-    transition: all 2s ease; }
-  #inicio .container-logo-uno {
-    position: absolute;
-    top: 380px;
-    left: 60px;
-    animation-name: entrada-logo;
-    animation-duration: 5s; }
-  #inicio .container-logo-dos {
-    opacity: 0;
-    position: absolute;
-    top: 380px;
-    left: 60px;
-    animation-name: entrada-logo-dos;
-    animation-duration: 9s; }
-  #inicio .logo-uno-m {
-    background-color: black;
-    height: 75px;
-    width: 4px;
-    position: relative;
-    animation-name: entrada-logo;
-    animation-duration: 5s; }
-  #inicio .logo-uno-m::before {
-    background-color: black;
-    height: 75px;
-    width: 4px;
-    position: absolute;
-    content: '';
-    left: 10px; }
-  #inicio .logo-uno-m::after {
-    background-color: black;
-    height: 75px;
-    width: 4px;
-    position: absolute;
-    content: '';
-    left: 20px; }
-  #inicio .logo-uno-i {
-    background-color: #9B9B9B;
-    height: 35px;
-    width: 4px;
-    position: absolute;
-    top: 40px;
-    left: -10px; }
-  #inicio .logo-uno-i::before {
-    background-color: black;
-    height: 75px;
-    width: 4px;
-    position: absolute;
-    content: '';
-    top: -40px;
-    left: -20px; }
+    display: none; }
   #inicio .slogan__contenedor {
     padding: 40px 0px;
     height: 35vh;
@@ -163,6 +105,68 @@
     font-family: 'Lato', sans-serif;
     font-style: italic;
     font-weight: 700; }
+  @media (min-width: 992px) {
+    #inicio .logo-container {
+      display: inline-block;
+      width: 50%; }
+    #inicio .img-logo img {
+      opacity: 0;
+      width: 60px;
+      position: absolute;
+      top: 175px;
+      left: 610px;
+      animation-name: img-opacity;
+      animation-duration: 3s;
+      transition: all 4s ease; }
+    #inicio .container-logo-uno {
+      position: absolute;
+      top: 380px;
+      left: 60px;
+      animation-name: entrada-logo;
+      animation-duration: 5s; }
+    #inicio .container-logo-dos {
+      opacity: 0;
+      position: absolute;
+      top: 380px;
+      left: 60px;
+      animation-name: entrada-logo-dos;
+      animation-duration: 9s; }
+    #inicio .logo-uno-m {
+      background-color: black;
+      height: 75px;
+      width: 4px;
+      position: relative;
+      animation-name: entrada-logo;
+      animation-duration: 5s; }
+    #inicio .logo-uno-m::before {
+      background-color: black;
+      height: 75px;
+      width: 4px;
+      position: absolute;
+      content: '';
+      left: 10px; }
+    #inicio .logo-uno-m::after {
+      background-color: black;
+      height: 75px;
+      width: 4px;
+      position: absolute;
+      content: '';
+      left: 20px; }
+    #inicio .logo-uno-i {
+      background-color: #9B9B9B;
+      height: 35px;
+      width: 4px;
+      position: absolute;
+      top: 40px;
+      left: -10px; }
+    #inicio .logo-uno-i::before {
+      background-color: black;
+      height: 75px;
+      width: 4px;
+      position: absolute;
+      content: '';
+      top: -40px;
+      left: -20px; } }
 
 #nosotros .nosotros__foto--tamanio {
   justify-content: center;
@@ -179,19 +183,26 @@
 
 #proyectos {
   padding: 100px 0; }
+  #proyectos .nav-proyectos ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
   #proyectos .nav-proyectos button {
     border: none;
     outline: none;
     background-color: transparent;
     font-size: 20px;
-    margin-right: 70px;
-    color: #9B9B9B; }
+    color: #9B9B9B;
+    margin-right: 20px; }
   #proyectos .nav-proyectos button:hover {
     color: black; }
   #proyectos .nav-proyectos button.active {
     color: black; }
   #proyectos .contenedor-proyectos {
     padding: 20px; }
+  @media (min-width: 576px) {
+    #proyectos .nav-proyectos ul {
+      flex-direction: row; } }
 
 .carousel {
   display: block;
@@ -204,9 +215,13 @@
   height: auto; }
 
 .modal-content {
-  width: 100%;
   background-color: transparent;
-  border: none; }
+  border: none;
+  width: 100%;
+  height: auto; }
+  .modal-content .modal-body {
+    height: 400px;
+    padding: 5px 20px 20px 0; }
 
 .modal-dialog {
   display: flex;

@@ -5,7 +5,8 @@ import Col from "react-bootstrap/Col";
 import ImgInicio1 from "../assets/images/Renders-inico/Inicio1.jpg";
 import ImgInicio2 from "../assets/images/Renders-inico/Inicio2.jpg";
 import ImgInicio3 from "../assets/images/Renders-inico/Inicio3.jpg";
-import ImgLogo from "../assets/images/logofooter.svg";
+import ImgLogo from "../assets/images/limArquitectura-negro.svg";
+
 // componentes
 import Carousel from "../components/Carousel";
 import Slogan from "../components/Slogan";
@@ -41,7 +42,7 @@ const Inicio = () => {
               </div>
               <div className="img-logo">
                 <img src={ImgLogo} alt="lim-arquitectura" />
-              </div>
+              </div> 
               <div className="container-logo-dos">
                 <div className="logo-uno-i"></div>
                 <div className="logo-uno-m"></div>
