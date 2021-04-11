@@ -23,36 +23,13 @@ function App() {
             <Menu/>
           </Col>
         </Row>
-        <Row className="m-0">
-          <Col className="p-0">
-            <Inicio/>
-          </Col>
-        </Row>
-        <Row className="m-0">
-          <Col className="p-0">
-            <Nosotros/>
-          </Col>
-        </Row>
-        <Row className="m-0">
-          <Col className="p-0">
-            <Proyectos/>
-          </Col>
-        </Row>
-        <Row className="m-0">
-          <Col className="p-0">
-            <Servicios/>
-          </Col>
-        </Row>
-        <Row className="m-0">
-          <Col className="p-0">
-            <Contacto/>
-          </Col>
-        </Row>
-        <Row className="m-0">
-          <Col className="p-0">
-            <Footer/>
-          </Col>
-        </Row>
+        <Inicio/>
+        <Nosotros/>
+        <Proyectos/>
+        <Servicios/>
+        <Contacto/>
+        <Footer/>
+
       </Container> 
     </div>
   );
