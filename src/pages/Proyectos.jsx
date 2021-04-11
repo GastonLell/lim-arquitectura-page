@@ -14,7 +14,7 @@ const Proyectos = () => {
 
   return (
     <section id="proyectos">
-      <Container className="px-5 p-md-0">
+      <Container className="pl-0 p-md-0">
         <h2 className="subtitulo">
           PROYEC<span>TOS</span>
         </h2>

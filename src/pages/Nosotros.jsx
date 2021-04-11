@@ -12,7 +12,7 @@ const Nosotros = () => {
       
       <Row className="m-0">
 
-        <Col className="p-0">
+        <Col md={12} lg={6} className="p-0">
           <h2 className="subtitulo">NOSOT<span className="">ROS</span></h2>
 
           <div className="nosotrosText">
