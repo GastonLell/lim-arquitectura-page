@@ -14,7 +14,7 @@ const MyVerticallyCenteredModal = (props) => {
         para cerrar modal con cruz
       <Modal.Header closeButton className="modal-header" /> */}
       <Modal.Body>
-        <Carousel items={props.items} itemId={props.itemId} tamaño="w-75" />
+        <Carousel item={props.item} tamaño="w-100" />
       </Modal.Body>
     </Modal>
   );

@@ -1,34 +1,31 @@
-import {useState } from 'react';
 import { Carousel } from "react-bootstrap";
 
-const CarouselProyectos = ({ items = [], itemId, tamaño }) => {
-
-  return (
-    //probar si se selecciona automaticamente la imagen sin el renderizado condicional
-    <Carousel className={`${tamaño}`} nextIcon prevIcon indicators={false}  >
-      {itemId ? (
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={items[itemId].srcImagen}
-            alt={items[itemId].nombre}
-          />
-        </Carousel.Item>
-      ) : (
-        items.map((item) => {
+const CarouselProyectos = ({ item, itemsCarousel, tamaño }) => {
+  if (item) {
+    return (
+      <Carousel className={`${tamaño}`} indicators={false}>
+        {item?.srcImagen.map((item) => {
           return (
             <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={item.srcImagen}
-                alt={item.nombre}
-              />
+              <img className="d-block w-100" src={item} />
             </Carousel.Item>
           );
-        })
-      )}
-    </Carousel>
-  );
+        })}
+      </Carousel>
+    );
+  } else if (itemsCarousel) {
+    return (
+      <Carousel className={`${tamaño}`} indicators={false}>
+        {itemsCarousel.map((item) => {
+          return (
+            <Carousel.Item>
+              <img className="d-block w-100" src={item.srcImagen} />
+            </Carousel.Item>
+          );
+        })}
+      </Carousel>
+    );
+  }
 };
 
 export default CarouselProyectos;
