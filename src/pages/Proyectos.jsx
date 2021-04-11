@@ -14,12 +14,12 @@ const Proyectos = () => {
 
   return (
     <section id="proyectos">
-      <Container className="p-0">
+      <Container className="px-5 p-md-0">
         <h2 className="subtitulo">
           PROYEC<span>TOS</span>
         </h2>
 
-        <div className="nav-proyectos">
+        <div className="nav-proyectos ">
           <ul>
             <button
               className={categoria === "renders" ? "active" : ""}

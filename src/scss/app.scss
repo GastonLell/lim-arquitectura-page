@@ -64,6 +64,88 @@ $color-gris: #9B9B9B;
 }
 
 // INICIO
+@keyframes entrada-logo {
+  0% {
+    margin-top: -100%;
+    margin-left: 43%;
+  }
+
+  50% {
+    margin-top: 0%;
+    margin-left: 43%;
+  }
+
+  90% {
+    margin-top: 0%;
+    margin-left: 43%;
+  }
+
+  100% {
+    margin-left: 0;
+  }
+}
+
+@keyframes entrada-logo-dos {
+  0% {
+    margin-top: -100%;
+    margin-left: 43%;
+    opacity: 1;
+  }
+
+  49% {
+    margin-top: 0%;
+    margin-left: 43%;
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    margin-left: 0;
+  }
+}
+
+@keyframes cambio-tamaño {
+  0% {
+    height: 100px;
+  }
+
+  90% {
+    height: 100px;
+  }
+
+  100% {
+    height: 75px;
+  }
+}
+
+@keyframes img-opacity {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 0;
+  }
+
+  55% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
 
 #inicio {
   width: 100%;
@@ -74,8 +156,20 @@ $color-gris: #9B9B9B;
     position: inherit;
   }
 
+  //EFECTO INICIO
+
+  .carousel-container {
+    height: auto;
+    position: relative;
+    display: inline-block;
+  }
+
+  .logo-container {
+    display: none;
+  }
+
   .slogan__contenedor {
-    padding: 0px 0px;
+    padding: 40px 0px;
     height: 35vh;
     display: flex;
     align-items: center;
@@ -87,6 +181,87 @@ $color-gris: #9B9B9B;
     font-family: 'Lato', sans-serif;
     font-style: italic;
     font-weight: 700;
+  }
+
+  @media (min-width: 992px) {
+    .logo-container {
+      display: inline-block;
+      width: 50%;
+    }
+
+    .img-logo img {
+      opacity: 0;
+      width: 60px;
+      position: absolute;
+      top: 175px;
+      left: 610px;
+      animation-name: img-opacity;
+      animation-duration: 3s;
+      transition: all 4s ease;
+    }
+
+    .container-logo-uno {
+      position: absolute;
+      top: 380px;
+      left: 60px;
+      animation-name: entrada-logo;
+      animation-duration: 5s;
+    }
+
+    .container-logo-dos {
+      opacity: 0;
+      position: absolute;
+      top: 380px;
+      left: 60px;
+      animation-name: entrada-logo-dos;
+      animation-duration: 9s;
+    }
+
+    .logo-uno-m {
+      background-color: black;
+      height: 75px;
+      width: 4px;
+      position: relative;
+      animation-name: entrada-logo;
+      animation-duration: 5s;
+    }
+
+    .logo-uno-m::before {
+      background-color: black;
+      height: 75px;
+      width: 4px;
+      position: absolute;
+      content: '';
+      left: 10px;
+    }
+
+    .logo-uno-m::after {
+      background-color: black;
+      height: 75px;
+      width: 4px;
+      position: absolute;
+      content: '';
+      left: 20px;
+    }
+
+    .logo-uno-i {
+      background-color: $color-gris;
+      height: 35px;
+      width: 4px;
+      position: absolute;
+      top: 40px;
+      left: -10px;
+    }
+
+    .logo-uno-i::before {
+      background-color: black;
+      height: 75px;
+      width: 4px;
+      position: absolute;
+      content: '';
+      top: -40px;
+      left: -20px;
+    }
   }
 
 }
@@ -117,13 +292,20 @@ $color-gris: #9B9B9B;
 #proyectos {
   padding: 100px 0;
 
+  .nav-proyectos ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+
   .nav-proyectos button {
     border: none;
     outline: none;
     background-color: transparent;
     font-size: 20px;
-    margin-right: 70px;
     color: $color-gris;
+    margin-right: 20px;
   }
 
   .nav-proyectos button:hover {
@@ -136,6 +318,12 @@ $color-gris: #9B9B9B;
 
   .contenedor-proyectos {
     padding: 20px;
+  }
+
+  @media (min-width: 576px) {
+    .nav-proyectos ul {
+      flex-direction: row;
+    }
   }
 }
 
@@ -156,9 +344,14 @@ $color-gris: #9B9B9B;
 // MODALE
 
 .modal-content {
-  width: 100%;
   background-color: transparent;
   border: none;
+  width: 100%;
+  .modal-body{
+    height: 400px;
+    padding: 5px 20px 20px 0;
+  }
+  height: auto;
 }
 
 .modal-dialog {
@@ -176,8 +369,10 @@ $color-gris: #9B9B9B;
 
 #servicios {
   padding: 100px 0;
+
   .servicios__miPadding {
     padding: 2rem 2rem 0 2rem;
+    min-height: 80px;
   }
 
   .serviciosSombra {
@@ -223,16 +418,17 @@ $color-gris: #9B9B9B;
 
 #footer {
 
-    background-color: #282c2d;
-    padding-left: 100px;
-    padding-right: 100px;
+  background-color: #282c2d;
+  padding-left: 100px;
+  padding-right: 100px;
 
-    .footer__alineamiento{
-      text-align: end;
-    }
-    p{
-      color: white;
-    }
+  .footer__alineamiento {
+    text-align: end;
+  }
+
+  p {
+    color: white;
+  }
 
   .footer__logo {
     width: 100px;

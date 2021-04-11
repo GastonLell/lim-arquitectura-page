@@ -41,10 +41,10 @@ const ContenedorProyectos = ({ modalShow, setModalShow, categoria }) => {
 
   return (
     <Container fluid className="contenedor-proyectos">
-      <Row md={3}>
+      <Row xs={12} md={2} lg={3}>
         {items.map((item) => {
           return (
-            <Col className="mb-3 p-0 text-center">
+            <Col  className="mb-3 p-0 text-center">
               <Button
                 variant="outline-ligth"
                 onClick={() => openModal(item.id)}
