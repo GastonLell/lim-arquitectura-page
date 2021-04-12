@@ -1,10 +1,7 @@
 @charset "UTF-8";
 /* GENERALES */
 html {
-  min-width: -webkit-min-content;
-  min-width: -moz-min-content;
-  min-width: min-content;
-}
+  min-width: min-content; }
 
 * {
   margin: 0;
@@ -206,128 +203,94 @@ html {
 
 #inicio {
   width: 100%;
-  height: auto;
-}
-
-#inicio .carousel {
-  height: auto;
-  position: inherit;
-}
-
-#inicio .carousel-container {
-  height: auto;
-  position: relative;
-  display: inline-block;
-}
-
-#inicio .logo-container {
-  display: none;
-}
-
-@media (min-width: 992px) {
-  #inicio .logo-container {
-    display: inline-block;
-    width: 50%;
-  }
-  #inicio .img-logo img {
-    opacity: 0;
-    width: 60px;
-    position: absolute;
-    top: 175px;
-    left: 610px;
-    -webkit-animation-name: img-opacity;
-            animation-name: img-opacity;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    -webkit-transition: all 4s ease;
-    transition: all 4s ease;
-  }
-  #inicio .container-logo-uno {
-    position: absolute;
-    top: 380px;
-    left: 60px;
-    -webkit-animation-name: entrada-logo;
-            animation-name: entrada-logo;
-    -webkit-animation-duration: 5s;
-            animation-duration: 5s;
-  }
-  #inicio .container-logo-dos {
-    opacity: 0;
-    position: absolute;
-    top: 380px;
-    left: 60px;
-    -webkit-animation-name: entrada-logo-dos;
-            animation-name: entrada-logo-dos;
-    -webkit-animation-duration: 9s;
-            animation-duration: 9s;
-  }
-  #inicio .logo-uno-m {
-    background-color: black;
-    height: 75px;
-    width: 4px;
+  height: auto; }
+  #inicio .carousel {
+    height: auto;
+    position: inherit; }
+  #inicio .img-carousel-inicio {
+    max-height: 90vh;
+    object-fit: cover; }
+  #inicio .carousel-container {
+    height: auto;
     position: relative;
-    -webkit-animation-name: entrada-logo;
-            animation-name: entrada-logo;
-    -webkit-animation-duration: 5s;
-            animation-duration: 5s;
-  }
-  #inicio .logo-uno-m::before {
-    background-color: black;
-    height: 75px;
-    width: 4px;
-    position: absolute;
-    content: '';
-    left: 10px;
-  }
-  #inicio .logo-uno-m::after {
-    background-color: black;
-    height: 75px;
-    width: 4px;
-    position: absolute;
-    content: '';
-    left: 20px;
-  }
-  #inicio .logo-uno-i {
-    background-color: #9B9B9B;
-    height: 35px;
-    width: 4px;
-    position: absolute;
-    top: 40px;
-    left: -10px;
-  }
-  #inicio .logo-uno-i::before {
-    background-color: black;
-    height: 75px;
-    width: 4px;
-    position: absolute;
-    content: '';
-    top: -40px;
-    left: -20px;
-  }
-}
-
-#inicio .slogan__contenedor {
-  padding: 40px 0px;
-  height: 25vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#inicio .slogan__contenedor .sloganLato {
-  font-size: 20px;
-  line-height: 30px;
-  font-family: 'Lato', sans-serif;
-  font-style: italic;
-  font-weight: 700;
-}
-
-#inicio .slogan__contenedor p {
-  margin-bottom: 0px;
-}
+    display: inline-block; }
+  #inicio .logo-container {
+    display: none; }
+  @media (min-width: 992px) {
+    #inicio .logo-container {
+      display: inline-block;
+      width: 50%; }
+    #inicio .img-logo img {
+      opacity: 0;
+      width: 60px;
+      position: absolute;
+      top: 175px;
+      left: 610px;
+      animation-name: img-opacity;
+      animation-duration: 3s;
+      transition: all 4s ease; }
+    #inicio .container-logo-uno {
+      position: absolute;
+      top: 380px;
+      left: 60px;
+      animation-name: entrada-logo;
+      animation-duration: 5s; }
+    #inicio .container-logo-dos {
+      opacity: 0;
+      position: absolute;
+      top: 380px;
+      left: 60px;
+      animation-name: entrada-logo-dos;
+      animation-duration: 9s; }
+    #inicio .logo-uno-m {
+      background-color: black;
+      height: 75px;
+      width: 4px;
+      position: relative;
+      animation-name: entrada-logo;
+      animation-duration: 5s; }
+    #inicio .logo-uno-m::before {
+      background-color: black;
+      height: 75px;
+      width: 4px;
+      position: absolute;
+      content: '';
+      left: 10px; }
+    #inicio .logo-uno-m::after {
+      background-color: black;
+      height: 75px;
+      width: 4px;
+      position: absolute;
+      content: '';
+      left: 20px; }
+    #inicio .logo-uno-i {
+      background-color: #9B9B9B;
+      height: 35px;
+      width: 4px;
+      position: absolute;
+      top: 40px;
+      left: -10px; }
+    #inicio .logo-uno-i::before {
+      background-color: black;
+      height: 75px;
+      width: 4px;
+      position: absolute;
+      content: '';
+      top: -40px;
+      left: -20px; } }
+  #inicio .slogan__contenedor {
+    padding: 40px 0px;
+    height: 25vh;
+    display: flex;
+    align-items: center; }
+    #inicio .slogan__contenedor .sloganLato {
+      font-size: 20px;
+      line-height: 30px;
+      font-family: 'Lato', sans-serif;
+      font-style: italic;
+      font-weight: 700; }
+    #inicio .slogan__contenedor p {
+      margin-bottom: 0px; }
 
 #nosotros .nosotros__foto--tamanio {
   -webkit-box-pack: center;
@@ -472,22 +435,14 @@ html {
 }
 
 #servicios {
-  padding: 100px 15px;
-}
-
-#servicios .servicios__alto {
-  min-height: 373px;
-}
-
-#servicios .servicios__padding {
-  padding: 2rem 2rem 0 2rem;
-  min-height: 80px;
-}
-
-#servicios .serviciosSombra {
-  -webkit-box-shadow: 3px 3px 15px #999;
-          box-shadow: 3px 3px 15px #999;
-}
+  padding: 100px 15px; }
+  #servicios .servicios__alto {
+    min-height: 373px; }
+  #servicios .servicios__padding {
+    padding: 2rem 2rem 0 2rem;
+    min-height: 80px; }
+  #servicios .serviciosSombra {
+    box-shadow: 3px 3px 15px #999; }
 
 #contacto {
   padding: 100px 0;
@@ -522,39 +477,22 @@ html {
 
 #footer {
   background-color: #282c2d;
-  padding: 15px;
-}
-
-#footer p {
-  color: white;
-  margin-bottom: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#footer .footer__logo {
-  width: 100px;
-}
-
-#footer .footer__contenedorVectores {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#footer .footer__vector {
-  margin-top: 1px;
-  width: 30px;
-  border-radius: 50px;
-  background-color: white;
-}
+  padding: 15px; }
+  #footer p {
+    color: white;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center; }
+  #footer .footer__logo {
+    width: 100px; }
+  #footer .footer__contenedorVectores {
+    display: flex;
+    justify-content: center; }
+  #footer .footer__vector {
+    margin-top: 1px;
+    width: 30px;
+    border-radius: 50px;
+    background-color: white; }
 
 @media (min-width: 576px) {
   #nosotros .nosotros__foto--tamanio {
@@ -564,29 +502,24 @@ html {
     padding-top: 0px;
     padding-right: 15px;
     padding-left: 15px;
-    padding-bottom: 50px;
-  }
+    padding-bottom: 50px; }
+
   #inicio .slogan__contenedor {
     padding: 40px 0px;
-    height: 30vh;
-  }
-  #inicio .slogan__contenedor .sloganLato {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  #inicio .slogan__contenedor p {
-    margin-bottom: 0px;
-  }
-}
-
+    height: 30vh; }
+    #inicio .slogan__contenedor .sloganLato {
+      font-size: 22px;
+      line-height: 32px; }
+    #inicio .slogan__contenedor p {
+      margin-bottom: 0px; } }
 @media (min-width: 768px) {
   .nav__bordeDer {
-    border-right: 1px solid;
-  }
+    border-right: 1px solid; }
+
   #inicio .slogan__contenedor {
     padding: 40px 0px;
-    height: 35vh;
-  }
+    height: 35vh; }
+
   #footer {
     padding-left: 50px;
     padding-right: 50px;
@@ -611,14 +544,11 @@ html {
   #nosotros .nosotrosText {
     font-size: 1.2rem;
     line-height: 27px;
-    padding-bottom: 0px;
-  }
+    padding-bottom: 0px; }
+
   #footer {
     padding-left: 100px;
-    padding-right: 100px;
-  }
-}
-
+    padding-right: 100px; } }
 @media (min-width: 1200px) {
   #nosotros .nosotros__foto--tamanio {
     height: 500px;
