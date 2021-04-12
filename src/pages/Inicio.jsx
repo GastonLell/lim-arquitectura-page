@@ -34,7 +34,7 @@ const Inicio = () => {
       <Container fluid className="p-0">
         <Row className="m-0">
           <Col className="p-0 carousel-container">
-            <Carousel itemsCarousel={items} tamaño="w-100" bsPrefix="carousel" />
+            <Carousel itemsCarousel={items} bsPrefix="carousel" />
             <div className="logo-container">
               <div className="container-logo-uno">
                 <div className="logo-uno-i"></div>

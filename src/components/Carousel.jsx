@@ -1,9 +1,9 @@
 import { Carousel } from "react-bootstrap";
 
-const CarouselProyectos = ({ item, itemsCarousel, tamaño }) => {
+const CarouselProyectos = ({ item, itemsCarousel }) => {
   if (item) {
     return (
-      <Carousel className={`${tamaño}`} indicators={false}>
+      <Carousel className="w-100" indicators={false}>
         {item?.srcImagen.map((item, index) => {
           
           return (
@@ -16,7 +16,7 @@ const CarouselProyectos = ({ item, itemsCarousel, tamaño }) => {
     );
   } else if (itemsCarousel) {
     return (
-      <Carousel className={`${tamaño}`} nextIcon={false} prevIcon={false} indicators={false}>
+      <Carousel className="w-100" nextIcon={false} prevIcon={false} indicators={false}>
         {itemsCarousel.map((item, index) => {
           return (
             <Carousel.Item key={index}>

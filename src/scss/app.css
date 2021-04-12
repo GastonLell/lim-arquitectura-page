@@ -210,11 +210,13 @@ html {
 
 .carousel {
   display: block;
-  margin: 0 auto;
+  margin: auto;
   width: 100%;
   height: auto; }
   .carousel .img-carousel-proyectos {
-    max-height: 90vh;
+    vertical-align: middle;
+    width: 100%;
+    max-height: 100vh;
     object-fit: contain; }
 
 .carousel .imgSlider {
@@ -227,7 +229,7 @@ html {
   width: 100%;
   height: auto; }
   .modal-content .modal-body {
-    height: 400px;
+    height: auto;
     padding: 5px 20px 20px 0; }
 
 .modal-dialog {
