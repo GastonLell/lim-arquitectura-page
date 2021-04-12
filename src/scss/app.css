@@ -211,8 +211,11 @@ html {
 .carousel {
   display: block;
   margin: 0 auto;
-  width: 500px;
-  height: 50px; }
+  width: 100%;
+  height: auto; }
+  .carousel .img-carousel-proyectos {
+    max-height: 90vh;
+    object-fit: contain; }
 
 .carousel .imgSlider {
   width: 100%;

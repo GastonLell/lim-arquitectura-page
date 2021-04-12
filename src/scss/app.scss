@@ -333,7 +333,6 @@ html{
   .contenedor-proyectos {
     padding: 20px;
   }
-
   @media (min-width: 576px) {
     .nav-proyectos ul {
       flex-direction: row;
@@ -346,8 +345,14 @@ html{
 .carousel {
   display: block;
   margin: 0 auto;
-  width: 500px;
-  height: 50px;
+  width: 100%;
+  height: auto;
+
+  .img-carousel-proyectos{
+    max-height: 90vh;
+    object-fit: contain;
+  }
+
 }
 
 .carousel .imgSlider {
