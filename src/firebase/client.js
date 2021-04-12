@@ -17,15 +17,15 @@ export const getFirestore = () => firebase.firestore(app);
 // traer info de firebase
 const db = getFirestore();
 
-export const getData = () => {
-  let arr = [];
-  var docRef = db.collection('proyectos');
-  docRef.get().then(querySnapshot => {
-      querySnapshot.forEach(doc => {
-        arr.push({data: doc.data(), id: doc.id})
-      })
-    })
-    .catch(err => console.log(`error al leer data ${err}`))
+// export const getData = () => {
+//   let arr = [];
+//   var docRef = db.collection('proyectos');
+//   docRef.get().then(querySnapshot => {
+//       querySnapshot.forEach(doc => {
+//         arr.push({data: doc.data(), id: doc.id})
+//       })
+//     })
+//     .catch(err => console.log(`error al leer data ${err}`))
 
-    return arr;
-}
+//     return arr;
+// }

@@ -14,6 +14,8 @@ import Contacto from "./pages/Contacto";
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 
+import ProyectosContext from "./store/ProyectosContext";
+
 function App() {
   return (
     <div className="App">
@@ -25,7 +27,9 @@ function App() {
         </Row>
         <Inicio/>
         <Nosotros/>
-        <Proyectos/>
+        <ProyectosContext>
+          <Proyectos/>
+        </ProyectosContext>
         <Servicios/>
         <Contacto/>
         <Footer/>
