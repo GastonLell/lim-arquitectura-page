@@ -8,7 +8,7 @@ const CarouselProyectos = ({ item, itemsCarousel, tamaño }) => {
           
           return (
             <Carousel.Item key={index}>
-              <img className="d-block w-100" src={item} />
+              <img className="d-block w-100 img-carousel-proyectos" src={item} />
             </Carousel.Item>
           );
         })}
@@ -20,7 +20,7 @@ const CarouselProyectos = ({ item, itemsCarousel, tamaño }) => {
         {itemsCarousel.map((item, index) => {
           return (
             <Carousel.Item key={index}>
-              <img className="d-block w-100" src={item.srcImagen} />
+              <img className="d-block w-100 img-carousel-inicio" src={item.srcImagen} />
             </Carousel.Item>
           );
         })}
