@@ -3,6 +3,10 @@ $color-uno: rgb(247, 241, 241);
 $color-gris: #9B9B9B;
 
 /* GENERALES */
+
+html{
+  min-width: min-content;
+}
 * {
   margin: 0;
   padding: 0;
@@ -169,21 +173,6 @@ $color-gris: #9B9B9B;
     display: none;
   }
 
-  .slogan__contenedor {
-    padding: 40px 0px;
-    height: 35vh;
-    display: flex;
-    align-items: center;
-  }
-
-  .sloganLato {
-    font-size: 26px;
-    line-height: 35px;
-    font-family: 'Lato', sans-serif;
-    font-style: italic;
-    font-weight: 700;
-  }
-
   @media (min-width: 992px) {
     .logo-container {
       display: inline-block;
@@ -265,7 +254,31 @@ $color-gris: #9B9B9B;
     }
   }
 
+// SLOGAN 
+  .slogan__contenedor {
+    padding: 40px 0px;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+
+    .sloganLato {
+      font-size: 20px;
+      line-height: 30px;
+      font-family: 'Lato', sans-serif;
+      font-style: italic;
+      font-weight: 700;
+    }
+
+    p{
+      margin-bottom: 0px;
+    }
+
+  }
+
+  
+
 }
+
 
 // NOSOTROS
 
@@ -366,9 +379,13 @@ $color-gris: #9B9B9B;
 // SERVICIOS 
 
 #servicios {
-  padding: 100px 0;
+  padding: 100px 15px;
 
-  .servicios__miPadding {
+  .servicios__alto{
+    min-height: 373px;
+  }
+
+  .servicios__padding {
     padding: 2rem 2rem 0 2rem;
     min-height: 80px;
   }
@@ -415,25 +432,24 @@ $color-gris: #9B9B9B;
 // FOOTER 
 
 #footer {
-
   background-color: #282c2d;
-  padding-left: 100px;
-  padding-right: 100px;
-
-  .footer__alineamiento {
-    text-align: end;
-  }
-
-  p {
+  padding: 15px;
+  p{
     color: white;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
   }
-
   .footer__logo {
-    width: 100px;
+    width: 100px; 
   }
-
+  .footer__contenedorVectores{
+    display: flex;
+    justify-content: center;
+  }
   .footer__vector {
-    width: 50px;
+    margin-top: 1px;
+    width: 30px;
     border-radius: 50px;
     background-color: white;
   }
@@ -442,7 +458,6 @@ $color-gris: #9B9B9B;
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-
 
   // NOSOTROS
 
@@ -459,29 +474,77 @@ $color-gris: #9B9B9B;
     padding-left: 15px;
     padding-bottom: 50px;
   }
-
 }
+
+// INICIO 
+
+#inicio{
+
+
+  // SLOGAN 
+    .slogan__contenedor {
+      padding: 40px 0px;
+      height: 30vh;
+      .sloganLato {
+        font-size: 22px;
+        line-height: 32px;
+      }
+      p{
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+// FOOTER 
 
 
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-
-  // NOSOTROS
-
-  #nosotros {
-  
-    .nosotrosText {
-      padding-right: 90px;
-    }
-  
-  }
-
-
+ 
+  // NAVBAR
   .nav__bordeDer {
     border-right: 1px solid;
   }
+
+
+  // INICIO 
+
+// SLOGAN 
+
+#inicio{
+
+  .slogan__contenedor {
+    padding: 40px 0px;
+    height: 35vh;
+
+    // .sloganLato {
+    //   font-size: 22px;
+    //   line-height: 32px;
+    // }
+
+  }
+
+}
+
+// FOOTER 
+
+#footer {
+
+  padding-left: 50px;
+  padding-right: 50px;
+  .footer__textoVectores{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  p{
+    padding: 0px 10px;
+  }
+}
+
+
 }
 
 // Large devices (desktops, 992px and up)
@@ -500,6 +563,13 @@ $color-gris: #9B9B9B;
     
     }
 
+    // FOOTER 
+
+#footer {
+
+  padding-left: 100px;
+  padding-right: 100px;
+}
 
 
 }

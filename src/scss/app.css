@@ -1,5 +1,11 @@
 @charset "UTF-8";
 /* GENERALES */
+html {
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -218,25 +224,6 @@
   display: none;
 }
 
-#inicio .slogan__contenedor {
-  padding: 40px 0px;
-  height: 35vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#inicio .sloganLato {
-  font-size: 26px;
-  line-height: 35px;
-  font-family: 'Lato', sans-serif;
-  font-style: italic;
-  font-weight: 700;
-}
-
 @media (min-width: 992px) {
   #inicio .logo-container {
     display: inline-block;
@@ -317,6 +304,29 @@
     top: -40px;
     left: -20px;
   }
+}
+
+#inicio .slogan__contenedor {
+  padding: 40px 0px;
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#inicio .slogan__contenedor .sloganLato {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+#inicio .slogan__contenedor p {
+  margin-bottom: 0px;
 }
 
 #nosotros .nosotros__foto--tamanio {
@@ -421,10 +431,14 @@
 }
 
 #servicios {
-  padding: 100px 0;
+  padding: 100px 15px;
 }
 
-#servicios .servicios__miPadding {
+#servicios .servicios__alto {
+  min-height: 373px;
+}
+
+#servicios .servicios__padding {
   padding: 2rem 2rem 0 2rem;
   min-height: 80px;
 }
@@ -467,24 +481,36 @@
 
 #footer {
   background-color: #282c2d;
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
-#footer .footer__alineamiento {
-  text-align: end;
+  padding: 15px;
 }
 
 #footer p {
   color: white;
+  margin-bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #footer .footer__logo {
   width: 100px;
 }
 
+#footer .footer__contenedorVectores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #footer .footer__vector {
-  width: 50px;
+  margin-top: 1px;
+  width: 30px;
   border-radius: 50px;
   background-color: white;
 }
@@ -499,14 +525,44 @@
     padding-left: 15px;
     padding-bottom: 50px;
   }
+  #inicio .slogan__contenedor {
+    padding: 40px 0px;
+    height: 30vh;
+  }
+  #inicio .slogan__contenedor .sloganLato {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  #inicio .slogan__contenedor p {
+    margin-bottom: 0px;
+  }
 }
 
 @media (min-width: 768px) {
-  #nosotros .nosotrosText {
-    padding-right: 90px;
-  }
   .nav__bordeDer {
     border-right: 1px solid;
+  }
+  #inicio .slogan__contenedor {
+    padding: 40px 0px;
+    height: 35vh;
+  }
+  #footer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  #footer .footer__textoVectores {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #footer p {
+    padding: 0px 10px;
   }
 }
 
@@ -515,6 +571,10 @@
     font-size: 1.2rem;
     line-height: 27px;
     padding-bottom: 0px;
+  }
+  #footer {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 

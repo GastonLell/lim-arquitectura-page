@@ -7,13 +7,9 @@ import CardServicio from "../components/CardServicio";
 
 const Servicios = () => {
   return (
-    <Container
-      fluid
-      id="servicios"
-      className="border-top border-bottom miContenedor"
-    >
+    <Container fluid id="servicios" className="border-top border-bottom miContenedor">
       <Container className="p-0">
-        <Row className=" ml-0">
+        <Row className="ml-0">
           <h2 className="subtitulo">
             SERVIC<span>IOS</span>
           </h2>

@@ -10,18 +10,18 @@ const Footer = () => {
 
         <Container fluid id="footer">
 
-            <Row className="p-3">
+            <Row className="">
 
                 <Col className=""><img className="footer__logo" src={logoBlanco} alt="Logo"/></Col>
 
-                <Col className="align-self-center footer__alineamiento">
-                    <div className="">
+                <Col className="footer__textoVectores">
                         
-                        <p className="d-inline">También encontranos en</p>
-                        <img src={instagram} className="footer__vector mx-3 p-1" alt="Instagram"/>
+                        <p>También encontranos en</p>
+
+                        <div className="footer__contenedorVectores">
+                        <img src={instagram} className="footer__vector p-1 mr-2" alt="Instagram"/>
                         <img src={behance} className="footer__vector p-1" alt="Behance"/>
-                        
-                    </div>
+                        </div>
                 </Col>
             </Row>
         </Container>

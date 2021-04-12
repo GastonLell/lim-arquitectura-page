@@ -3,14 +3,14 @@ import Card from "react-bootstrap/Card";
 
 const CardServicio = ({title, textoUno, textoDos, textoTres}) => {
   return (
-    <Col className="mb-3">
-      <Card className="h-100 serviciosSombra" style={{ width: "21.8rem" }}>
-        <Card.Body className="columnaBorderTop p-0">
-          <Card.Title className="servicios__miPadding">
+    <Col xs={12} lg={4} className="mb-5 mb-lg-0 d-flex justify-content-center">
+      <Card className="serviciosSombra" style={{ width: "21.8rem" }}>
+        <Card.Body className="columnaBorderTop p-0 servicios__alto">
+          <Card.Title className="servicios__padding">
             {title}
           </Card.Title>
           <div className="border border-dark w-75"></div>
-          <Card.Text className="servicios__miPadding">
+          <Card.Text className="servicios__padding">
             <p>{textoUno}</p>
             <p>{textoDos}</p>
             <p>{textoTres}</p>
