@@ -1,54 +1,59 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import { StoreProyectos } from "../store/ProyectosContext";
 
 import MyVerticallyCenteredModal from "./MyVerticallyCenteredModal";
-
+import Loading from "./Loading";
 // componentes bootstrap
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import { getData } from "../firebase/client";
 const ContenedorProyectos = ({ modalShow, setModalShow, categoria }) => {
-
+  const [proyectos] = useContext(StoreProyectos);
   const [items, setItems] = useState([]);
   const [item, setItem] = useState([]);
 
-  useEffect(() => {
-    setItems(getData);
-    console.log(items)
-  }, []);
-
   const openModal = (id) => {
-    let item = items.find(item => item.id == id)
-    setItem(item)
+    let item = items.find((item) => item.id == id);
+    setItem(item);
     setModalShow(true);
   };
 
+  const obtenerProyectos = () => {
+    setItems(proyectos);
+  };
+
+  useEffect(() => {
+    obtenerProyectos();
+    console.log("use effect contenedor proyectos")
+    
+  }, [proyectos]);
+
   return (
     <Container fluid className="contenedor-proyectos">
-
-      <Row xs={1} md={2} lg={3}>
-        {items.map((item) => {
-          return (
-            <Col className="mb-3 p-0 text-center">
-              <Button
-                variant="outline-ligth"
-                onClick={() => openModal(item.id)}
-              >
-                <img
-                  className="w-100"
-                  src={item.data.srcImagen[0]}
-                  alt={item.data.nombre}
-                />
-              </Button>
-
-            </Col>
-            
-          );
-        })}
-      </Row>
-
+      {!!items ? (
+        <Row xs={1} md={2} lg={3}>
+          {items.map((item) => {
+            return (
+              <Col key={item.id} className="mb-3 p-0 text-center">
+                <Button
+                  variant="outline-ligth"
+                  onClick={() => openModal(item.id)}
+                >
+                  <img
+                    className="w-100"
+                    src={item.data.srcImagen[0]}
+                    alt={item.data.nombre}
+                  />
+                </Button>
+              </Col>
+            );
+          })}
+        </Row>
+      ) : (
+        <Loading />
+      )}
       <MyVerticallyCenteredModal
         show={modalShow}
         onHide={() => setModalShow(false)}

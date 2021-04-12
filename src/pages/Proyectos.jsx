@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ContenedorProyectos from "../components/ContenedorProyectos";
 // componentes bootstrap
 import Container from "react-bootstrap/Container";

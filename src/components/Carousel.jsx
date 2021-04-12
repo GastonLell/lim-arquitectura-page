@@ -4,9 +4,10 @@ const CarouselProyectos = ({ item, itemsCarousel, tamaño }) => {
   if (item) {
     return (
       <Carousel className={`${tamaño}`} indicators={false}>
-        {item?.srcImagen.map((item) => {
+        {item?.srcImagen.map((item, index) => {
+          
           return (
-            <Carousel.Item>
+            <Carousel.Item key={index}>
               <img className="d-block w-100" src={item} />
             </Carousel.Item>
           );
@@ -15,10 +16,10 @@ const CarouselProyectos = ({ item, itemsCarousel, tamaño }) => {
     );
   } else if (itemsCarousel) {
     return (
-      <Carousel className={`${tamaño}`} indicators={false}>
-        {itemsCarousel.map((item) => {
+      <Carousel className={`${tamaño}`} nextIcon={false} prevIcon={false} indicators={false}>
+        {itemsCarousel.map((item, index) => {
           return (
-            <Carousel.Item>
+            <Carousel.Item key={index}>
               <img className="d-block w-100" src={item.srcImagen} />
             </Carousel.Item>
           );
