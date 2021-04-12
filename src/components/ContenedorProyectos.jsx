@@ -21,14 +21,31 @@ const ContenedorProyectos = ({ modalShow, setModalShow, categoria }) => {
   };
 
   const obtenerProyectos = () => {
-    setItems(proyectos);
+    if (categoria === "renders") {
+      let arrayItems = proyectos.filter(
+        (item) => item.data.categoria === "renders"
+      );
+      setItems(arrayItems);
+    } else if (categoria === "videos") {
+      let arrayItems = proyectos.filter(
+        (item) => item.data.categoria === "videos"
+      );
+      setItems(arrayItems);
+    } else if (categoria === "realidad") {
+      let arrayItems = proyectos.filter(
+        (item) => item.categoria === "realidad"
+      );
+      setItems(arrayItems);
+    } else {
+      let arrayItems = proyectos;
+      setItems(arrayItems);
+    }
   };
 
   useEffect(() => {
     obtenerProyectos();
-    console.log("use effect contenedor proyectos")
-    
-  }, [proyectos]);
+    console.log("use effect contenedor proyectos");
+  }, [proyectos, categoria]);
 
   return (
     <Container fluid className="contenedor-proyectos">
@@ -68,18 +85,7 @@ export default ContenedorProyectos;
 /*
 PARA CAMBIO DE CATEGORIAS
 const mostrarItems = () => {
-  if (categoria === "renders") {
-    let arrayItems = dbPrueba.filter((item) => item.categoria === "renders");
-    setItems(arrayItems);
-  } else if (categoria === "videos") {
-    let arrayItems = dbPrueba.filter((item) => item.categoria === "videos");
-    setItems(arrayItems);
-  } else if (categoria === "realidad") {
-    let arrayItems = dbPrueba.filter((item) => item.categoria === "realidad");
-    setItems(arrayItems);
-  } else {
-    let arrayItems = dbPrueba;
-    setItems(arrayItems);
+
   }
 };
 
