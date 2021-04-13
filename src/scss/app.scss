@@ -332,6 +332,11 @@ html{
   .contenedor-proyectos {
     padding: 20px;
   }
+  .button-img-proyectos{
+    object-fit: cover;
+    width: 100%;
+    max-height: 200px;
+  }
   .video-list-proyectos{
     width: 100%;
     height: 250px;
@@ -353,21 +358,16 @@ html{
   height: auto;
 
   .img-carousel-proyectos{
-    vertical-align: middle;
-    width: 100%;
-    max-height: 100vh;
-    object-fit: contain;
-  }
-  .video-carousel-proyecto{
-    display: inline-block;
     margin: auto;
     width: 100%;
     max-height: 90vh;
-    border: none;
+    object-fit: cover;
   }
-  .video-carousel-proyecto source{
-    display: inline-block;
+  .video-carousel-proyecto, .video-carousel-proyecto source{
+    display: block;
     margin: auto;
+    width: 100%;
+    max-height: 80vh;
     border: none;
   }
 
