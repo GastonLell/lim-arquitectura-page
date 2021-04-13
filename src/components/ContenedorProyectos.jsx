@@ -54,15 +54,20 @@ const ContenedorProyectos = ({ modalShow, setModalShow, categoria }) => {
           {items.map((item) => {
             return (
               <Col key={item.id} className="mb-3 p-0 text-center">
-                <Button
-                  variant="outline-ligth"
-                  onClick={() => openModal(item.id)}
-                >
-                  <img
-                    className="w-100"
-                    src={item.data.srcImagen[0]}
-                    alt={item.data.nombre}
-                  />
+                <Button variant="outline-ligth" onClick={() => openModal(item.id)}>
+                  {
+                    item.data.categoria !== "realidad" ? (
+                      <img
+                        className="w-100"
+                        src={item.data.srcImagen[0]}
+                        alt={item.data.nombre}
+                      />) : (
+                        <video className="video-list-proyectos" >
+                          <source src={item.data.srcImagen[0]} type="video/mp4" />
+                        </video>
+                      )
+                  }
+
                 </Button>
               </Col>
             );

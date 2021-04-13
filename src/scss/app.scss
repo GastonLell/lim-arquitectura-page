@@ -329,9 +329,13 @@ html{
   .nav-proyectos button.active {
     color: black;
   }
-
   .contenedor-proyectos {
     padding: 20px;
+  }
+  .video-list-proyectos{
+    width: 100%;
+    height: 250px;
+    object-fit: scale-down;
   }
   @media (min-width: 576px) {
     .nav-proyectos ul {
@@ -353,6 +357,18 @@ html{
     width: 100%;
     max-height: 100vh;
     object-fit: contain;
+  }
+  .video-carousel-proyecto{
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    max-height: 90vh;
+    border: none;
+  }
+  .video-carousel-proyecto source{
+    display: inline-block;
+    margin: auto;
+    border: none;
   }
 
 }
