@@ -281,11 +281,19 @@ html{
   .nav-proyectos button.active {
     color: black;
   }
-
   .contenedor-proyectos {
     padding: 20px;
   }
-
+  .button-img-proyectos{
+    object-fit: cover;
+    width: 100%;
+    max-height: 200px;
+  }
+  .video-list-proyectos{
+    width: 100%;
+    height: 250px;
+    object-fit: scale-down;
+  }
   @media (min-width: 576px) {
     .nav-proyectos ul {
       flex-direction: row;
@@ -297,9 +305,24 @@ html{
 
 .carousel {
   display: block;
-  margin: 0 auto;
-  width: 500px;
-  height: 50px;
+  margin: auto;
+  width: 100%;
+  height: auto;
+
+  .img-carousel-proyectos{
+    margin: auto;
+    width: 100%;
+    max-height: 90vh;
+    object-fit: cover;
+  }
+  .video-carousel-proyecto, .video-carousel-proyecto source{
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-height: 80vh;
+    border: none;
+  }
+
 }
 
 .carousel .imgSlider {
@@ -314,7 +337,7 @@ html{
   border: none;
   width: 100%;
   .modal-body{
-    height: 400px;
+    height: auto;
     padding: 5px 20px 20px 0;
   }
   height: auto;
