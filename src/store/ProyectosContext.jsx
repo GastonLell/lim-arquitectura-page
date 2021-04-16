@@ -23,7 +23,6 @@ const ProyectosContext = ({ children }) => {
     }
     useEffect(() => {
         setData(getData())
-        console.log("use effect context")
     }, [])
     return( 
         <>

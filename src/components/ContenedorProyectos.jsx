@@ -25,7 +25,6 @@ const ContenedorProyectos = ({ modalShow, setModalShow, categoria }) => {
 
   useEffect(() => {
     obtenerProyectos();
-    console.log("use effect contenedor proyectos");
   }, [proyectos]);
 
   return (
@@ -49,14 +48,3 @@ const ContenedorProyectos = ({ modalShow, setModalShow, categoria }) => {
 };
 
 export default ContenedorProyectos;
-
-/*
-PARA CAMBIO DE CATEGORIAS
-const mostrarItems = () => {
-
-  }
-};
-
-useEffect(() => {
-  mostrarItems();
-}, [categoria]); */
