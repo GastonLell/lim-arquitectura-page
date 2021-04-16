@@ -7,7 +7,7 @@ const Contacto = () => {
   return (
     <Container id="contacto">
       <Row className="m-0">
-        <Col className="p-0">
+        <Col xs={12} md={6} className="p-0">
           <h2 className="subtitulo">
             CONTA<span>CTO</span>
           </h2>

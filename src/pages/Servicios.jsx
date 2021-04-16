@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
+// import Col from "react-bootstrap/Col";
+// import Card from "react-bootstrap/Card";
 
 import CardServicio from "../components/CardServicio";
 
@@ -9,11 +9,10 @@ const Servicios = () => {
   return (
     <Container fluid id="servicios" className="border-top border-bottom miContenedor">
       <Container className="p-0">
-        <Row className="ml-0">
-          <h2 className="subtitulo">
-            SERVIC<span>IOS</span>
+        {/* <Row className=""> */}
+          <h2 className="subtitulo">SERVIC<span>IOS</span>
           </h2>
-        </Row>
+        {/* </Row> */}
 
         <Row>
           <CardServicio
