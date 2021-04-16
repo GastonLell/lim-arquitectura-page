@@ -292,7 +292,7 @@ html{
   .video-list-proyectos{
     width: 100%;
     height: 250px;
-    object-fit: scale-down;
+    object-fit: cover;
   }
   @media (min-width: 576px) {
     .nav-proyectos ul {
@@ -310,9 +310,8 @@ html{
   height: auto;
 
   .img-carousel-proyectos{
-    margin: auto;
     width: 100%;
-    max-height: 90vh;
+    max-height: 100vh;
     object-fit: cover;
   }
   .video-carousel-proyecto, .video-carousel-proyecto source{
@@ -321,6 +320,7 @@ html{
     width: 100%;
     max-height: 80vh;
     border: none;
+    object-fit: cover;
   }
 
 }
@@ -335,18 +335,15 @@ html{
 .modal-content {
   background-color: transparent;
   border: none;
-  width: 100%;
+  overflow: none;
+
   .modal-body{
     height: auto;
-    padding: 5px 20px 20px 0;
   }
-  height: auto;
 }
-
-.modal-dialog {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.modal-backdrop{
+  width: 100%;
+  height: 150vh;
 }
 
 .modal-header {
