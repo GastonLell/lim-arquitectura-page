@@ -6,6 +6,7 @@
 .pnp.js
 .sass-cache
 .env
+firebase.json
 # testing
 /coverage
 
