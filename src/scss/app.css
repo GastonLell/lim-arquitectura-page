@@ -282,7 +282,13 @@
     #contacto form .textarea-form {
       resize: none; }
     #contacto form .btn {
-      border-radius: 0 !important; }
+      border-radius: 0 !important;
+      margin: 0 !important; }
+  #contacto .alert-form {
+    bottom: -50px;
+    left: 5px;
+    border-radius: 0 !important;
+    margin: 0 !important; }
 
 #footer {
   background-color: #282c2d;

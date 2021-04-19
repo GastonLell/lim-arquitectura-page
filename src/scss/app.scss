@@ -439,7 +439,15 @@ $color-gris: #9B9B9B;
 
     .btn {
       border-radius: 0 !important;
+      margin: 0 !important;
     }
+
+  }
+  .alert-form{
+    bottom: -50px;
+    left: 5px;
+    border-radius: 0 !important;
+    margin: 0 !important;
   }
 }
 
