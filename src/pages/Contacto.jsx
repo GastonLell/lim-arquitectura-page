@@ -12,8 +12,8 @@ const Contacto = () => {
             CONTA<span>CTO</span>
           </h2>
           <p>
-            <i>Envianos tu consulta al formulario <br/> o mediante nuestras redes.</i> <br />
-            <strong><i>Madrid, España</i></strong>
+            Envianos tu consulta al formulario <br/> o mediante nuestras redes. <br />
+            <strong>Madrid, España</strong>
           </p>
         </Col>
         <Col>
