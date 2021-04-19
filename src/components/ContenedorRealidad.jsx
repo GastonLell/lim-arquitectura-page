@@ -16,7 +16,6 @@ const ContenedorRealidad = ({items, openModal}) => {
     return(
       <>
       <Row xs={1} md={2} lg={3}>
-				<Col lg={12}><h3>Contenedor realidad</h3></Col>
         {
           proyectosRealidad?.map((item) => {
             return (

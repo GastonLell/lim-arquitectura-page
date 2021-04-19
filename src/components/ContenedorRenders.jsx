@@ -16,7 +16,6 @@ const ContenedorRenders = ({items, openModal}) => {
     return(
 			<>
       <Row xs={1} md={2} lg={3}>
-				<Col lg={12}><h3>Contenedor renders</h3></Col>
         {
           proyectosRenders?.map((item) => {
             return (
