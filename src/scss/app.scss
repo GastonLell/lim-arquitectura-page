@@ -240,7 +240,8 @@ $color-gris: #9B9B9B;
     font-size: 1rem;
   }
   .nosotros__foto--tamanio {
-    height: 12rem;
+    // height: 15rem;
+    width: 90%;
     justify-content: center;
     border-radius: 2px;
   }
@@ -463,11 +464,11 @@ $color-gris: #9B9B9B;
 #footer {
   background-color: #282c2d;
   padding: 15px;
+
   p{
     color: white;
     margin-bottom: 0px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
   }
   .footer__logo {
     width: 100px; 
@@ -506,7 +507,7 @@ $color-gris: #9B9B9B;
 #nosotros {
 
   .nosotros__foto--tamanio {
-    height: 400px;
+    width: 90%;
   }
 
   .nosotrosText {
@@ -597,6 +598,23 @@ $color-gris: #9B9B9B;
 }
 
 
+// NOSOTROS
+
+#nosotros {
+        
+  .nosotros__foto--tamanio {
+    width: 75%;
+  }
+  .nosotrosText {
+    font-size: 1.3rem;
+    line-height: 35px;
+    padding-top: 0px;
+    padding-right: 130px;
+    padding-left: 15px;
+  }
+}
+
+
 // CONTACTO
 
 #contacto {
@@ -656,7 +674,10 @@ $color-gris: #9B9B9B;
     // NOSOTROS
 
     #nosotros {
-    
+
+      .nosotros__foto--tamanio {
+        width: 100%;
+      }
       .nosotrosText {
         font-size: 1.2rem;
         line-height: 27px;
@@ -804,7 +825,6 @@ $color-gris: #9B9B9B;
         .nosotros__foto--tamanio {
           height: 500px;
         }
-      
         .nosotrosText {
           font-size: 1.3rem;
           line-height: 35px;
@@ -812,9 +832,7 @@ $color-gris: #9B9B9B;
           padding-right: 130px;
           padding-left: 15px;
         }
-      
       }
-
 
 
 }

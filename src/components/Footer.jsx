@@ -15,9 +15,9 @@ const Footer = () => {
                 <Col className=""><img className="footer__logo" src={logoBlanco} alt="Logo"/></Col>
 
                 <Col className="footer__textoVectores">
-                        
-                        <p>También encontranos en</p>
 
+                        <p>También encontranos en</p>
+                        
                         <div className="footer__contenedorVectores">
                         <img src={instagram} className="footer__vector p-1 mr-2" alt="Instagram"/>
                         <img src={behance} className="footer__vector p-1" alt="Behance"/>

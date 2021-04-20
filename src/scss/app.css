@@ -308,7 +308,7 @@
 }
 
 #nosotros .nosotros__foto--tamanio {
-  height: 12rem;
+  width: 90%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -565,12 +565,7 @@
 #footer p {
   color: white;
   margin-bottom: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
 }
 
 #footer .footer__logo {
@@ -603,7 +598,7 @@
     border-bottom: 5px solid;
   }
   #nosotros .nosotros__foto--tamanio {
-    height: 400px;
+    width: 90%;
   }
   #nosotros .nosotrosText {
     padding-top: 0px;
@@ -649,6 +644,16 @@
     padding: 40px 0px;
     height: 35vh;
   }
+  #nosotros .nosotros__foto--tamanio {
+    width: 75%;
+  }
+  #nosotros .nosotrosText {
+    font-size: 1.3rem;
+    line-height: 35px;
+    padding-top: 0px;
+    padding-right: 130px;
+    padding-left: 15px;
+  }
   #contacto {
     padding: 100px 0;
   }
@@ -693,6 +698,9 @@
 }
 
 @media (min-width: 992px) {
+  #nosotros .nosotros__foto--tamanio {
+    width: 100%;
+  }
   #nosotros .nosotrosText {
     font-size: 1.2rem;
     line-height: 27px;
