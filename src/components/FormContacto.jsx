@@ -31,7 +31,21 @@ const FormContacto = () => {
         mensaje: "Gracias por escribirnos! A la brevedad nos pondremos en contacto!",
         color: "dark"
       })
+
       setShow(true)
+
+      nombre.value = "";
+      email.value = "";
+      telefono.value = "";
+      mensaje.value = "";
+
+      setTimeout(() => {
+        setShow(false)
+        setAlert({
+          mensaje: "",
+          color: ""
+        })
+      }, 10000)
     })
     .catch(() => {
       setAlert({
@@ -45,8 +59,8 @@ const FormContacto = () => {
   return (
     <>
     <Form onSubmit={handleSubmit} bsPrefix="form">
-      <Form.Control name="nombre" className="mb-3" type="text" placeholder="nombre" />
-      <Form.Control name="email" className="mb-3" type="email" placeholder="e-mail" />
+      <Form.Control name="nombre" className="mb-3" type="text" placeholder="nombre" required />
+      <Form.Control name="email" className="mb-3" type="email" placeholder="e-mail" required/>
       <Form.Control name="telefono" className="mb-3" type="text" placeholder="teléfono" />
       <Form.Control
         name="mensaje"
@@ -54,6 +68,7 @@ const FormContacto = () => {
         as="textarea"
         rows={8}
         placeholder="mensaje"
+        required
       />
       <Button type="submit" variant="dark float-right">Enviar</Button>
     </Form>
