@@ -101,8 +101,6 @@
   #inicio .logo-container {
     display: none; }
   @media (min-width: 992px) {
-    #inicio .carousel-container {
-      height: 90vh; }
     #inicio .logo-container {
       display: inline-block; }
     #inicio .img-logo img {
