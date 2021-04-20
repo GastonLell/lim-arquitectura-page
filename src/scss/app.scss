@@ -162,6 +162,9 @@ $color-gris: #9B9B9B;
   }
 
   @media (min-width: 992px) {
+    .carousel-container {
+      height: 85vh;
+    }
 
     .logo-container {
       display: inline-block;
@@ -392,7 +395,7 @@ $color-gris: #9B9B9B;
   padding: 100px 0px;
 
   .row{
-    padding: 0px 0px;
+    padding: 0px 15px;
     margin-left: 0px;
     margin-right: 0px;
   }
