@@ -102,7 +102,7 @@
     display: none; }
   @media (min-width: 992px) {
     #inicio .carousel-container {
-      height: 85vh; }
+      height: 90vh; }
     #inicio .logo-container {
       display: inline-block; }
     #inicio .img-logo img {
@@ -258,7 +258,7 @@
 #servicios {
   padding: 100px 0px; }
   #servicios .row {
-    padding: 0px 15px;
+    padding: 0;
     margin-left: 0px;
     margin-right: 0px; }
   #servicios .card-title {
