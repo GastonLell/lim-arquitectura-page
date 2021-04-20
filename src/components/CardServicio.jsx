@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 
 const CardServicio = ({title, textoUno, textoDos, textoTres}) => {
   return (
-    <Col xs={12} lg={4} className="mb-5 mb-lg-0 d-flex justify-content-center">
+    <Col xs={12} lg={4} className="mb-5 mb-lg-0 d-flex justify-content-center ">
       <Card className="serviciosSombra" style={{ width: "21.8rem" }}>
         <Card.Body className="columnaBorderTop p-0 servicios__alto">
           <Card.Title className="servicios__padding">
