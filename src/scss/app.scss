@@ -4,16 +4,13 @@ $color-gris: #9B9B9B;
 
 /* GENERALES */
 
-html{
-  min-width: min-content;
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 
   h2.subtitulo {
-    font-size: 40px;
+    // font-size: 40px;
     margin-bottom: 35px;
     padding: 15px;
 
@@ -69,86 +66,74 @@ html{
 }
 
 // INICIO
-@keyframes entrada-logo {
-  0% {
-    margin-top: -100%;
-    margin-left: 43%;
-  }
 
-  50% {
-    margin-top: 0%;
-    margin-left: 43%;
-  }
-
-  90% {
-    margin-top: 0%;
-    margin-left: 43%;
-  }
-
-  100% {
-    margin-left: 0;
-  }
-}
-
-@keyframes entrada-logo-dos {
-  0% {
-    margin-top: -100%;
-    margin-left: 43%;
-    opacity: 1;
-  }
-
-  49% {
-    margin-top: 0%;
-    margin-left: 43%;
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    margin-left: 0;
-  }
-}
-
-@keyframes cambio-tamaño {
-  0% {
-    height: 100px;
-  }
-
-  90% {
-    height: 100px;
-  }
-
-  100% {
-    height: 75px;
-  }
-}
+// KEYFRAMES INICIO 
 
 @keyframes img-opacity {
-  0% {
+  13% {
     opacity: 0;
   }
-
-  45% {
-    opacity: 0;
-  }
-
-  55% {
+  14% {
     opacity: 1;
   }
-
-  75% {
+  47% {
     opacity: 1;
   }
-
-  80% {
+  48% {
     opacity: 0;
   }
+}
 
-  100% {
+
+@keyframes simbolo-1{
+  0%{
+    opacity: 1;
+    top: -10%;
+    left: 49%;
+    transform: scaleY(3.5);
+  }
+  33%{
+    opacity: 1;
+    top: 75%;
+    left: 49%;
+    transform: scaleY(0.7);
+  }
+  90%{
+    opacity: 1;
+    top: 75%;
+    left: 49%;
+    transform: scaleY(0.7);
+  }
+  100%{
+    opacity: 1;
+    top: 75%;
+    left: 5%;
+    transform: scaleY(0.7);
+  }
+}
+@keyframes simbolo-2{
+  0%{
     opacity: 0;
+    top: -10%;
+    left: 49%;
+  }
+  33%{
+    opacity: 0;
+    top: -10%;
+    left: 49%;
+    transform: scaleY(3.5);
+  }
+  90%{
+    opacity: 1;
+    top: 75%;
+    left: 49%;
+    transform: scaleY(0.7);
+  }
+  100%{
+    opacity: 1;
+    top: 75%;
+    left: 5%;
+    transform: scaleY(0.7);
   }
 }
 
@@ -177,87 +162,54 @@ html{
   }
 
   @media (min-width: 992px) {
+
     .logo-container {
       display: inline-block;
-      width: 50%;
     }
 
-    .img-logo img {
-      opacity: 0;
-      width: 60px;
-      position: absolute;
-      top: 175px;
-      left: 610px;
-      animation-name: img-opacity;
-      animation-duration: 3s;
-      transition: all 4s ease;
+    .img-logo {
+      img{
+        opacity: 0;
+        width: 80px;
+        position: absolute;
+        top: 50%;
+        left: 49%;
+        animation-name: img-opacity;
+        animation-duration: 3s;
+        transition: all 0s linear;
+      }
     }
 
-    .container-logo-uno {
-      position: absolute;
-      top: 380px;
-      left: 60px;
-      animation-name: entrada-logo;
-      animation-duration: 5s;
-    }
-
-    .container-logo-dos {
-      opacity: 0;
-      position: absolute;
-      top: 380px;
-      left: 60px;
-      animation-name: entrada-logo-dos;
-      animation-duration: 9s;
-    }
-
-    .logo-uno-m {
-      background-color: black;
-      height: 75px;
-      width: 4px;
-      position: relative;
-      animation-name: entrada-logo;
-      animation-duration: 5s;
-    }
-
-    .logo-uno-m::before {
-      background-color: black;
-      height: 75px;
-      width: 4px;
-      position: absolute;
-      content: '';
-      left: 10px;
-    }
-
-    .logo-uno-m::after {
-      background-color: black;
-      height: 75px;
-      width: 4px;
-      position: absolute;
-      content: '';
-      left: 20px;
-    }
-
-    .logo-uno-i {
-      background-color: $color-gris;
-      height: 35px;
-      width: 4px;
-      position: absolute;
-      top: 40px;
-      left: -10px;
-    }
-
-    .logo-uno-i::before {
-      background-color: black;
-      height: 75px;
-      width: 4px;
-      position: absolute;
-      content: '';
-      top: -40px;
-      left: -20px;
+    .inicio__animacion{
+      img{
+        width: 80px;
+      }
+      .simbolo-1{
+        position: absolute;
+        opacity: 1;
+        top: 75%;
+        left: 5%;
+        animation-name: simbolo-1;
+        animation-duration: 3s;
+        transition: all 4s ease-in;
+        transform: scaleY(0.7);
+      }
+      .simbolo-2{
+        position: absolute;
+        opacity: 1;
+        top: 75%;
+        left: 5%;
+        animation-name: simbolo-2;
+        animation-duration: 3s;
+        transition: all 4s ease-in;
+        transform: scaleY(0.7);
+      }
     }
   }
+}
 
 // SLOGAN 
+
   .slogan__contenedor {
     padding: 40px 0px;
     height: 25vh;
@@ -265,8 +217,8 @@ html{
     align-items: center;
 
     .sloganLato {
-      font-size: 20px;
-      line-height: 30px;
+      // font-size: 20px;
+      // line-height: 30px;
       font-family: 'Lato', sans-serif;
       font-style: italic;
       font-weight: 700;
@@ -278,16 +230,17 @@ html{
 
   }
 
-  
-
-}
 
 
 // NOSOTROS
 
 #nosotros {
 
+  p{
+    font-size: 1rem;
+  }
   .nosotros__foto--tamanio {
+    height: 12rem;
     justify-content: center;
     border-radius: 2px;
   }
@@ -329,11 +282,19 @@ html{
   .nav-proyectos button.active {
     color: black;
   }
-
   .contenedor-proyectos {
     padding: 20px;
   }
-
+  .button-img-proyectos{
+    object-fit: cover;
+    width: 100%;
+    max-height: 200px;
+  }
+  .video-list-proyectos{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
   @media (min-width: 576px) {
     .nav-proyectos ul {
       flex-direction: row;
@@ -345,9 +306,24 @@ html{
 
 .carousel {
   display: block;
-  margin: 0 auto;
-  width: 500px;
-  height: 50px;
+  margin: auto;
+  width: 100%;
+  height: auto;
+
+  .img-carousel-proyectos{
+    width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+  }
+  .video-carousel-proyecto, .video-carousel-proyecto source{
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-height: 80vh;
+    border: none;
+    object-fit: cover;
+  }
+
 }
 
 .carousel .imgSlider {
@@ -360,20 +336,27 @@ html{
 .modal-content {
   background-color: transparent;
   border: none;
-  width: 100%;
+  overflow: none;
+
   .modal-body{
-    height: 400px;
-    padding: 5px 20px 20px 0;
+    height: auto;
   }
-  height: auto;
+}
+.modal-backdrop{
+  width: 100%;
+  height: 150vh;
 }
 
-.modal-dialog {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+.modal-content {
+  width: 100%;
+  padding: 100px 10px;
+  background-color: transparent;
+  border: none;
 
+  @media (min-width: 576px) {
+    padding: 0;
+  }
+}
 .modal-header {
   border: none;
 }
@@ -405,14 +388,27 @@ html{
 // SERVICIOS 
 
 #servicios {
-  padding: 100px 15px;
+  padding: 100px 0px;
+
+  .row{
+    padding: 0px 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .card-title{
+    font-size: 1.1rem;
+  }
+  .subtitulo{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
   .servicios__alto{
     min-height: 373px;
   }
 
   .servicios__padding {
-    padding: 2rem 2rem 0 2rem;
+    padding: 1rem 1rem 0 1rem; 
     min-height: 80px;
   }
 
@@ -429,7 +425,7 @@ html{
 
   p {
     font-size: 20px;
-
+    padding: 0px 15px;
     strong {
       line-height: 50px;
     }
@@ -440,7 +436,6 @@ html{
 
     .form-control {
       font-size: 17px;
-      font-style: italic;
       border: 1px solid #333;
       border-radius: 0 !important;
     }
@@ -451,7 +446,15 @@ html{
 
     .btn {
       border-radius: 0 !important;
+      margin: 0 !important;
     }
+
+  }
+  .alert-form{
+    bottom: -50px;
+    left: 5px;
+    border-radius: 0 !important;
+    margin: 0 !important;
   }
 }
 
@@ -484,6 +487,19 @@ html{
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
+
+  // GENERALES
+
+  h2.subtitulo {
+    font-size: 40px;
+    margin-bottom: 35px;
+    padding: 15px;
+
+    span {
+      border-bottom: 5px solid;
+      // padding: 5px;
+    }
+  }
 
   // NOSOTROS
 
@@ -521,6 +537,32 @@ html{
     }
   }
 
+
+// SERVICIOS 
+
+#servicios {
+  padding: 100px 15px;
+
+  .card-title{
+    font-size: 1.3rem;
+  }
+  .servicios__alto{
+    min-height: 373px;
+  }
+
+  .servicios__padding {
+    padding: 2rem 2rem 0 2rem;
+    min-height: 80px;
+  }
+
+  .serviciosSombra {
+    box-shadow: 3px 3px 15px #999;
+  }
+
+}
+
+
+
 // FOOTER 
 
 
@@ -553,6 +595,40 @@ html{
   }
 
 }
+
+
+// CONTACTO
+
+#contacto {
+  padding: 100px 0;
+
+  p {
+    font-size: 20px;
+
+    strong {
+      line-height: 50px;
+    }
+  }
+
+  form {
+    width: 100%;
+
+    .form-control {
+      font-size: 17px;
+      border: 1px solid #333;
+      border-radius: 0 !important;
+    }
+
+    .textarea-form {
+      resize: none;
+    }
+
+    .btn {
+      border-radius: 0 !important;
+    }
+  }
+}
+
 
 // FOOTER 
 
@@ -604,6 +680,123 @@ html{
 @media (min-width: 1200px) {
 
 
+  // KEYFRAMES INICIO 
+
+  
+
+@keyframes img-opacity {
+  13% {
+    opacity: 0;
+  }
+  14% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+
+@keyframes simbolo-1{
+  0%{
+    opacity: 1;
+    top: -10%;
+    left: 49%;
+    transform: scaleY(4.5);
+  }
+  33%{
+    opacity: 1;
+    top: 80%;
+    left: 49%;
+    transform: scaleY(0.8);
+  }
+  90%{
+    opacity: 1;
+    top: 80%;
+    left: 49%;
+    transform: scaleY(0.8);
+  }
+  100%{
+    opacity: 1;
+    top: 80%;
+    left: 7%;
+    transform: scaleY(0.8);
+  }
+}
+@keyframes simbolo-2{
+  0%{
+    opacity: 0;
+    top: -10%;
+    left: 49%;
+  }
+  33%{
+    opacity: 0;
+    top: -10%;
+    left: 49%;
+    transform: scaleY(3);
+  }
+  90%{
+    opacity: 1;
+    top: 80%;
+    left: 49%;
+    transform: scaleY(0.8);
+  }
+  100%{
+    opacity: 1;
+    top: 80%;
+    left: 7%;
+    transform: scaleY(0.8);
+  }
+}
+
+#inicio{
+
+.logo-container {
+  display: inline-block;
+}
+.img-logo {
+  img{
+    opacity: 0;
+    width: 80px;
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    animation-name: img-opacity;
+    animation-duration: 3s;
+    transition: all 0s linear;
+  }
+}
+.inicio__animacion{
+    img{
+      width: 80px;
+    }
+    .simbolo-1{
+      position: absolute;
+      opacity: 1;
+      top: 80%;
+      left: 7%;
+      animation-name: simbolo-1;
+      animation-duration: 3s;
+      transition: all 4s ease-in;
+      transform: scaleY(0.8);
+    }
+    .simbolo-2{
+      position: absolute;
+      opacity: 1;
+      top: 80%;
+      left: 7%;
+      animation-name: simbolo-2;
+      animation-duration: 3s;
+      transition: all 4s ease-in;
+      transform: scaleY(0.8);
+    }
+  }
+}
+
+
       // NOSOTROS
 
       #nosotros {
@@ -627,4 +820,123 @@ html{
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+
+
+    // KEYFRAMES INICIO 
+
+  
+
+@keyframes img-opacity {
+  13% {
+    opacity: 0;
+  }
+  14% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  54% {
+    opacity: 0;
+  }
+}
+
+
+@keyframes simbolo-1{
+  0%{
+    opacity: 1;
+    top: -10%;
+    left: 49%;
+    transform: scaleY(4.5);
+  }
+  33%{
+    opacity: 1;
+    top: 80%;
+    left: 49%;
+    transform: scaleY(0.8);
+  }
+  90%{
+    opacity: 1;
+    top: 80%;
+    left: 49%;
+    transform: scaleY(0.8);
+  }
+  100%{
+    opacity: 1;
+    top: 80%;
+    left: 5%;
+    transform: scaleY(0.8);
+  }
+}
+@keyframes simbolo-2{
+  0%{
+    opacity: 0;
+    top: -10%;
+    left: 49%;
+  }
+  33%{
+    opacity: 0;
+    top: -10%;
+    left: 49%;
+    transform: scaleY(3);
+  }
+  90%{
+    opacity: 1;
+    top: 80%;
+    left: 49%;
+    transform: scaleY(0.8);
+  }
+  100%{
+    opacity: 1;
+    top: 80%;
+    left: 5%;
+    transform: scaleY(0.8);
+  }
+}
+
+#inicio{
+
+.logo-container {
+  display: inline-block;
+}
+.img-logo {
+  img{
+    opacity: 0;
+    width: 80px;
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    animation-name: img-opacity;
+    animation-duration: 3s;
+    transition: all 0s linear;
+  }
+}
+.inicio__animacion{
+    img{
+      width: 80px;
+    }
+    .simbolo-1{
+      position: absolute;
+      opacity: 1;
+      top: 80%;
+      left: 5%;
+      animation-name: simbolo-1;
+      animation-duration: 3s;
+      transition: all 4s ease-in;
+      transform: scaleY(0.8);
+    }
+    .simbolo-2{
+      position: absolute;
+      opacity: 1;
+      top: 80%;
+      left: 5%;
+      animation-name: simbolo-2;
+      animation-duration: 3s;
+      transition: all 4s ease-in;
+      transform: scaleY(0.8);
+    }
+  }
+}
+
+}

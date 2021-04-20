@@ -8,13 +8,12 @@ const MyVerticallyCenteredModal = (props) => {
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       contentClassName="modal-content"
+      backdrop="static"
+      keyboard="true"
+      centered
       >
-
-      {/*
-        para cerrar modal con cruz
-      <Modal.Header closeButton className="modal-header" /> */}
       <Modal.Body>
-        <Carousel item={props.item} tamaño="w-100" />
+        <Carousel  items={props.items} itemId={props.itemId} />
       </Modal.Body>
     </Modal>
   );

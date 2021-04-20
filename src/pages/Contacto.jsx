@@ -7,13 +7,13 @@ const Contacto = () => {
   return (
     <Container id="contacto">
       <Row className="m-0">
-        <Col className="p-0">
+        <Col xs={12} md={6} className="p-0">
           <h2 className="subtitulo">
             CONTA<span>CTO</span>
           </h2>
           <p>
-            <i>Envianos tu consulta al formulario <br/> o mediante nuestras redes.</i> <br />
-            <strong><i>Madrid, España</i></strong>
+            Envianos tu consulta al formulario <br/> o mediante nuestras redes. <br />
+            <strong>Madrid, España</strong>
           </p>
         </Col>
         <Col>
