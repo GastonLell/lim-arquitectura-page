@@ -62,7 +62,14 @@ $color-gris: #9B9B9B;
 // INICIO
 
 // KEYFRAMES INICIO 
-
+@keyframes movimiento-background{
+  to{
+    background-position: bottom left;
+  }
+  from{
+    background-position: top right;
+  }
+}
 @keyframes img-opacity {
   13% {
     opacity: 0;
@@ -140,8 +147,11 @@ $color-gris: #9B9B9B;
     position: inherit;
   }
   .img-carousel-inicio{
-    max-height: 90vh;
-    object-fit: cover;
+    width: 100%;
+    height: 85vh;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    animation:movimiento-background 20s infinite linear alternate;
   }
   //EFECTO INICIO
 
@@ -149,6 +159,16 @@ $color-gris: #9B9B9B;
     height: auto;
     position: relative;
     display: inline-block;
+
+    #item-carousel-uno{
+      background-image: url("../assets/images/Renders-inico/Inicio1.jpg");
+    }
+    #item-carousel-dos{
+      background-image: url("../assets/images/Renders-inico/Inicio2.jpg");   
+    }
+    #item-carousel-tres{
+      background-image: url("../assets/images/Renders-inico/Inicio3.jpg");
+    }
   }
 
   .logo-container {
@@ -253,7 +273,6 @@ $color-gris: #9B9B9B;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
   }
 
   .nav-proyectos button {
@@ -295,21 +314,6 @@ $color-gris: #9B9B9B;
       height: 375px;
     }
   }
-  @media (min-width: 990px) {
-    .button-img-proyectos{
-      width: 375px;
-      height: 375px;
-      padding: 30px;
-    }
-  }
-  @media (min-width: 1200px) {
-    .button-img-proyectos{
-      width: 375px;
-      height: 375px;
-      padding: 0;
-    }
-  }
-
 }
 
 //CAROUSEL

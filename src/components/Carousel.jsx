@@ -1,6 +1,7 @@
 import { Carousel } from "react-bootstrap";
 
-const CarouselProyectos = ({itemId, items, itemsCarousel }) => {
+const CarouselProyectos = ({itemId, items }) => {
+  
   const obtenerIndice = (id) => {
     let indice = items.findIndex(el => el.id == id);
     return indice;
@@ -27,19 +28,7 @@ const CarouselProyectos = ({itemId, items, itemsCarousel }) => {
         }
       </Carousel>
     );
-  } else if (itemsCarousel) {
-    return (
-      <Carousel className="w-100" nextIcon={false} prevIcon={false} indicators={false}>
-        {itemsCarousel.map((item, index) => {
-          return (
-            <Carousel.Item key={index}>
-              <img className="d-block w-100 img-carousel-inicio" src={item.srcImagen} />
-            </Carousel.Item>
-          );
-        })}
-      </Carousel>
-    );
-  }
+  } 
 };
 
 export default CarouselProyectos;
