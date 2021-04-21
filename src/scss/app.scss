@@ -10,7 +10,7 @@ $color-gris: #9B9B9B;
   box-sizing: border-box;
 
   h2.subtitulo {
-    // font-size: 40px;
+    font-size: 28px;
     margin-bottom: 35px;
     padding: 15px;
 
@@ -35,12 +35,12 @@ $color-gris: #9B9B9B;
     font-family: 'Lato', sans-serif;
   }
 
-  .miContenedor {
-    padding: 45px 0;
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-  }
+  // .miContenedor {
+  //   padding: 45px 0;
+  //   min-height: 90vh;
+  //   display: flex;
+  //   align-items: center;
+  // }
 
   .columnaBorderTop {
     border-top: 5px solid;
@@ -220,7 +220,6 @@ $color-gris: #9B9B9B;
       // font-size: 20px;
       // line-height: 30px;
       font-family: 'Lato', sans-serif;
-      font-style: italic;
       font-weight: 700;
     }
 
@@ -233,12 +232,11 @@ $color-gris: #9B9B9B;
 // NOSOTROS
 
 #nosotros {
-
+  padding: 30px 0px;
   p{
     font-size: 1rem;
   }
   .nosotros__foto--tamanio {
-    // height: 15rem;
     width: 90%;
     justify-content: center;
     border-radius: 2px;
@@ -255,7 +253,7 @@ $color-gris: #9B9B9B;
 // PROYECTOS
 
 #proyectos {
-  padding: 100px 0;
+  padding: 30px 0px;
 
   .nav-proyectos ul {
     display: flex;
@@ -387,7 +385,7 @@ $color-gris: #9B9B9B;
 // SERVICIOS 
 
 #servicios {
-  padding: 100px 0px;
+  padding: 30px 0px;
 
   .row{
     padding: 0;
@@ -395,7 +393,7 @@ $color-gris: #9B9B9B;
     margin-right: 0px;
   }
   .card-title{
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .subtitulo{
     padding-left: 15px;
@@ -420,7 +418,7 @@ $color-gris: #9B9B9B;
 // CONTACTO
 
 #contacto {
-  padding: 100px 0;
+  padding: 30px 0;
 
   p {
     font-size: 20px;
@@ -469,7 +467,7 @@ $color-gris: #9B9B9B;
     text-align: center;
   }
   .footer__logo {
-    width: 100px; 
+    width: 100px;
   }
   .footer__contenedorVectores{
     display: flex;
@@ -478,6 +476,7 @@ $color-gris: #9B9B9B;
   .footer__vector {
     margin-top: 1px;
     width: 30px;
+    height: 30px;
     border-radius: 50px;
     background-color: white;
   }
@@ -490,7 +489,7 @@ $color-gris: #9B9B9B;
   // GENERALES
 
   h2.subtitulo {
-    font-size: 40px;
+    font-size: 34px;
     margin-bottom: 35px;
     padding: 15px;
 
@@ -503,7 +502,7 @@ $color-gris: #9B9B9B;
   // NOSOTROS
 
 #nosotros {
-
+  padding: 100px 0px;
   .nosotros__foto--tamanio {
     width: 90%;
   }
@@ -536,6 +535,12 @@ $color-gris: #9B9B9B;
     }
   }
 
+  // PROYECTOS 
+
+  #proyectos{
+    padding: 100px 0px;
+  }
+
 
 // SERVICIOS 
 
@@ -543,7 +548,7 @@ $color-gris: #9B9B9B;
   padding: 100px 15px;
 
   .card-title{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   .servicios__alto{
     min-height: 373px;
@@ -558,6 +563,12 @@ $color-gris: #9B9B9B;
     box-shadow: 3px 3px 15px #999;
   }
 
+}
+
+// CONTACTO 
+
+#contacto{
+  padding: 100px 0px;
 }
 
 
