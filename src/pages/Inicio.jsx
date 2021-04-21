@@ -41,8 +41,8 @@ const Inicio = () => {
                 <img src={ImgLogo} alt="lim-arquitectura" />
               </div> 
               <div className="inicio__animacion">
-                <div className="simbolo-1"><img src={ImgSimbolo} alt=""/></div>
-                <div className="simbolo-2"><img src={ImgSimbolo} alt=""/></div>
+                <div className="simbolo-1"><img src={ImgSimbolo} /></div>
+                <div className="simbolo-2"><img src={ImgSimbolo} /></div>
               </div>
             </div>
           </Col>
