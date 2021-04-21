@@ -1,6 +1,4 @@
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Container, Row, Col, Carousel } from "react-bootstrap";
 
 import ImgInicio1 from "../assets/images/Renders-inico/Inicio1.jpg";
 import ImgInicio2 from "../assets/images/Renders-inico/Inicio2.jpg";
@@ -9,7 +7,7 @@ import ImgLogo from "../assets/images/limArquitectura-negro.svg";
 import ImgSimbolo from "../assets/images/Simbolo-alto.svg";
 
 // componentes
-import Carousel from "../components/Carousel";
+// import Carousel from "../components/Carousel";
 import Slogan from "../components/Slogan";
 
 const items = [
@@ -35,14 +33,34 @@ const Inicio = () => {
       <Container fluid className="p-0">
         <Row className="m-0">
           <Col className="p-0 carousel-container">
-            <Carousel itemsCarousel={items} bsPrefix="carousel" />
+            <Carousel
+              bsPrefix="carousel"
+              className="w-100"
+              nextIcon={false}
+              prevIcon={false}
+              indicators={false}
+            >
+              <Carousel.Item >
+                <div id="item-carousel-uno" className="d-block w-100 img-carousel-inicio"/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <div id="item-carousel-dos" className="d-block w-100 img-carousel-inicio" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <div id="item-carousel-tres" className="d-block w-100 img-carousel-inicio"/>
+              </Carousel.Item>
+            </Carousel>
             <div className="logo-container">
               <div className="img-logo">
                 <img src={ImgLogo} alt="lim-arquitectura" />
-              </div> 
+              </div>
               <div className="inicio__animacion">
-                <div className="simbolo-1"><img src={ImgSimbolo} /></div>
-                <div className="simbolo-2"><img src={ImgSimbolo} /></div>
+                <div className="simbolo-1">
+                  <img src={ImgSimbolo} />
+                </div>
+                <div className="simbolo-2">
+                  <img src={ImgSimbolo} />
+                </div>
               </div>
             </div>
           </Col>
