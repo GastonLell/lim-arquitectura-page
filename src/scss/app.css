@@ -201,16 +201,6 @@
     #proyectos .button-img-proyectos {
       width: 375px;
       height: 375px; } }
-  @media (min-width: 990px) {
-    #proyectos .button-img-proyectos {
-      width: 375px;
-      height: 375px;
-      padding: 30px; } }
-  @media (min-width: 1200px) {
-    #proyectos .button-img-proyectos {
-      width: 375px;
-      height: 375px;
-      padding: 0; } }
 
 .carousel {
   display: block;
