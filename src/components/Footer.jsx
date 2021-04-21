@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import logoBlanco from "../assets/images/logofooter.svg";
+import simboloBlanco from "../assets/images/simbolo-blanco.svg";
 import behance from "../assets/images/vector behance.jpg";
 import instagram from "../assets/images/vector instagram.jpg";
 
@@ -12,7 +12,7 @@ const Footer = () => {
 
             <Row className="">
 
-                <Col className="d-flex"><img className="footer__logo" src={logoBlanco} alt="Logo"/></Col>
+                <Col className="d-flex"><img className="footer__logo" src={simboloBlanco} alt="Logo"/></Col>
 
                 <Col className="footer__textoVectores">
 

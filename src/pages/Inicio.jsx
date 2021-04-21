@@ -6,7 +6,7 @@ import ImgInicio1 from "../assets/images/Renders-inico/Inicio1.jpg";
 import ImgInicio2 from "../assets/images/Renders-inico/Inicio2.jpg";
 import ImgInicio3 from "../assets/images/Renders-inico/Inicio3.jpg";
 import ImgLogo from "../assets/images/limArquitectura-negro.svg";
-import ImgSimbolo from "../assets/images/Simbolo-alto.svg";
+import ImgSimbolo from "../assets/images/simbolo.svg";
 
 // componentes
 import Carousel from "../components/Carousel";
