@@ -1,8 +1,8 @@
 import {useState, useEffect} from "react";
 import {Button, Row, Col} from "react-bootstrap";
-import MyVerticallyCenteredModal from "./MyVerticallyCenteredModal";
 
-const ContenedorRenders = ({items, openModal}) => {
+const ItemListRenders = ({items, openModal}) => {
+  
     const [proyectosRenders, setProyectosRenders] = useState([]);
 
     const obtenerRenders = () => {
@@ -35,4 +35,4 @@ const ContenedorRenders = ({items, openModal}) => {
 			</>
     )
 }
-export default ContenedorRenders;
+export default ItemListRenders;

@@ -1,10 +1,11 @@
-import test from "../assets/images/p360.jpg";
+import "aframe";
 
-const RealidadVirtual = () => {
+
+const RealidadVirtual = (srcImagen) => {
   return (
     <>
       <a-scene >
-        <a-sky id="test-realidad" src={test}/ >
+        <a-sky  src={srcImagen} />
       </a-scene>
     </>
   );
