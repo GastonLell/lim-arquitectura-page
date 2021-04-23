@@ -211,6 +211,11 @@
     width: 100%;
     max-height: 100vh;
     object-fit: cover; }
+  .carousel .img-carousel-realidad {
+    display: block;
+    margin: 0 auto;
+    width: 700px;
+    height: 500px; }
   .carousel .video-carousel-proyecto, .carousel .video-carousel-proyecto source {
     display: block;
     margin: auto;

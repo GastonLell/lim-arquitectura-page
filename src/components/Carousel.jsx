@@ -1,5 +1,6 @@
 import { Carousel } from "react-bootstrap";
-import RealidadVirtual from "../components/RealidadVirtualTest";
+// import PhotoPano from "./ImagenPano";
+// import srcPano from "../assets/images/p360.jpg";
 
 const CarouselProyectos = ({itemId, items }) => {
   
@@ -31,7 +32,7 @@ const CarouselProyectos = ({itemId, items }) => {
               } else if (item.data.categoria == "realidad"){
                 return(
                   <Carousel.Item key={item.id}>
-                    <RealidadVirtual  srcImagen={item.data.srcImagen}/>
+                    <iframe className="img-carousel-realidad" frameborder="0" src="https://momento360.com/e/u/412757d846074cd6ae3ae72e603693c4?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium"></iframe>
                   </Carousel.Item>
                 )
               }
