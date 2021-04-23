@@ -197,17 +197,14 @@
   #proyectos .button-img-proyectos {
     object-fit: cover;
     width: 90%;
-    max-height: 300px; }
+    height: 350px; }
   #proyectos .video-list-proyectos {
-    width: 375px;
-    height: 375px;
+    width: 90%;
+    height: 350px;
     object-fit: cover; }
   @media (min-width: 576px) {
     #proyectos .nav-proyectos ul {
-      flex-direction: row; }
-    #proyectos .button-img-proyectos {
-      width: 375px;
-      height: 375px; } }
+      flex-direction: row; } }
 
 .carousel {
   display: block;
