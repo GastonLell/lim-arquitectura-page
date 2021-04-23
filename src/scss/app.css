@@ -46,6 +46,24 @@
   z-index: 1;
 }
 
+@-webkit-keyframes movimiento-background {
+  to {
+    background-position: bottom left;
+  }
+  from {
+    background-position: top right;
+  }
+}
+
+@keyframes movimiento-background {
+  to {
+    background-position: bottom left;
+  }
+  from {
+    background-position: top right;
+  }
+}
+
 @-webkit-keyframes img-opacity {
   13% {
     opacity: 0;
@@ -61,11 +79,6 @@
   }
 }
 
-@keyframes movimiento-background {
-  to {
-    background-position: bottom left; }
-  from {
-    background-position: top right; } }
 @keyframes img-opacity {
   13% {
     opacity: 0;
@@ -203,26 +216,46 @@
 
 #inicio {
   width: 100%;
-  height: auto; }
-  #inicio .carousel {
-    height: auto;
-    position: inherit; }
-  #inicio .img-carousel-inicio {
-    width: 100%;
-    height: 85vh;
-    background-size: 110%;
-    background-repeat: no-repeat;
-    animation: movimiento-background 20s infinite linear alternate; }
-  #inicio .carousel-container {
-    height: auto;
-    position: relative;
-    display: inline-block; }
-    #inicio .carousel-container #item-carousel-uno {
-      background-image: url("../assets/images/Renders-inico/Inicio1.jpg"); }
-    #inicio .carousel-container #item-carousel-dos {
-      background-image: url("../assets/images/Renders-inico/Inicio2.jpg"); }
-    #inicio .carousel-container #item-carousel-tres {
-      background-image: url("../assets/images/Renders-inico/Inicio3.jpg"); }
+  height: auto;
+}
+
+#inicio .carousel {
+  height: auto;
+  position: inherit;
+}
+
+#inicio .img-carousel-inicio {
+  width: 100%;
+  height: 85vh;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  -webkit-animation: movimiento-background 20s infinite linear alternate;
+          animation: movimiento-background 20s infinite linear alternate;
+}
+
+#inicio .carousel-container {
+  height: auto;
+  position: relative;
+  display: inline-block;
+}
+
+#inicio .carousel-container #item-carousel-uno {
+  background-image: url("../assets/images/Renders-inico/Inicio1.jpg");
+}
+
+#inicio .carousel-container #item-carousel-dos {
+  background-image: url("../assets/images/Renders-inico/Inicio2.jpg");
+}
+
+#inicio .carousel-container #item-carousel-tres {
+  background-image: url("../assets/images/Renders-inico/Inicio3.jpg");
+}
+
+#inicio .logo-container {
+  display: none;
+}
+
+@media (min-width: 992px) {
   #inicio .logo-container {
     display: inline-block;
   }
@@ -270,7 +303,7 @@
     -webkit-transform: scaleY(0.7);
             transform: scaleY(0.7);
   }
-
+}
 
 .slogan__contenedor {
   padding: 40px 0px;
@@ -379,18 +412,6 @@
     height: 375px;
   }
 }
-
-@media (min-width: 990px) {
-  #proyectos .button-img-proyectos {
-    width: 375px;
-    height: 375px;
-    object-fit: cover; }
-  @media (min-width: 576px) {
-    #proyectos .nav-proyectos ul {
-      flex-direction: row; }
-    #proyectos .button-img-proyectos {
-      width: 375px;
-      height: 375px; } }
 
 .carousel {
   display: block;
@@ -1148,6 +1169,5 @@
     -webkit-transform: scaleY(0.8);
             transform: scaleY(0.8);
   }
-}
 }
 /*# sourceMappingURL=app.css.map */
