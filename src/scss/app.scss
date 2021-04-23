@@ -143,11 +143,12 @@ $color-gris: #9B9B9B;
   height: auto;
 
   .carousel {
+    width: 100%;
     height: auto;
     position: inherit;
   }
   .contenedor-inicio-carousel{
-    height: 100vh;
+    height: 60vh;
   }
   .img-carousel-inicio{
     position: fixed;
@@ -160,7 +161,6 @@ $color-gris: #9B9B9B;
 
   .carousel-container {
     height: auto;
-    
     display: inline-block;
     
 
@@ -183,6 +183,8 @@ $color-gris: #9B9B9B;
   @media (min-width: 992px) {
     .img-carousel-inicio{
       animation:movimiento-background 20s infinite linear alternate;
+    }  .contenedor-inicio-carousel{
+      height: 60vh;
     }
 
     .logo-container {
@@ -557,7 +559,9 @@ $color-gris: #9B9B9B;
 // INICIO 
 
 #inicio{
-
+  .contenedor-inicio-carousel{
+    height: 100vh;
+  }
 
   // SLOGAN 
     .slogan__contenedor {
@@ -635,7 +639,6 @@ $color-gris: #9B9B9B;
     // ANIMACION CAROUSEL 
     
     .img-carousel-inicio{
-      height: 50vh;
       background-size: 100%;
       animation:movimiento-background 20s infinite linear alternate;
     }
