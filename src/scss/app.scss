@@ -151,7 +151,6 @@ $color-gris: #9B9B9B;
     height: 85vh;
     background-size: 110%;
     background-repeat: no-repeat;
-    animation:movimiento-background 20s infinite linear alternate;
   }
   //EFECTO INICIO
 
@@ -176,6 +175,9 @@ $color-gris: #9B9B9B;
   }
 
   @media (min-width: 992px) {
+    .img-carousel-inicio{
+      animation:movimiento-background 20s infinite linear alternate;
+    }
 
     .logo-container {
       display: inline-block;
