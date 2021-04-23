@@ -19,7 +19,7 @@ const Inicio = () => {
               prevIcon={false}
               indicators={false}
             >
-              <Carousel.Item >
+              <Carousel.Item>
                 <div id="item-carousel-uno" className="d-block w-100 img-carousel-inicio"/>
               </Carousel.Item>
               <Carousel.Item>

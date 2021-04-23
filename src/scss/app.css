@@ -91,15 +91,14 @@
   height: auto; }
   #inicio .carousel {
     width: 100%;
-    height: auto;
-    position: inherit; }
+    height: auto; }
   #inicio .contenedor-inicio-carousel {
     height: 60vh; }
   #inicio .img-carousel-inicio {
-    position: fixed;
     width: 100%;
-    height: 85vh;
-    background-size: 100%;
+    height: 60vh;
+    background-attachment: fixed;
+    background-size: cover;
     background-repeat: no-repeat; }
   #inicio .carousel-container {
     height: auto;
@@ -115,9 +114,8 @@
     height: 85vh; }
   @media (min-width: 992px) {
     #inicio .img-carousel-inicio {
+      height: 100vh;
       animation: movimiento-background 20s infinite linear alternate; }
-    #inicio .contenedor-inicio-carousel {
-      height: 60vh; }
     #inicio .logo-container {
       display: inline-block; }
     #inicio .img-logo img {
@@ -362,6 +360,8 @@
 
   #inicio .contenedor-inicio-carousel {
     height: 100vh; }
+  #inicio .img-carousel-inicio {
+    height: 70vh; }
   #inicio .slogan__contenedor {
     padding: 40px 0px;
     height: 30vh; }
@@ -393,7 +393,7 @@
     border-right: 1px solid; }
 
   #inicio .img-carousel-inicio {
-    background-size: 100%;
+    height: 100vh;
     animation: movimiento-background 20s infinite linear alternate; }
   #inicio .slogan__contenedor {
     padding: 40px 0px;
