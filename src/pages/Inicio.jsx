@@ -10,7 +10,7 @@ const Inicio = () => {
   return (
     <div id="inicio">
       <Container fluid className="p-0">
-        <Row className="m-0">
+        <Row className="contenedor-inicio-carousel m-0">
           <Col className="p-0 carousel-container">
             <Carousel
               bsPrefix="carousel"

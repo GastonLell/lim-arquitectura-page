@@ -63,11 +63,11 @@ $color-gris: #9B9B9B;
 
 // KEYFRAMES INICIO 
 @keyframes movimiento-background{
-  to{
-    background-position: bottom left;
-  }
   from{
     background-position: top right;
+  }
+  to{
+    background-position: bottom left;
   }
 }
 @keyframes img-opacity {
@@ -146,19 +146,23 @@ $color-gris: #9B9B9B;
     height: auto;
     position: inherit;
   }
+  .contenedor-inicio-carousel{
+    height: 100vh;
+  }
   .img-carousel-inicio{
+    position: fixed;
     width: 100%;
     height: 85vh;
-    background-size: 110%;
+    background-size: 100%;
     background-repeat: no-repeat;
-    animation:movimiento-background 20s infinite linear alternate;
   }
   //EFECTO INICIO
 
   .carousel-container {
     height: auto;
-    position: relative;
+    
     display: inline-block;
+    
 
     #item-carousel-uno{
       background-image: url("../assets/images/Renders-inico/Inicio1.jpg");
@@ -173,6 +177,7 @@ $color-gris: #9B9B9B;
 
   .logo-container {
     display: none;
+    height: 85vh;
   }
 
   @media (min-width: 992px) {
@@ -193,6 +198,8 @@ $color-gris: #9B9B9B;
         transition: all 0s linear;
       }
     }
+
+    
 
     .inicio__animacion{
       img{
@@ -615,6 +622,14 @@ $color-gris: #9B9B9B;
 // SLOGAN 
 
 #inicio{
+
+    // ANIMACION CAROUSEL 
+    
+    .img-carousel-inicio{
+      height: 50vh;
+      background-size: 100%;
+      animation:movimiento-background 20s infinite linear alternate;
+    }
 
   .slogan__contenedor {
     padding: 40px 0px;
