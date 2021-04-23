@@ -1,8 +1,10 @@
 import { useEffect, useState, useContext } from "react";
 import { StoreProyectos } from "../store/ProyectosContext";
 
-import ContenedorRenders from "./ContenedorRenders";
-import ContenedorRealidad from "./ContenedorRealidad";
+import ItemListRenders from "./ItemListRenders";
+import ItemListVideos from "./ItemListVideos";
+import ItemListRealidad from "./ItemListRealidad";
+
 import Loading from "./Loading";
 import MyVerticallyCenteredModal from "./MyVerticallyCenteredModal";
 // componentes bootstrap
@@ -31,8 +33,9 @@ const ContenedorProyectos = ({ modalShow, setModalShow, categoria }) => {
     <Container fluid className="contenedor-proyectos">
       {!!items ? (
         <>
-          <ContenedorRenders itemId={itemId} openModal={openModal} modalShow={modalShow} setModalShow={setModalShow} items={items} />
-          <ContenedorRealidad itemId={itemId} openModal={openModal} modalShow={modalShow} setModalShow={setModalShow} items={items}/>
+          <ItemListRenders itemId={itemId} openModal={openModal} modalShow={modalShow} setModalShow={setModalShow} items={items} />
+          <ItemListVideos itemId={itemId} openModal={openModal} modalShow={modalShow} setModalShow={setModalShow} items={items}/>
+          <ItemListRealidad itemId={itemId} openModal={openModal} modalShow={modalShow} setModalShow={setModalShow} items={items} />
         </>
       ) : (
         <Loading />
