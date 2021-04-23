@@ -32,7 +32,7 @@ const CarouselProyectos = ({itemId, items }) => {
               } else if (item.data.categoria == "realidad"){
                 return(
                   <Carousel.Item key={item.id}>
-                    <iframe className="img-carousel-realidad" frameborder="0" src="https://momento360.com/e/u/412757d846074cd6ae3ae72e603693c4?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium"></iframe>
+                    <iframe className="img-carousel-realidad" frameborder="0" src={item.data.srcImagen} ></iframe>
                   </Carousel.Item>
                 )
               }

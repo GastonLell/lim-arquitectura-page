@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button, Row, Col } from "react-bootstrap";
 
-
 const ItemListRealidad = ({ items, openModal }) => {
-
   const [proyectosRealidad, setProyectosRealidad] = useState([]);
 
   const obtenerRealidad = () => {
@@ -25,12 +23,12 @@ const ItemListRealidad = ({ items, openModal }) => {
               <Button
                 variant="outline-ligth"
                 onClick={() => openModal(item.id)}
-              >Realidad
-               {/*  <img
+              >
+                <img
                   className="button-img-proyectos"
-                  src={item.data.srcImagen}
+                  src={item.data.srcImagenPortada}
                   alt={item.data.nombre}
-                /> */}
+                />
               </Button>
             </Col>
           );
