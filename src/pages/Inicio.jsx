@@ -1,7 +1,7 @@
 import { Container, Row, Col, Carousel } from "react-bootstrap";
 
 import ImgLogo from "../assets/images/limArquitectura-negro.svg";
-import ImgSimbolo from "../assets/images/Simbolo-alto.svg";
+import ImgSimbolo from "../assets/images/simbolo.svg";
 
 // componentes
 import Slogan from "../components/Slogan";
