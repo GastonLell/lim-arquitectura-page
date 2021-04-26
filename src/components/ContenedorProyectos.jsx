@@ -22,12 +22,27 @@ const ContenedorProyectos = ({ modalShow, setModalShow, categoria }) => {
 
   const obtenerProyectos = () => {
     let arrayItems = proyectos;
-    setItems(arrayItems);
+
+    if(categoria === "todos"){
+      setItems(arrayItems);
+    }
+    if(categoria === "renders"){
+      let arrFilt = arrayItems.filter(item => item.data.categoria === "renders")
+      setItems(arrFilt);
+    }
+    if(categoria === "videos"){
+      let arrFilt = arrayItems.filter(item => item.data.categoria === "videos")
+      setItems(arrFilt);
+    }
+    if(categoria === "realidad"){
+      let arrFilt = arrayItems.filter(item => item.data.categoria === "realidad")
+      setItems(arrFilt);
+    }
   };
 
   useEffect(() => {
     obtenerProyectos();
-  }, [proyectos]);
+  }, [proyectos, categoria]);
 
   return (
     <Container fluid className="contenedor-proyectos">

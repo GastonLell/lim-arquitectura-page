@@ -62,13 +62,21 @@ $color-gris: #9B9B9B;
 // INICIO
 
 // KEYFRAMES INICIO 
-@keyframes movimiento-background {
-  from {
+@keyframes movimiento-background-uno {
+  0% {
+    background-position: bottom left;
+  }
+  100% {
     background-position: top right;
   }
+}
+@keyframes movimiento-background-dos {
+  0% {
+    background-size: 90%;
 
-  to {
-    background-position: bottom left;
+  }
+  100% {
+    background-size: 120%;
   }
 }
 
@@ -167,7 +175,6 @@ $color-gris: #9B9B9B;
     width: 100%;
     height: 60vh;
     background-attachment: fixed;
-    background-size: cover;
     background-repeat: no-repeat;
   }
 
@@ -180,6 +187,8 @@ $color-gris: #9B9B9B;
 
     #item-carousel-uno {
       background-image: url("../assets/images/Renders-inico/Inicio1.jpg");
+    background-size: 110%;
+
     }
 
     #item-carousel-dos {
@@ -188,6 +197,8 @@ $color-gris: #9B9B9B;
 
     #item-carousel-tres {
       background-image: url("../assets/images/Renders-inico/Inicio3.jpg");
+    background-size: 110%;
+
     }
   }
 
@@ -200,7 +211,17 @@ $color-gris: #9B9B9B;
 
     .img-carousel-inicio {
       height: 100vh;
-      animation: movimiento-background 20s infinite linear alternate;
+    }
+    #item-carousel-uno {
+      animation: movimiento-background-uno 10s linear;
+    }
+
+    #item-carousel-dos {
+      animation: movimiento-background-dos 10s linear;
+    }
+
+    #item-carousel-tres {
+      animation: movimiento-background-uno 10s linear;
     }
 
     .logo-container {
@@ -261,8 +282,7 @@ $color-gris: #9B9B9B;
   align-items: center;
 
   .sloganLato {
-    // font-size: 1.4rem;
-    // line-height: 30px;
+
     font-family: 'Lato', sans-serif;
     font-weight: 700;
   }
@@ -686,7 +706,7 @@ $color-gris: #9B9B9B;
 
     .img-carousel-inicio {
       height: 100vh;
-      animation: movimiento-background 20s infinite linear alternate;
+      animation: movimiento-background-uno 20s linear;
     }
 
     .logo-container {
