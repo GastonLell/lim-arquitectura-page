@@ -18,6 +18,7 @@ const Inicio = () => {
               nextIcon={false}
               prevIcon={false}
               indicators={false}
+              interval={4000}
             >
               <Carousel.Item>
                 <div id="item-carousel-uno" className="d-block w-100 img-carousel-inicio"/>
