@@ -1,6 +1,4 @@
 import { Carousel } from "react-bootstrap";
-// import PhotoPano from "./ImagenPano";
-// import srcPano from "../assets/images/p360.jpg";
 
 const CarouselProyectos = ({itemId, items }) => {
   
