@@ -38,7 +38,7 @@
     background-position: top right; } }
 @keyframes movimiento-background-dos {
   0% {
-    background-size: 90%; }
+    background-size: 100%; }
   100% {
     background-size: 120%; } }
 @keyframes img-opacity {
