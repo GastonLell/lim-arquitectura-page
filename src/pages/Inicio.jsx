@@ -44,11 +44,6 @@ const Inicio = () => {
             </div>
           </Col>
         </Row>
-        <Row className="m-0" bsPrefix="row-slogan">
-          <Col className="p-0">
-            <Slogan />
-          </Col>
-        </Row>
       </Container>
     </div>
   );

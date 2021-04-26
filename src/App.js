@@ -7,6 +7,8 @@ import {Container, Row, Col} from "react-bootstrap";
 // vistas secciones
 import Inicio from "./pages/Inicio";
 import Menu from "./components/Menu";
+import Slogan from "./components/Slogan";
+
 import Nosotros from "./pages/Nosotros";
 import Servicios from "./pages/Servicios";
 import Proyectos from "./pages/Proyectos";
@@ -25,6 +27,11 @@ function App() {
           </Col>
         </Row>
         <Inicio/>
+        <Row className="m-0" bsPrefix="row-slogan">
+          <Col className="p-0">
+            <Slogan />
+          </Col>
+        </Row>
         <Nosotros/>
         <ProyectosContext>
           <Proyectos/>
