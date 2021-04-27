@@ -3,7 +3,9 @@ $color-uno: rgb(247, 241, 241);
 $color-gris: #9B9B9B;
 
 /* GENERALES */
-
+html{
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
