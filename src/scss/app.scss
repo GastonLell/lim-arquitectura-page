@@ -287,10 +287,6 @@ p,a {
 #nosotros {
   padding: 30px 0px;
 
-  p {
-    font-size: 1rem;
-  }
-
   .nosotros__foto--tamanio {
     width: 90%;
     justify-content: center;
@@ -299,7 +295,6 @@ p,a {
 
   .nosotrosText {
     color:  #9B9B9B;
-    font-size: 1.3rem;
     padding: 15px;
   }
 
@@ -726,11 +721,10 @@ p,a {
     }
 
     .nosotrosText {
-      font-size: 1.3rem;
-      line-height: 35px;
+      font-size: 1.1rem;
       padding-top: 0px;
-      padding-right: 130px;
-      padding-left: 15px;
+      padding-right: 70px;
+      padding-left: 70px;
     }
   }
 
@@ -803,9 +797,10 @@ p,a {
     }
 
     .nosotrosText {
-      font-size: 1.2rem;
-      line-height: 27px;
+      line-height: 28px;
       padding-bottom: 0px;
+      padding-right: 130px;
+      padding-left: 15px;
     }
 
   }
@@ -965,9 +960,10 @@ p,a {
     }
 
     .nosotrosText {
-      font-size: 1.3rem;
-      line-height: 35px;
-      padding-top: 0px;
+      font-size: 1.2rem;
+      line-height: 30px;
+      padding-top: 30px;
+      padding-bottom: 30px;
       padding-right: 130px;
       padding-left: 15px;
     }

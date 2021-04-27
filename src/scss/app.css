@@ -173,15 +173,12 @@ p, a {
 
 #nosotros {
   padding: 30px 0px; }
-  #nosotros p {
-    font-size: 1rem; }
   #nosotros .nosotros__foto--tamanio {
     width: 90%;
     justify-content: center;
     border-radius: 2px; }
   #nosotros .nosotrosText {
     color: #9B9B9B;
-    font-size: 1.3rem;
     padding: 15px; }
 
 #proyectos {
@@ -427,11 +424,10 @@ p, a {
   #nosotros .nosotros__foto--tamanio {
     width: 75%; }
   #nosotros .nosotrosText {
-    font-size: 1.3rem;
-    line-height: 35px;
+    font-size: 1.1rem;
     padding-top: 0px;
-    padding-right: 130px;
-    padding-left: 15px; }
+    padding-right: 70px;
+    padding-left: 70px; }
 
   #contacto {
     padding: 100px 0; }
@@ -464,9 +460,10 @@ p, a {
   #nosotros .nosotros__foto--tamanio {
     width: 100%; }
   #nosotros .nosotrosText {
-    font-size: 1.2rem;
-    line-height: 27px;
-    padding-bottom: 0px; }
+    line-height: 28px;
+    padding-bottom: 0px;
+    padding-right: 130px;
+    padding-left: 15px; }
 
   #footer {
     padding-left: 100px;
@@ -557,9 +554,10 @@ p, a {
   #nosotros .nosotros__foto--tamanio {
     height: 500px; }
   #nosotros .nosotrosText {
-    font-size: 1.3rem;
-    line-height: 35px;
-    padding-top: 0px;
+    font-size: 1.2rem;
+    line-height: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-right: 130px;
     padding-left: 15px; } }
 @media (min-width: 1400px) {
