@@ -6,24 +6,22 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
-  * h2.subtitulo {
-    font-size: 28px;
-    margin-bottom: 35px;
-    padding: 15px; }
-    * h2.subtitulo span {
-      border-bottom: 5px solid; }
-  * h1,
-  * h2,
-  * h3,
-  * h4,
-  * h5,
-  * h6 {
-    font-family: 'Josefin Sans', sans-serif; }
-  * p,
-  * a {
-    font-family: 'Lato', sans-serif; }
-  * .columnaBorderTop {
-    border-top: 5px solid; }
+
+h2.subtitulo {
+  font-size: 28px;
+  margin-bottom: 35px;
+  padding: 15px; }
+  h2.subtitulo span {
+    border-bottom: 5px solid; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Josefin Sans', sans-serif; }
+
+p, a {
+  font-family: 'Lato', sans-serif; }
+
+.columnaBorderTop {
+  border-top: 5px solid; }
 
 #menu .miLogo {
   width: 125px; }
