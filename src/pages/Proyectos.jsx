@@ -6,7 +6,7 @@ import Container from "react-bootstrap/Container";
 const Proyectos = () => {
   const [modalShow, setModalShow] = useState(false);
 
-  const [categoria, setCategoria] = useState("todos");
+  const [categoria, setCategoria] = useState("renders");
 
   const cambiarCategoria = (e) => {
     setCategoria(e.target.attributes.value.nodeValue);

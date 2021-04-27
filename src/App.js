@@ -33,9 +33,9 @@ function App() {
           </Col>
         </Row>
         <Nosotros/>
-        <ProyectosContext>
+        {/* <ProyectosContext>
           <Proyectos/>
-        </ProyectosContext>
+        </ProyectosContext> */}
         <Servicios/>
         <Contacto/>
         <Footer/>

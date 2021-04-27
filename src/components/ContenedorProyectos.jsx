@@ -23,9 +23,6 @@ const ContenedorProyectos = ({ modalShow, setModalShow, categoria }) => {
   const obtenerProyectos = () => {
     let arrayItems = proyectos;
 
-    if(categoria === "todos"){
-      setItems(arrayItems);
-    }
     if(categoria === "renders"){
       let arrFilt = arrayItems.filter(item => item.data.categoria === "renders")
       setItems(arrFilt);

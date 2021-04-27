@@ -1,30 +1,39 @@
 /* GENERALES */
-html{
+html {
   scroll-behavior: smooth;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 // SUBTITULOS
 h2.subtitulo {
-   font-size: 28px;
-   margin-bottom: 35px;
-   padding: 15px;
-   span {
-     border-bottom: 5px solid;
-     // padding: 5px;
-   }
- }
+  font-size: 28px;
+  margin-bottom: 35px;
+  padding: 15px;
 
-h1,h2,h3,h4,h5,h6 {
+  span {
+    border-bottom: 5px solid;
+    // padding: 5px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Josefin Sans', sans-serif;
 }
 
 // TIPOGRAFIAS
 
-p,a {
+p,
+a {
   font-family: 'Lato', sans-serif;
 }
 
@@ -57,16 +66,19 @@ p,a {
 
 @keyframes movimiento-background-uno {
   0% {
-    background-position: bottom left;
+    background-position: center left;
   }
+
   100% {
     background-position: top right;
   }
 }
+
 @keyframes movimiento-background-dos {
   0% {
     background-size: 100%;
   }
+
   100% {
     background-size: 120%;
   }
@@ -171,6 +183,7 @@ p,a {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: scale-down !important;
   }
 
   //aplicando efecto de movimiento de imagenes
@@ -182,18 +195,18 @@ p,a {
 
     #item-carousel-uno {
       background-image: url("../assets/images/Renders-inico/Inicio1.jpg");
-      background-size: 110%;
+      background-size: 140%;
     }
 
     #item-carousel-dos {
       background-image: url("../assets/images/Renders-inico/Inicio2.jpg");
       background-position: center;
-      background-size: 100%;
+      background-size: 140%;
     }
 
     #item-carousel-tres {
       background-image: url("../assets/images/Renders-inico/Inicio3.jpg");
-      background-size: 110%;
+      background-size: 140%;
     }
   }
 
@@ -201,7 +214,7 @@ p,a {
     display: none;
     height: 85vh;
   }
-  
+
 }
 
 // SLOGAN 
@@ -236,7 +249,7 @@ p,a {
   }
 
   .nosotrosText {
-    color:  #9B9B9B;
+    color: #9B9B9B;
     padding: 15px;
   }
 
@@ -258,7 +271,7 @@ p,a {
     outline: none;
     background-color: transparent;
     font-size: 20px;
-    color:  #9B9B9B;
+    color: #9B9B9B;
     margin-right: 20px;
     padding-left: 15px;
   }
@@ -326,6 +339,7 @@ p,a {
   }
 
 }
+
 // VER SI SE ESTA APLICANDO (SI LA ESTAMOS USANDO)
 /* 
 .carousel .imgSlider {
@@ -524,18 +538,35 @@ p,a {
     }
   }
 
-
   // INICIO 
 
   #inicio {
     .contenedor-inicio-carousel {
-      height: 100vh;
+      height: 80vh;
     }
 
     .img-carousel-inicio {
-      height: 70vh;
+      height: 80vh;
     }
 
+    .carousel-container {
+
+      #item-carousel-uno {
+        background-size: 130%;
+        animation: movimiento-background-uno 20s linear;
+      }
+
+      #item-carousel-dos {
+        background-size: 130%;
+        animation: movimiento-background-dos 10s linear;
+      }
+
+      #item-carousel-tres {
+        background-size: 130%;
+        animation: movimiento-background-uno 20s linear;
+
+      }
+    }
   }
 
   // SLOGAN 
@@ -547,6 +578,7 @@ p,a {
       font-size: 1.1rem;
       line-height: 32px;
     }
+
     p {
       margin-bottom: 0px;
     }
@@ -625,10 +657,27 @@ p,a {
       height: auto;
       max-height: 100vh;
     }
-
+    .contenedor-inicio-carousel {
+      height: 100vh;
+    }
     .img-carousel-inicio {
       height: 100vh;
-      animation: movimiento-background-uno 20s linear;
+    }
+
+    .carousel-container {
+
+      #item-carousel-uno {
+        background-size: 110%;
+      }
+
+      #item-carousel-dos {
+        background-size: 110%;
+      }
+
+      #item-carousel-tres {
+        background-size: 110%;
+
+      }
     }
 
     .logo-container {
@@ -724,22 +773,20 @@ p,a {
 @media (min-width: 992px) {
 
   //INICIO
-  #inicio{
+  #inicio {
 
-    .img-carousel-inicio {
-      height: 100vh;
-    }
+    .carousel-container {
+      #item-carousel-uno {
+        background-size: 100%;
+      }
 
-    #item-carousel-uno {
-      animation: movimiento-background-uno 10s linear;
-    }
+      #item-carousel-dos {
+        animation: movimiento-background-dos 10s linear;
+      }
 
-    #item-carousel-dos {
-      animation: movimiento-background-dos 10s linear;
-    }
-
-    #item-carousel-tres {
-      animation: movimiento-background-uno 10s linear;
+      #item-carousel-tres {
+        background-size: 100%;
+      }
     }
 
     .logo-container {
@@ -786,7 +833,7 @@ p,a {
         transform: scaleY(0.7);
       }
     }
-  
+
   }
 
   // NOSOTROS
@@ -901,6 +948,20 @@ p,a {
   }
 
   #inicio {
+
+    .carousel-container {
+      #item-carousel-uno {
+        background-size: 100%;
+      }
+
+      #item-carousel-dos {
+        background-size: 110%;
+      }
+
+      #item-carousel-tres {
+        background-size: 100%;
+      }
+    }
 
     .logo-container {
       display: inline-block;

@@ -14,10 +14,16 @@ h2.subtitulo {
   h2.subtitulo span {
     border-bottom: 5px solid; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Josefin Sans', sans-serif; }
 
-p, a {
+p,
+a {
   font-family: 'Lato', sans-serif; }
 
 .columnaBorderTop {
@@ -34,7 +40,7 @@ p, a {
 
 @keyframes movimiento-background-uno {
   0% {
-    background-position: bottom left; }
+    background-position: center left; }
   100% {
     background-position: top right; } }
 @keyframes movimiento-background-dos {
@@ -105,20 +111,21 @@ p, a {
     height: 60vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center; }
+    background-position: center;
+    background-size: scale-down !important; }
   #inicio .carousel-container {
     height: auto;
     display: inline-block; }
     #inicio .carousel-container #item-carousel-uno {
       background-image: url("../assets/images/Renders-inico/Inicio1.jpg");
-      background-size: 110%; }
+      background-size: 140%; }
     #inicio .carousel-container #item-carousel-dos {
       background-image: url("../assets/images/Renders-inico/Inicio2.jpg");
       background-position: center;
-      background-size: 100%; }
+      background-size: 140%; }
     #inicio .carousel-container #item-carousel-tres {
       background-image: url("../assets/images/Renders-inico/Inicio3.jpg");
-      background-size: 110%; }
+      background-size: 140%; }
   #inicio .logo-container {
     display: none;
     height: 85vh; }
@@ -323,9 +330,18 @@ p, a {
       border-bottom: 5px solid; }
 
   #inicio .contenedor-inicio-carousel {
-    height: 100vh; }
+    height: 80vh; }
   #inicio .img-carousel-inicio {
-    height: 70vh; }
+    height: 80vh; }
+  #inicio .carousel-container #item-carousel-uno {
+    background-size: 130%;
+    animation: movimiento-background-uno 20s linear; }
+  #inicio .carousel-container #item-carousel-dos {
+    background-size: 130%;
+    animation: movimiento-background-dos 10s linear; }
+  #inicio .carousel-container #item-carousel-tres {
+    background-size: 130%;
+    animation: movimiento-background-uno 20s linear; }
 
   .slogan__contenedor {
     padding: 40px 0px;
@@ -372,9 +388,16 @@ p, a {
     width: 100vw;
     height: auto;
     max-height: 100vh; }
+  #inicio .contenedor-inicio-carousel {
+    height: 100vh; }
   #inicio .img-carousel-inicio {
-    height: 100vh;
-    animation: movimiento-background-uno 20s linear; }
+    height: 100vh; }
+  #inicio .carousel-container #item-carousel-uno {
+    background-size: 110%; }
+  #inicio .carousel-container #item-carousel-dos {
+    background-size: 110%; }
+  #inicio .carousel-container #item-carousel-tres {
+    background-size: 110%; }
   #inicio .logo-container {
     width: 90vw;
     position: relative; }
@@ -422,14 +445,12 @@ p, a {
     #footer p {
       padding: 0px 10px; } }
 @media (min-width: 992px) {
-  #inicio .img-carousel-inicio {
-    height: 100vh; }
-  #inicio #item-carousel-uno {
-    animation: movimiento-background-uno 10s linear; }
-  #inicio #item-carousel-dos {
+  #inicio .carousel-container #item-carousel-uno {
+    background-size: 100%; }
+  #inicio .carousel-container #item-carousel-dos {
     animation: movimiento-background-dos 10s linear; }
-  #inicio #item-carousel-tres {
-    animation: movimiento-background-uno 10s linear; }
+  #inicio .carousel-container #item-carousel-tres {
+    background-size: 100%; }
   #inicio .logo-container {
     display: inline-block; }
   #inicio .img-logo img {
@@ -524,6 +545,12 @@ p, a {
       top: 80%;
       left: 3%;
       transform: scaleY(0.8); } }
+  #inicio .carousel-container #item-carousel-uno {
+    background-size: 100%; }
+  #inicio .carousel-container #item-carousel-dos {
+    background-size: 110%; }
+  #inicio .carousel-container #item-carousel-tres {
+    background-size: 100%; }
   #inicio .logo-container {
     display: inline-block; }
   #inicio .img-logo img {
