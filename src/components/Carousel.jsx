@@ -9,7 +9,11 @@ const CarouselProyectos = ({itemId, items }) => {
 
   if (items) {
     return (
-      <Carousel className="w-100" defaultActiveIndex={() => obtenerIndice(itemId)} indicators={false}>
+      <Carousel className="w-100"
+      defaultActiveIndex={() => obtenerIndice(itemId)}
+      indicators={false}
+      interval={null}
+      >
         {
           items.map((item) => {
             
@@ -22,7 +26,7 @@ const CarouselProyectos = ({itemId, items }) => {
               } else if (item.data.categoria == "videos") { 
                 return (
                   <Carousel.Item key={item.id} >
-                    <video className="video-carousel-proyecto" controls >
+                    <video className="video-carousel-proyecto" controls autoPlay>
                       <source src={item.data.srcImagen} type="video/mp4" />
                     </video>   
                   </Carousel.Item>
@@ -42,25 +46,3 @@ const CarouselProyectos = ({itemId, items }) => {
 };
 
 export default CarouselProyectos;
-
-/* 
-{
-  item.categoria !== "realidad" ? (
-  item?.srcImagen.map((item, index) => {
-  return (
-    <Carousel.Item key={index}>
-      <img className="d-block w-100 img-carousel-proyectos" src={item} />
-    </Carousel.Item>
-  );
-})) : (
-  item?.srcImagen.map((item, index) => {
-    return(
-    <Carousel.Item key={index}>
-      <video className="video-carousel-proyecto" controls >
-        <source src={item} type="video/mp4" />
-      </video>
-    </Carousel.Item>
-    )})
-)
-
-} */

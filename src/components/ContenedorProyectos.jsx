@@ -22,18 +22,19 @@ const ContenedorProyectos = ({ modalShow, setModalShow, categoria }) => {
 
   const obtenerProyectos = () => {
     let arrayItems = proyectos;
-
-    if(categoria === "renders"){
-      let arrFilt = arrayItems.filter(item => item.data.categoria === "renders")
-      setItems(arrFilt);
-    }
-    if(categoria === "videos"){
-      let arrFilt = arrayItems.filter(item => item.data.categoria === "videos")
-      setItems(arrFilt);
-    }
-    if(categoria === "realidad"){
-      let arrFilt = arrayItems.filter(item => item.data.categoria === "realidad")
-      setItems(arrFilt);
+    if(arrayItems){
+      if(categoria === "renders"){
+        let arrFilt = arrayItems.filter(item => item.data.categoria === "renders")
+        setItems(arrFilt);
+      }
+      if(categoria === "videos"){
+        let arrFilt = arrayItems.filter(item => item.data.categoria === "videos")
+        setItems(arrFilt);
+      }
+      if(categoria === "realidad"){
+        let arrFilt = arrayItems.filter(item => item.data.categoria === "realidad")
+        setItems(arrFilt);
+      }
     }
   };
 
