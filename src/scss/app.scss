@@ -510,16 +510,17 @@ a {
 
 #footer {
   background-color: #282c2d;
-  padding: 15px;
+  padding: 20px;
 
   p {
     color: white;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     text-align: center;
+    font-size: 0.79rem;
   }
 
   .footer__logo {
-    width: 80px;
+    width: 50px;
   }
 
   .footer__textoVectores {
@@ -537,8 +538,9 @@ a {
     margin-top: 1px;
     width: 30px;
     height: 30px;
-    border-radius: 50px;
+    border-radius: 20px;
     background-color: white;
+    padding: 0.18rem;
   }
 }
 
@@ -754,6 +756,8 @@ a {
 
     p {
       padding: 0px 10px;
+      margin-bottom: 0px;
+      font-size: 1rem;
     }
   }
 
@@ -844,8 +848,8 @@ a {
   // FOOTER 
 
   #footer {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 
 
