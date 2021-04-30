@@ -640,11 +640,11 @@ a {
     border-bottom: 5px solid;
   }
   #inicio .contenedor-inicio-carousel {
-    height: 25vh;
+    height: 50vh;
   }
   #inicio .img-carousel-inicio {
     width: 100%;
-    height: 25vh;
+    height: 50vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: scale-down !important;
@@ -702,19 +702,19 @@ a {
     border-right: 1px solid;
   }
   #inicio {
-    height: 40vh;
+    height: 60vh;
   }
   #inicio .carousel {
     position: absolute;
     width: 100vw;
     height: auto;
-    max-height: 40vh;
+    max-height: 60vh;
   }
   #inicio .contenedor-inicio-carousel {
-    height: 40vh;
+    height: 60vh;
   }
   #inicio .img-carousel-inicio {
-    height: 40vh;
+    height: 60vh;
   }
   #inicio .logo-container {
     width: 90vw;

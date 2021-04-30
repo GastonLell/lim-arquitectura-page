@@ -563,12 +563,12 @@ a {
 
   #inicio {
     .contenedor-inicio-carousel {
-      height: 25vh;
+      height: 50vh;
     }
 
     .img-carousel-inicio {
       width: 100%;
-      height: 25vh;
+      height: 50vh;
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-size: scale-down !important;
@@ -656,19 +656,19 @@ a {
 
   // INICIO
   #inicio {
-    height: 40vh;
+    height: 60vh;
     // ANIMACION CAROUSEL 
     .carousel {
       position: absolute;
       width: 100vw;
       height: auto;
-      max-height: 40vh;
+      max-height: 60vh;
     }
     .contenedor-inicio-carousel {
-      height: 40vh;
+      height: 60vh;
     }
     .img-carousel-inicio {
-      height: 40vh;
+      height: 60vh;
     }
 
     .logo-container {
