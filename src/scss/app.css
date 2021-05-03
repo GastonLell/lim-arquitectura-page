@@ -277,41 +277,9 @@ a {
   height: 85vh;
 }
 
-/* @media (max-width: 275.98px) {
-  #inicio{
-    height: 160px;
-  }
-}
-@media (min-width: 276.99px) and (max-width: 375.98px) {
-  #inicio{
-    height: 200px;
-    .img-carousel-inicio {
-      height: 30vh;
-    }
-  }
-}
-@media (min-width: 375.99px) and (max-width: 475.98px) {
-  #inicio{
-    height: 220px;
-    .img-carousel-inicio {
-      height: 30vh;
-    }
-  }
-}
-@media (min-width: 475.99px) and (max-width: 575.98px) {
-  #inicio{
-    height: 290px;
-    .img-carousel-inicio {
-      height: 40vh;
-    }
-  }
-}
-
- */
 .slogan__contenedor {
-  position: relative;
   padding: 40px 0px;
-  height: 25vh;
+  height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -636,10 +604,6 @@ a {
     background-repeat: no-repeat;
     background-size: scale-down !important;
   }
-  .slogan__contenedor {
-    padding: 40px 0px;
-    height: 30vh;
-  }
   .slogan__contenedor .sloganLato {
     font-size: 1.1rem;
     line-height: 32px;
@@ -716,8 +680,9 @@ a {
     position: relative;
   }
   .slogan__contenedor {
-    padding: 40px 0px;
-    height: 30vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .slogan__contenedor .sloganLato {
     font-size: 1.2rem;
@@ -769,9 +734,6 @@ a {
   }
   #inicio .img-carousel-inicio {
     height: 90vh;
-  }
-  .slogan__contenedor {
-    height: 30vh;
   }
   #nosotros .nosotros__foto--tamanio {
     width: 100%;
@@ -930,11 +892,8 @@ a {
     }
   }
   #inicio {
-    height: 100vh;
-    max-height: 100vh;
-  }
-  #inicio .img-carousel-inicio {
-    background-attachment: fixed;
+    height: 90vh;
+    max-height: 90vh;
   }
   #inicio .carousel-container {
     height: 100vh;

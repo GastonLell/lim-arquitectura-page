@@ -205,49 +205,11 @@ a {
 
 }
 
-
-// MEDIAS QUERIE DISPOSITIVOS MUY PEQUEÑOS CAROUSEL
-
-// X-Small devices (portrait phones, less than 576px)
-
-/* @media (max-width: 275.98px) {
-  #inicio{
-    height: 160px;
-  }
-}
-@media (min-width: 276.99px) and (max-width: 375.98px) {
-  #inicio{
-    height: 200px;
-    .img-carousel-inicio {
-      height: 30vh;
-    }
-  }
-}
-@media (min-width: 375.99px) and (max-width: 475.98px) {
-  #inicio{
-    height: 220px;
-    .img-carousel-inicio {
-      height: 30vh;
-    }
-  }
-}
-@media (min-width: 475.99px) and (max-width: 575.98px) {
-  #inicio{
-    height: 290px;
-    .img-carousel-inicio {
-      height: 40vh;
-    }
-  }
-}
-
- */
-
 // SLOGAN 
 
 .slogan__contenedor {
-  position: relative;
   padding: 40px 0px;
-  height: 25vh;
+  height: 30vh;
   display: flex;
   align-items: center;
 
@@ -568,8 +530,6 @@ a {
 
   // SLOGAN 
   .slogan__contenedor {
-    padding: 40px 0px;
-    height: 30vh;
 
     .sloganLato {
       font-size: 1.1rem;
@@ -682,9 +642,7 @@ a {
 
   // SLOGAN
   .slogan__contenedor {
-    padding: 40px 0px;
-    height: 30vh;
-    
+    align-items: center;
     .sloganLato {
       font-size: 1.2rem;
       line-height: 32px;
@@ -762,9 +720,6 @@ a {
     }
   }
 
-  .slogan__contenedor {
-    height: 30vh;
-  }
 
   // NOSOTROS
 
@@ -869,13 +824,12 @@ a {
   }
 
   #inicio {
-    height: 100vh;
-    max-height: 100vh;
-    .img-carousel-inicio {
-      background-attachment: fixed;
-    }
+    height: 90vh;
+    max-height: 90vh;
+
     .carousel-container {
       height: 100vh;
+
       #item-carousel-uno {
         background-size: 100%;
         animation: movimiento-background-uno 10s ease;
