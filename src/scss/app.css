@@ -590,46 +590,30 @@ a {
   padding: 20px;
 }
 
-#footer p {
+#footer .footer__texto p {
   color: white;
   margin-bottom: 5px;
   text-align: center;
-  font-size: 0.79rem;
+  font-size: 15px;
+}
+
+#footer .footer__redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer .footer__redes a {
+  color: #fff;
+  font-size: 25px;
+  margin: 0 10px;
 }
 
 #footer .footer__logo {
-  width: 50px;
-}
-
-#footer .footer__textoVectores {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#footer .footer__contenedorVectores {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#footer .footer__vector {
-  margin-top: 1px;
-  width: 30px;
-  height: 30px;
-  border-radius: 20px;
-  background-color: white;
-  padding: 0.18rem;
+  display: none;
 }
 
 @media (min-width: 576px) {
@@ -697,6 +681,18 @@ a {
   #contacto {
     padding: 100px 0px;
   }
+  #footer .footer__texto p {
+    text-align: end;
+  }
+  #footer .footer__redes {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #footer .footer__logo {
+    display: block;
+    width: 60px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -761,30 +757,6 @@ a {
   }
   #contacto form .btn {
     border-radius: 0 !important;
-  }
-  #footer {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  #footer .footer__textoVectores {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  #footer p {
-    padding: 0px 10px;
-    margin-bottom: 0px;
-    font-size: 1rem;
   }
 }
 
@@ -856,10 +828,6 @@ a {
     padding-bottom: 0px;
     padding-right: 130px;
     padding-left: 15px;
-  }
-  #footer {
-    padding-left: 70px;
-    padding-right: 70px;
   }
 }
 
