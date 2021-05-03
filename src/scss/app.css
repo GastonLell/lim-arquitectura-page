@@ -638,10 +638,10 @@ a {
 
 @media (min-width: 576px) and (min-width: 644.99px) and (max-width: 767.98px) {
   #inicio .contenedor-inicio-carousel {
-    height: 50vh;
+    height: 30vh;
   }
   #inicio .img-carousel-inicio {
-    height: 50vh;
+    height: 30vh;
   }
 }
 
@@ -711,7 +711,7 @@ a {
     border-right: 1px solid;
   }
   #inicio {
-    height: 60vh;
+    height: 40vh;
   }
   #inicio .carousel {
     position: absolute;
@@ -768,6 +768,18 @@ a {
 }
 
 @media (min-width: 992px) {
+  #inicio {
+    height: 40vh;
+  }
+  #inicio .carousel {
+    max-height: 90vh;
+  }
+  #inicio .contenedor-inicio-carousel {
+    height: 90vh;
+  }
+  #inicio .img-carousel-inicio {
+    height: 90vh;
+  }
   .slogan__contenedor {
     height: 30vh;
   }
