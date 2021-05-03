@@ -185,7 +185,6 @@ a {
     height: auto;
     display: inline-block;
 
-
     #item-carousel-uno {
       background-image: url("../assets/images/Renders-inico/Inicio1.jpg");
       background-size: 100%;
@@ -679,11 +678,8 @@ a {
       position: absolute;
       width: 100vw;
       height: auto;
-      // max-height: 60vh;
     }
-    // .contenedor-inicio-carousel {
-    //   height: 60vh;
-    // }
+
     .img-carousel-inicio {
       height: 60vh;
     }
@@ -699,7 +695,7 @@ a {
   .slogan__contenedor {
     padding: 40px 0px;
     height: 30vh;
-
+    
     .sloganLato {
       font-size: 1.2rem;
       line-height: 32px;
@@ -764,7 +760,7 @@ a {
   //INICIO
    #inicio {
 
-     height: 40vh;
+     height: 90vh;
 
     .carousel {
       max-height: 90vh;

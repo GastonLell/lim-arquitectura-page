@@ -769,7 +769,7 @@ a {
 
 @media (min-width: 992px) {
   #inicio {
-    height: 40vh;
+    height: 90vh;
   }
   #inicio .carousel {
     max-height: 90vh;
