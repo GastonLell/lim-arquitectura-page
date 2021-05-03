@@ -1,8 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { AiOutlineInstagram, AiOutlineFacebook, AiOutlineLinkedin, AiOutlineBehance} from "react-icons/ai";
-
 import { FaLinkedinIn, FaBehance, FaFacebookF, FaInstagram } from "react-icons/fa";
-import { RiFacebookFill } from "react-icons/ri";
 import simboloBlanco from "../assets/images/simbolo-blanco.svg";
 
 
@@ -19,16 +16,16 @@ const Footer = () => {
           <p>También encontranos en</p>
 
           <div className="footer__redes">
-            <a href="#">
+            <a href="https://www.instagram.com/lim_arquitectura/?igshid=1qjipmho40bqx" target="__blank">
               <FaInstagram />
             </a>
-            <a href="#">
+            <a href="https://www.facebook.com/limarquitecturastudio" target="__blank">
               <FaFacebookF />
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/company/limarquitectura/" target="__blank">
               <FaLinkedinIn />
             </a>
-            <a href="#">
+            <a href="https://www.behance.net/limarquitectura" target="__blank">
               <FaBehance />
             </a>
           </div>
