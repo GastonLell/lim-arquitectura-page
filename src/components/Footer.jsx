@@ -1,36 +1,41 @@
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Container, Row, Col } from "react-bootstrap";
+import { AiOutlineInstagram, AiOutlineFacebook, AiOutlineLinkedin, AiOutlineBehance} from "react-icons/ai";
+
+import { FaLinkedinIn, FaBehance, FaFacebookF, FaInstagram } from "react-icons/fa";
+import { RiFacebookFill } from "react-icons/ri";
 import simboloBlanco from "../assets/images/simbolo-blanco.svg";
-import behance from "../assets/images/vector behance.jpg";
-import instagram from "../assets/images/vector instagram.jpg";
-import facebook from "../assets/images/facebook.png";
-import linkedin from "../assets/images/linkedin.jpg";
+
 
 const Footer = () => {
-    return (
+  return (
+    <Container fluid id="footer">
+      <Row className="px-sm-4">
+        <Col sm={6}>
+          <img className="footer__logo" src={simboloBlanco} alt="Logo" />
+        </Col>
 
-        <Container fluid id="footer">
+        <Col xs={12} sm={6} className="footer__texto">
+          
+          <p>También encontranos en</p>
 
-            <Row className="">
-
-                <Col className="d-flex"><img className="footer__logo" src={simboloBlanco} alt="Logo"/></Col>
-
-                <Col className="footer__textoVectores">
-
-                        <p>También encontranos en</p>
-                        
-                        <div className="footer__contenedorVectores">
-                        <img src={instagram} className="footer__vector mr-2" alt="Instagram"/>
-                        <img src={facebook} className="footer__vector mr-2" alt="Facebook"/>
-                        <img src={linkedin} className="footer__vector mr-2" alt="Linkedin"/>
-                        <img src={behance} className="footer__vector" alt="Behance"/>
-                        </div>
-                </Col>
-            </Row>
-        </Container>
-
-    )
-}
+          <div className="footer__redes">
+            <a href="#">
+              <FaInstagram />
+            </a>
+            <a href="#">
+              <FaFacebookF />
+            </a>
+            <a href="#">
+              <FaLinkedinIn />
+            </a>
+            <a href="#">
+              <FaBehance />
+            </a>
+          </div>
+        </Col>
+      </Row>
+    </Container>
+  );
+};
 
 export default Footer;
