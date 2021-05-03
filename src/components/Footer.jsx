@@ -1,15 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiOutlineInstagram,
-  AiOutlineFacebook,
-  AiOutlineLinkedin,
-  AiOutlineBehanceSquare,
-} from "react-icons/ai";
+import { AiOutlineInstagram, AiOutlineFacebook, AiOutlineLinkedin, AiOutlineBehance} from "react-icons/ai";
+
+import { FaLinkedinIn, FaBehance, FaFacebookF, FaInstagram } from "react-icons/fa";
+import { RiFacebookFill } from "react-icons/ri";
 import simboloBlanco from "../assets/images/simbolo-blanco.svg";
-import behance from "../assets/images/vector behance.jpg";
-import instagram from "../assets/images/vector instagram.jpg";
-import facebook from "../assets/images/facebook.png";
-import linkedin from "../assets/images/linkedin.jpg";
+
 
 const Footer = () => {
   return (
@@ -25,16 +20,16 @@ const Footer = () => {
 
           <div className="footer__redes">
             <a href="#">
-              <AiOutlineInstagram />
+              <FaInstagram />
             </a>
             <a href="#">
-              <AiOutlineFacebook />
+              <FaFacebookF />
             </a>
             <a href="#">
-              <AiOutlineLinkedin />
+              <FaLinkedinIn />
             </a>
             <a href="#">
-              <AiOutlineBehanceSquare />
+              <FaBehance />
             </a>
           </div>
         </Col>
