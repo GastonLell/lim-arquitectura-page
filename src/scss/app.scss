@@ -166,8 +166,7 @@ a {
 
 #inicio {
   width: 100%;
-  height: 100%;
-
+  height: 35vh;
   .carousel {
     width: 100%;
     height: auto;
@@ -175,14 +174,12 @@ a {
 
   .img-carousel-inicio {
     width: 100%;
-    height: 30vh;
+    height: 35vh;
     background-repeat: no-repeat;
   }
 
-  //aplicando efecto de movimiento de imagenes
-
   .carousel-container {
-    height: auto;
+    height: 35vh;
     display: inline-block;
 
     #item-carousel-uno {
@@ -213,7 +210,7 @@ a {
 
 // X-Small devices (portrait phones, less than 576px)
 
-@media (max-width: 275.98px) {
+/* @media (max-width: 275.98px) {
   #inicio{
     height: 160px;
   }
@@ -243,7 +240,7 @@ a {
   }
 }
 
-
+ */
 
 // SLOGAN 
 
@@ -255,7 +252,6 @@ a {
   align-items: center;
 
   .sloganLato {
-
     font-family: 'Lato', sans-serif;
     font-weight: 700;
   }
@@ -346,13 +342,14 @@ a {
 
   .img-carousel-proyectos {
     width: 100vw;
+    height: 70vh;
     max-height: 100vh;
     object-fit: cover;
   }
 
   .img-carousel-realidad {
     display: block;
-    margin: 0 auto;
+    margin: auto;
     width: 700px;
     height: 90vh;
   }
@@ -361,6 +358,7 @@ a {
     display: block;
     margin: auto;
     width: 100%;
+    height: 80vh;
     max-height: 80vh;
     border: none;
     object-fit: cover;
