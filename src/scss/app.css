@@ -302,8 +302,8 @@ a {
 }
 
 #nosotros .nosotros__foto--tamanio {
-  width: 100%;
-  height: auto;
+  width: 300px;
+  height: 300px;
   -o-object-fit: scale-down;
      object-fit: scale-down;
   border-radius: 2px;
@@ -613,6 +613,10 @@ a {
   }
   #nosotros {
     padding: 100px 0px;
+  }
+  #nosotros .nosotros__foto--tamanio {
+    width: 100%;
+    height: auto;
   }
   #nosotros .nosotrosText {
     padding-top: 0px;
