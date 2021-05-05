@@ -230,8 +230,9 @@ a {
   padding: 30px 0px;
 
   .nosotros__foto--tamanio {
-    width: 90%;
-    justify-content: center;
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
     border-radius: 2px;
   }
 
@@ -546,10 +547,6 @@ a {
   #nosotros {
     padding: 100px 0px;
 
-    .nosotros__foto--tamanio {
-      width: 90%;
-    }
-
     .nosotrosText {
       padding-top: 0px;
       padding-right: 15px;
@@ -654,9 +651,6 @@ a {
 
   #nosotros {
 
-    .nosotros__foto--tamanio {
-      width: 75%;
-    }
 
     .nosotrosText {
       font-size: 1.1rem;
@@ -724,10 +718,6 @@ a {
   // NOSOTROS
 
   #nosotros {
-
-    .nosotros__foto--tamanio {
-      width: 100%;
-    }
 
     .nosotrosText {
       line-height: 28px;
@@ -895,12 +885,6 @@ a {
   // NOSOTROS
 
   #nosotros {
-
-    .nosotros__foto--tamanio {
-      width: 100%;
-      height: auto;
-      object-fit: scale-down;
-    }
 
     .nosotrosText {
       font-size: 1.2rem;

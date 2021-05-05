@@ -302,10 +302,10 @@ a {
 }
 
 #nosotros .nosotros__foto--tamanio {
-  width: 90%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 100%;
+  height: auto;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
   border-radius: 2px;
 }
 
@@ -614,9 +614,6 @@ a {
   #nosotros {
     padding: 100px 0px;
   }
-  #nosotros .nosotros__foto--tamanio {
-    width: 90%;
-  }
   #nosotros .nosotrosText {
     padding-top: 0px;
     padding-right: 15px;
@@ -688,9 +685,6 @@ a {
     font-size: 1.2rem;
     line-height: 32px;
   }
-  #nosotros .nosotros__foto--tamanio {
-    width: 75%;
-  }
   #nosotros .nosotrosText {
     font-size: 1.1rem;
     padding-top: 0px;
@@ -734,9 +728,6 @@ a {
   }
   #inicio .img-carousel-inicio {
     height: 90vh;
-  }
-  #nosotros .nosotros__foto--tamanio {
-    width: 100%;
   }
   #nosotros .nosotrosText {
     line-height: 28px;
@@ -959,12 +950,6 @@ a {
     transition: all 4s ease-in;
     -webkit-transform: scaleY(0.8);
             transform: scaleY(0.8);
-  }
-  #nosotros .nosotros__foto--tamanio {
-    width: 100%;
-    height: auto;
-    -o-object-fit: scale-down;
-       object-fit: scale-down;
   }
   #nosotros .nosotrosText {
     font-size: 1.2rem;
