@@ -22,7 +22,7 @@ const Nosotros = () => {
         </Col>
 
         <Col className="d-flex justify-content-center">
-          <img className="nosotros__foto--tamanio" src={ellos} alt="Ellos"/>
+          <img className="nosotros__foto--tamanio" src={ellos} alt="LIM Arquitectura - nosotros"/>
         </Col>
 
       </Row>

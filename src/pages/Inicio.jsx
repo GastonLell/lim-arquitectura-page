@@ -3,9 +3,6 @@ import { Container, Row, Col, Carousel } from "react-bootstrap";
 import ImgLogo from "../assets/images/limArquitectura-negro.svg";
 import ImgSimbolo from "../assets/images/Simbolo.svg";
 
-// componentes
-import Slogan from "../components/Slogan";
-
 const Inicio = () => {
   return (
     <div id="inicio">
@@ -36,10 +33,10 @@ const Inicio = () => {
               </div>
               <div className="inicio__animacion">
                 <div className="simbolo-1">
-                  <img src={ImgSimbolo} />
+                  <img src={ImgSimbolo} alt="lim-arquitectura"/>
                 </div>
                 <div className="simbolo-2">
-                  <img src={ImgSimbolo} />
+                  <img src={ImgSimbolo} alt="lim-arquitectura" />
                 </div>
               </div>
             </div>
